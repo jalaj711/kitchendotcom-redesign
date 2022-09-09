@@ -1,0 +1,96 @@
+@use "../../styles/theme";
+
+.footer {
+  width: 100vw;
+  background-color: theme.$primary;
+  color: theme.$text_on_primary;
+  padding: 16px 24px 8px 24px;
+  display: grid;
+  grid-template-areas:
+    "footer-main footer-main footer-about-us footer-offerings footer-locations"
+    "footer-main footer-main footer-about-us footer-offerings footer-locations"
+    "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings footer-locations"
+    "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings footer-locations"
+    "footer-copyrights footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
+}
+
+.main {
+  grid-area: footer-main;
+  text-align: center;
+
+  div {
+    display: inline-block;
+  }
+}
+
+.getInTouch {
+  grid-area: footer-get-in-touch;
+  text-align: center;
+}
+
+.aboutus {
+  grid-area: footer-about-us;
+  ul li {
+    list-style-type: none;
+    font-size: larger;
+    font-weight: 600;
+  }
+}
+
+.offerings {
+  grid-area: footer-offerings;
+  ul {
+    padding-left: 8px;
+  }
+}
+
+.locations {
+  grid-area: footer-locations;
+}
+
+.copyrights {
+  grid-area: footer-copyrights;
+  display: flex;
+  margin-top: 48px;
+  div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    :nth-child(1) {
+      font-weight: 600;
+    }
+  }
+
+  :nth-child(2) {
+    * {
+      font-weight: 400 !important;
+    }
+  }
+}
+
+.copyrightItems {
+    
+}
+
+.contactDetails {
+  display: flex;
+  text-align: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 0 12px;
+    :nth-child(1) {
+      font-weight: 600;
+    }
+  }
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
