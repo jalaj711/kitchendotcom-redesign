@@ -1,9 +1,12 @@
+@use "./theme";
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Laila";
   overflow-x: hidden;
+  background-color: theme.$background;
 }
 
 a {

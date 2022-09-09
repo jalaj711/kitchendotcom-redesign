@@ -1,0 +1,67 @@
+@use "../../styles/theme";
+
+.bg{
+    width: 100vw;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 64px 0;
+    justify-content: center;
+}
+.container {
+  display: flex;
+}
+.card {
+  border-bottom-right-radius: 48px;
+  border-top-left-radius: 48px;
+  background-color: theme.$offwhite;
+  max-width: 70%;
+}
+.form {
+  flex-basis: 70%;
+  padding: 16px;
+  margin-left: 16px;
+  margin-top: 16px;
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-top: 8px;
+    }
+    button {
+      margin-top: 12px;
+      width: fit-content;
+    }
+    div {
+      display: flex;
+      width: 100%;
+      input {
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+.details {
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  background-color: theme.$primary;
+  border-bottom-right-radius: 48px;
+  div {
+    padding: 16px;
+    flex-grow: 1;
+    div {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+    }
+  }
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-bottom-right-radius: 48px;
+}
