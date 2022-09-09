@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Button from '../components/Button/Button'
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <Button>Submit</Button>
         <p>
           Get started by editing{' '}
           <code>pages/index.js</code>
