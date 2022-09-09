@@ -1,0 +1,11 @@
+@use "../../styles/theme";
+
+.nav {
+    padding: 16px 24px;
+    display: flex;
+    span{
+        margin: 0 16px;
+        font-size: x-large;
+        font-weight: 600;
+    }
+}
