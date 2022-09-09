@@ -1,0 +1,14 @@
+@use "../../styles/theme";
+
+.inp {
+    background-color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Spectral';
+}
+
+.inp :focus, .inp :focus-visible{
+    outline: none;
+    box-shadow: 0 0 2px #ccc;
+}
