@@ -1,14 +1,19 @@
 @use "../../styles/theme";
 
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  span {
+    margin: 0 16px;
+    font-size: x-large;
+    font-weight: 600;
+  }
+  div {
     padding: 16px 24px;
-    display: flex;
-    position: fixed;
-    top: 0;
     width: 100vw;
-    span{
-        margin: 0 16px;
-        font-size: x-large;
-        font-weight: 600;
-    }
+    display: flex;
+  }
 }
