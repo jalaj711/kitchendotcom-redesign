@@ -1,0 +1,81 @@
+@use "../../styles/theme";
+
+.landing {
+  padding: 16px;
+  background-color: theme.$bg2;
+  height: 100vh;
+  h1 {
+    border-left: 6px solid theme.$primary;
+    padding: 8px;
+    margin-left: 16px;
+  }
+  h2 {
+    margin-left: 56px;
+  }
+}
+
+.landingImage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWithSquare {
+  background: theme.$primary;
+  img {
+    transform: translate(-32px, 32px);
+  }
+}
+
+.container {
+  display: flex;
+  background-color: theme.$bg2;
+  padding: 16px;
+  padding-bottom: 32px;
+  .half {
+    flex-basis: 50%;
+    padding: 16px;
+    div {
+      width: fit-content;
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+.kitchenLayout {
+  padding: 24px 36px;
+  background-color: theme.$bg2;
+  h2, p {
+    max-width: 50vw;
+  }
+}
+
+.card {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: theme.$primary;
+  width: fit-content;
+  border-radius: 20px;
+  img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+  }
+  .imageContainer {
+    padding: 0;
+  }
+  .text {
+    padding: 8px 16px;
+    h4, p {
+      margin: 0px;
+    }
+  }
+}
+
+.allCards {
+  display: flex;
+}

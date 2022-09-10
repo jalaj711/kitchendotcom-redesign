@@ -20,7 +20,7 @@
   max-width: 70%;
 }
 .form {
-  flex-basis: 70%;
+  flex-basis: 60%;
   padding: 16px;
   margin-left: 16px;
   margin-top: 16px;
@@ -45,7 +45,7 @@
 }
 .details {
   display: flex;
-  flex-basis: 30%;
+  flex-basis: 40%;
   flex-direction: column;
   background-color: theme.$primary;
   border-bottom-right-radius: 48px;
