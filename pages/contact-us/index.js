@@ -13,10 +13,12 @@ import ThreeTriangles from "../../components/ThreeTriangles";
 import DoodleDots from "../../components/DoodleDotsEllipse";
 import TwoSquares from "../../components/TwoSquares";
 import Image from "next/image";
+import NavBar from "../../components/NavBar/NavBar";
 
 export default function ContactUs() {
   return (
     <>
+    <NavBar />
       <div className={styles.top}>
         <img src={Background.src} className={styles.bg} alt="bg" />
         <div className={styles.title}>
