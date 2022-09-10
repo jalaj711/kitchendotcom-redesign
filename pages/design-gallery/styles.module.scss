@@ -21,8 +21,81 @@
   justify-content: center;
 }
 
+.doodleDot1,
+.doodleDot2 {
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+}
+
+.doodleDot1 {
+  top: -100px;
+  right: -50px;
+}
+
+.doodleDot2 {
+  bottom: -100px;
+  left: -50px;
+}
+
+.lamps {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.triangle1,
+.triangle2 {
+  position: absolute;
+  width: 20vw;
+}
+
+.triangle1 {
+  top: 50%;
+  left: -5vw;
+}
+
+.triangle2 {
+  top: 30%;
+  right: -7vw;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  width: 20vw;
+  height: 20vw;
+  background-color: theme.$primary;
+  filter: blur(435px);
+  position: absolute;
+  z-index: 0;
+}
+
+.circle1 {
+  top: -20%;
+  right: 0%;
+}
+
+.circle2 {
+  top: 30%;
+  left: 20%;
+}
+
+.circle3 {
+  top: 20%;
+  left: 70%;
+}
+
+.circle4 {
+  top: 60%;
+  left: 40%;
+}
 .imageWithSquare {
   background: theme.$primary;
+  position: relative;
+  z-index: 10;
   img {
     transform: translate(-32px, 32px);
   }
@@ -36,6 +109,14 @@
   .half {
     flex-basis: 50%;
     padding: 16px;
+  }
+  .half2 {
+    flex-basis: 50%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     div {
       width: fit-content;
       img {
@@ -48,11 +129,55 @@
 .kitchenLayout {
   padding: 24px 36px;
   background-color: theme.$bg2;
-  h2, p {
+  position: relative;
+  padding-bottom: 72px;
+  h2,
+  p {
     max-width: 50vw;
+  }
+  * {
+    z-index: 1;
   }
 }
 
+.triangle3, .square1, .square2, .circle5, .circle6, .circle7 {
+  position: absolute;
+  z-index: 0;
+}
+
+.triangle3 {
+  width: 20vw;
+  top: 30%;
+  left: -5vw;
+}
+.square1 {
+  width: 20vw;
+  top: 30%;
+  right: -5vw;
+}
+.square2 {
+  width: 20vw;
+  bottom: -5vw;
+  right: 5vw;
+}
+.circle5, .circle6, .circel7 {
+  width: 10vw;
+  height: 10vw;
+  filter: blur(200px);
+  background-color: theme.$primary;
+}
+.circle5 {
+  top: 30%;
+  left: 30%;
+}
+.circle6 {
+  top: 10%;
+  left: 60%;
+}
+.circle7 {
+  top: 60%;
+  left: 90%;
+}
 .card {
   margin: 16px;
   display: flex;
@@ -70,7 +195,8 @@
   }
   .text {
     padding: 8px 16px;
-    h4, p {
+    h4,
+    p {
       margin: 0px;
     }
   }

@@ -2,6 +2,10 @@ import styles from "./styles.module.scss";
 import LandingImage from "../../assets/design-gallery/landing.png";
 import DesignGallery2 from "../../assets/design-gallery/2.png";
 import DesignGallery3 from "../../assets/design-gallery/3.png";
+import DoodlesEllipse from "../../components/DoodleDotsEllipse";
+import ThreeTriangles from "../../components/ThreeTriangles";
+import TwoSquares from "../../components/TwoSquares";
+import LampImage from "../../assets/lamp.png";
 
 function KitchenCard({ title, image, details }) {
   return (
@@ -23,12 +27,25 @@ export default function ContactUs() {
       <div className={styles.landing}>
         <h1>Design Gallery</h1>
         <h2>Discover your Modular Kitchen</h2>
-
+        <div className={styles.lamps}>
+          <img src={LampImage.src} />
+          <img src={LampImage.src} />
+          <img src={LampImage.src} />
+        </div>
         <div className={styles.landingImage}>
           <div className={styles.imageWithSquare}>
+            <DoodlesEllipse className={styles.doodleDot1} />
             <img src={LandingImage.src} />
+            <DoodlesEllipse className={styles.doodleDot2} />
           </div>
         </div>
+
+        <ThreeTriangles className={styles.triangle1} />
+        <ThreeTriangles className={styles.triangle2} />
+        <div className={styles.circle1} />
+        <div className={styles.circle2} />
+        <div className={styles.circle3} />
+        <div className={styles.circle4} />
       </div>
       <div className={styles.container}>
         <div className={styles.half}>
@@ -45,9 +62,11 @@ export default function ContactUs() {
             their designs a firm foothold in the industry.
           </p>
         </div>
-        <div className={styles.half}>
+        <div className={styles.half2}>
           <div className={styles.imageWithSquare}>
+            <DoodlesEllipse className={styles.doodleDot1} />
             <img src={DesignGallery2.src} />
+            <DoodlesEllipse className={styles.doodleDot2} />
           </div>
         </div>
       </div>
@@ -58,11 +77,33 @@ export default function ContactUs() {
           kitchen. Your kitchen would have one of the following layouts.
         </p>
         <div className={styles.allCards}>
-          <KitchenCard title="test" details="details" image={DesignGallery3.src} />
-          <KitchenCard title="test" details="details" image={DesignGallery3.src} />
-          <KitchenCard title="test" details="details" image={DesignGallery3.src} />
-          <KitchenCard title="test" details="details" image={DesignGallery3.src} />
+          <KitchenCard
+            title="test"
+            details="details"
+            image={DesignGallery3.src}
+          />
+          <KitchenCard
+            title="test"
+            details="details"
+            image={DesignGallery3.src}
+          />
+          <KitchenCard
+            title="test"
+            details="details"
+            image={DesignGallery3.src}
+          />
+          <KitchenCard
+            title="test"
+            details="details"
+            image={DesignGallery3.src}
+          />
         </div>
+        <ThreeTriangles className={styles.triangle3} />
+        <TwoSquares className={styles.square1} />
+        <TwoSquares className={styles.square2} />
+        <div className={styles.circle5} />
+        <div className={styles.circle6} />
+        <div className={styles.circle7} />
       </div>
     </>
   );
