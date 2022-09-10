@@ -3,7 +3,8 @@ import FacebookIcon from "../../assets/Facebook.svg";
 import InstagramIcon from "../../assets/Instagram.svg";
 import TwitterIcon from "../../assets/Twitter.svg";
 import WhatsAppIcon from "../../assets/WhatsApp.svg";
-import FooterBackground from "../../assets/footer-background.svg";
+import TwoSquares from "../TwoSquares";
+import LampImg from "../../assets/lamp.png";
 import Image from "next/image";
 
 export default function Footer() {
@@ -65,6 +66,10 @@ export default function Footer() {
         </div>
       </div>
       {/* <img src={FooterBackground.src} alt="background" className={styles.background} /> */}
+      <img src={LampImg.src} alt="lamp" className={styles.lampImage} />
+      <TwoSquares className={styles.square1} />
+      <TwoSquares className={styles.square2} />
+      <TwoSquares className={styles.square3} />
     </footer>
   );
 }

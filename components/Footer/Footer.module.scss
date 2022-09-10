@@ -6,6 +6,7 @@
   color: theme.$text_on_primary;
   padding: 16px 24px 8px 24px;
   display: grid;
+  position: relative;
   grid-template-areas:
     "footer-main footer-main footer-about-us footer-offerings footer-locations"
     "footer-main footer-main footer-about-us footer-offerings footer-locations"
@@ -81,4 +82,35 @@
       font-weight: 600;
     }
   }
+}
+
+.square1, .square2, .square3, .lampImage {
+  position: absolute;
+}
+
+.square1 {
+  width: 20vw;
+  left: -10vw;
+  bottom: 72px;
+  opacity: 0.8;
+}
+
+.square2 {
+  width: 20vw;
+  right: -5vw;
+  bottom: 12px;
+  opacity: 0.8;
+}
+
+.square3 {
+  height: 20vw;
+  bottom: -10vw;
+  left: 20%;
+  opacity: 0.5;
+  clip: rect(0px, 30vw, 10vw, 0px);
+}
+
+.lampImage {
+  top: 0;
+  right: 12px;
 }
