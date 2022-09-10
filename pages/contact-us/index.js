@@ -9,6 +9,9 @@ import InstagramIcon from "../../assets/Instagram.svg";
 import TwitterIcon from "../../assets/Twitter.svg";
 import WhatsAppIcon from "../../assets/WhatsApp.svg";
 import Background from "../../assets/MainBG.png";
+import ThreeTriangles from "../../components/ThreeTriangles";
+import DoodleDots from "../../components/DoodleDotsEllipse";
+import TwoSquares from "../../components/TwoSquares";
 import Image from "next/image";
 
 export default function ContactUs() {
@@ -73,6 +76,12 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+        <ThreeTriangles className={styles.triangles} />
+        <DoodleDots className={styles.dots} />
+        <TwoSquares className={styles.squares} />
+        <div className={styles.circle1} />
+        <div className={styles.circle2} />
+        <div className={styles.circle3} />
       </div>
     </>
   );

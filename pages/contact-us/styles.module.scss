@@ -6,6 +6,7 @@
     position: absolute;
     bottom: 20%;
     left: 48px;
+    font-size: larger;
   }
   h3, p {
     margin: 0;
@@ -20,6 +21,7 @@
     width: 100%;
     margin: 64px 0;
     justify-content: center;
+    position: relative;
 }
 .container {
   display: flex;
@@ -29,6 +31,7 @@
   border-top-left-radius: 48px;
   background-color: theme.$offwhite;
   max-width: 70%;
+  z-index: 2;
 }
 .form {
   flex-basis: 60%;
@@ -75,4 +78,51 @@
   max-width: 100%;
   height: auto;
   border-bottom-right-radius: 48px;
+}
+
+.triangles, .dots, .squares, .circle1, .circle2, .circle3 {
+  position: absolute;
+  z-index: 0;
+}
+
+.circle1, .circle2, .circle3 {
+  width: 30vw;
+  height: 30vw;
+  background-color: theme.$primary;
+  filter: blur(435px);
+  z-index: 0;
+}
+
+.circle1 {
+  bottom: -15vw;
+  left: 0;
+}
+.circle2 {
+  bottom: 0vw;
+  left: 5vw;
+}
+.circle3 {
+  top: -5vw;
+  right: 10vw;
+}
+.triangles {
+  top: 0%;
+  width: 30vw;
+  left: -10vw;
+  opacity: 0.8;
+}
+
+.dots {
+  bottom: 30%;
+  width: 15vw;
+  right: -5vw;
+  opacity: 0.8;
+}
+
+.squares {
+  bottom: -8vw;
+  width: 20vw;
+  right: -2vw;
+  opacity: 0.8;
+  z-index: 0;
 }
