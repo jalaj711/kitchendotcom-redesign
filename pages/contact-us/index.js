@@ -8,13 +8,20 @@ import FacebookIcon from "../../assets/Facebook.svg";
 import InstagramIcon from "../../assets/Instagram.svg";
 import TwitterIcon from "../../assets/Twitter.svg";
 import WhatsAppIcon from "../../assets/WhatsApp.svg";
-import Background from "../../assets/MainBG.svg";
+import Background from "../../assets/MainBG.png";
 import Image from "next/image";
 
 export default function ContactUs() {
   return (
     <>
-    <img src={Background.src} className={styles.bg} alt="bg" />
+      <div className={styles.top}>
+        <img src={Background.src} className={styles.bg} alt="bg" />
+        <div className={styles.title}>
+          <h3>Get in touch!</h3>
+          <div>Have an inquiry or some feedback for us?</div>
+          <div>Fill out the form below to contact our team.</div>
+        </div>
+      </div>
       <div className={styles.wrapper}>
         <div className={styles.card}>
           <div className={styles.container}>
@@ -57,7 +64,6 @@ export default function ContactUs() {
                     <Image src={WhatsAppIcon} width={48} alt="WhatsApp" />
                   </div>
                 </div>
-                {/**TODO SOCIAL ICONS */}
               </div>
               <img
                 src="https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/b315ccda-47b0-49c5-99a0-12afdd067d85.jpeg"

@@ -1,5 +1,16 @@
 @use "../../styles/theme";
 
+.top {
+  position: relative;
+  .title {
+    position: absolute;
+    bottom: 20%;
+    left: 48px;
+  }
+  h3, p {
+    margin: 0;
+  }
+}
 .bg{
     width: 100vw;
 }
