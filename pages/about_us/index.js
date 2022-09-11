@@ -11,8 +11,8 @@ import TwoSquares from "../../components/TwoSquares";
 const About = () => {
   return (
     <div className={styles.container}>
-      <img classname={styles.bgimg} src={Background.src}></img>
-      <DoodleDots className={styles.dots} />
+      <img className={styles.bgimg} src={Background.src}></img>
+
       <h1 className={styles.abt}>About Us</h1>
       <div className={styles.ourvision}>
         <div className={styles.paracontainer}>
@@ -28,12 +28,14 @@ const About = () => {
             modular kitchen with all the updated features.
           </p>
         </div>
-        <div>
+        <div className={styles.ddots}>
+          <DoodleDots className={styles.dots} />
           <img className={styles.img1} src={Image.src}></img>
         </div>
       </div>
       <div className={styles.ourvision}>
-        <div>
+        <div className={styles.ddots1}>
+          <DoodleDots className={styles.dots1} />
           <img className={styles.img1} src={Image1.src}></img>
         </div>
         <div className={styles.paracontainer}>
@@ -51,6 +53,7 @@ const About = () => {
         </div>
       </div>
       <div className={styles.howstart}>
+        <ThreeTriangles className={styles.triangles1} />
         <h2 className={styles.started}>HOW IT STARTED</h2>
         <p className={styles.started1}>
           Established in 2020, KitchenDotCom is a unit of Ideago Interiors. It
@@ -81,14 +84,25 @@ const About = () => {
           is due to his invaluable leadership and efforts that the firm has been
           able to deliver the services to all the clients up to their
           satisfaction.
+          <br />
+          <br />
+          We also offer an array of designs for tiles, compartments, chimneys,
+          etc. We are a one-stop destination for material selection, products,
+          fitting and installation, repairing ,etc.
         </p>
       </div>
-      <img className={styles.img2} src={Image2.src}></img>
-      <h3 className={styles.he3}> Mr. Abhishek Gupta</h3>
+      <div className={styles.drdots}>
+        <DoodleDots className={styles.dots3} />
+        <img className={styles.img2} src={Image2.src}></img>
+        <h3 className={styles.he3}> Mr. Abhishek Gupta</h3>
+        <div className={styles.square1}>
+          <TwoSquares className={styles.squares} />
+        </div>
+      </div>
 
       <ThreeTriangles className={styles.triangles} />
-      <DoodleDots className={styles.dots} />
-      <TwoSquares className={styles.squares} />
+      {/* <DoodleDots className={styles.dots} /> */}
+      {/* <TwoSquares className={styles.squares} /> */}
       <div className={styles.circle1} />
       <div className={styles.circle2} />
       <div className={styles.circle3} />

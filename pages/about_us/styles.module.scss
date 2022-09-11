@@ -1,5 +1,9 @@
+.container{
+    background-color: #FFF4DC;
+}
+
 .bgimg{
-    width: 100vh;
+    width: 100vw;
     
 }
 
@@ -8,10 +12,12 @@
     padding:  12px;
 }
 .img1{
-    width: 70%;
-    height: 70%;
-    padding-top: 30px;
-        padding-left: 69px;
+        width: 70%;
+            height: 70%;
+            padding-top: 30px;
+            padding-left: 69px;
+            z-index: 1;
+            position: relative;
    
     
 }
@@ -32,6 +38,7 @@
     text-align: center;
 }
 .howstart {
+    position: relative;
      align-items: center;
 }
 .img2{
@@ -42,4 +49,45 @@ text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+.started1{
+    
+    padding-left:  230px ;
+    padding-right: 230px;
+}
+.ddots , .ddots1 ,.drdots , .square1{
+    position: relative;
+    
+}
+.dots{
+    position: absolute;
+     top: -60px;
+}
+.dots1{
+    position: absolute;
+    left: 50%;
+    top: -60px;
+}
+.triangles{
+    position: absolute;
+    top: 75%;
+    left: 85%;
+}
+.triangles1{
+    position: absolute;
+    right: 85%;
+}
+.dots3{
+    position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 30%;
+        left: 32%;
+        z-index: 0;
+}
+.squares{
+   padding-right: 30px;
+
+    
+    
 }
