@@ -185,10 +185,13 @@
   background-color: theme.$primary;
   width: fit-content;
   border-radius: 20px;
+  max-width: 300px;
   img {
     width: 100%;
     max-width: 300px;
     margin: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .imageContainer {
     padding: 0;
