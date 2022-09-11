@@ -14,6 +14,7 @@ import DoodleDots from "../../components/DoodleDotsEllipse";
 import TwoSquares from "../../components/TwoSquares";
 import Image from "next/image";
 import NavBar from "../../components/NavBar/NavBar";
+import ContactUsImage from "../../assets/contact-us.jpeg";
 
 export default function ContactUs() {
   return (
@@ -71,7 +72,7 @@ export default function ContactUs() {
                 </div>
               </div>
               <img
-                src="https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/b315ccda-47b0-49c5-99a0-12afdd067d85.jpeg"
+                src={ContactUsImage.src}
                 alt="team"
                 className={styles.image}
               />

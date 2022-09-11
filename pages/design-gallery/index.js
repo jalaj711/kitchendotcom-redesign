@@ -2,6 +2,9 @@ import styles from "./styles.module.scss";
 import LandingImage from "../../assets/design-gallery/landing.png";
 import DesignGallery2 from "../../assets/design-gallery/2.png";
 import DesignGallery3 from "../../assets/design-gallery/3.png";
+import DesignGallery4 from "../../assets/design-gallery/4.jpeg";
+import DesignGallery5 from "../../assets/design-gallery/5.jpeg";
+import DesignGallery6 from "../../assets/design-gallery/6.jpeg";
 import DoodlesEllipse from "../../components/DoodleDotsEllipse";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import TwoSquares from "../../components/TwoSquares";
@@ -78,24 +81,24 @@ export default function ContactUs() {
         </p>
         <div className={styles.allCards}>
           <KitchenCard
-            title="test"
-            details="details"
+            title="L-Shape Kitchen"
+            details="Enim gravida fames viverra tincidunt. Neque neque."
             image={DesignGallery3.src}
           />
           <KitchenCard
-            title="test"
-            details="details"
-            image={DesignGallery3.src}
+            title="Straight Shape Kitchen"
+            details="Enim gravida fames viverra tincidunt. Neque neque."
+            image={DesignGallery4.src}
           />
           <KitchenCard
-            title="test"
-            details="details"
-            image={DesignGallery3.src}
+            title="U- Shape Kitchen"
+            details="Enim gravida fames viverra tincidunt. Neque neque."
+            image={DesignGallery5.src}
           />
           <KitchenCard
-            title="test"
-            details="details"
-            image={DesignGallery3.src}
+            title="Parallel Shape Kitchen"
+            details="Enim gravida fames viverra tincidunt. Neque neque."
+            image={DesignGallery6.src}
           />
         </div>
         <ThreeTriangles className={styles.triangle3} />
