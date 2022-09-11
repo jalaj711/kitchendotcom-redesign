@@ -1,3 +1,8 @@
+.bgimg{
+    width: 100vh;
+    
+}
+
 .ourvision{
     display: flex;
     padding:  12px;
@@ -23,13 +28,18 @@
     padding-left: 30px;
 
 }
-.ourmission{
-display: flex;
-    padding: 12px;
+.started , .he3 {
+    text-align: center;
+}
+.howstart {
+     align-items: center;
 }
 .img2{
-    width: 70%;
-        height: 70%;
-        padding-top: 30px;
-        padding-right: 69px;
+    width: 20%;
+    height: 20%;
+text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
