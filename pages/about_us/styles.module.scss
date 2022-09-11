@@ -1,7 +1,45 @@
+.bgimg{
+    width: 100vh;
+    
+}
+
 .ourvision{
     display: flex;
+    padding:  12px;
 }
-.Image.src{
-    width: 100%;
-    height: 100%;
+.img1{
+    width: 70%;
+    height: 70%;
+    padding-top: 30px;
+        padding-left: 69px;
+   
+    
+}
+.abt{
+    margin-top: 13%;
+    padding-left: 80px;
+}
+.vsn{
+    padding-left: 80px;
+    margin-top: 8%;
+}
+.paracontainer{
+    flex-basis: 50%;
+    padding-left: 30px;
+
+}
+.started , .he3 {
+    text-align: center;
+}
+.howstart {
+     align-items: center;
+}
+.img2{
+    width: 20%;
+    height: 20%;
+text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
