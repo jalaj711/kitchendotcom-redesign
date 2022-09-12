@@ -1,93 +1,111 @@
-.container{
-    background-color: #FFF4DC;
+.container {
+  background-color: #fff4dc;
 }
 
-.bgimg{
-    width: 100vw;
-    
+.bgimg {
+  width: 100vw;
 }
 
-.ourvision{
-    display: flex;
-    padding:  12px;
+.ourvision {
+  display: flex;
+  padding: 12px;
 }
-.img1{
-        width: 70%;
-            height: 70%;
-            padding-top: 30px;
-            padding-left: 69px;
-            z-index: 1;
-            position: relative;
-   
-    
+.img1 {
+  width: 70%;
+  height: 70%;
+  padding-top: 30px;
+  padding-left: 69px;
+  z-index: 1;
+  position: relative;
 }
-.abt{
-    margin-top: 13%;
-    padding-left: 80px;
+.abt {
+  margin-top: 13%;
+  padding-left: 80px;
 }
-.vsn{
-    padding-left: 80px;
-    margin-top: 8%;
+.vsn {
+  // padding-left: 80px;
+  margin-top: 8%;
+  text-align: left;
+  padding-left: 40px;
 }
-.paracontainer{
-    flex-basis: 50%;
-    padding-left: 30px;
-
+.msn {
+  // padding-left: 80px;
+  margin-top: 8%;
+  text-align: center;
 }
-.started , .he3 {
-    text-align: center;
+.paracontainer {
+  flex-basis: 50%;
+  padding-left: 30px;
+}
+.started,
+.he3 {
+  text-align: center;
 }
 .howstart {
-    position: relative;
-     align-items: center;
+  position: relative;
+  align-items: center;
 }
-.img2{
-    width: 20%;
-    height: 20%;
-text-align: center;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.img2 {
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  z-index: 1;
+  position: relative;
 }
-.started1{
-    
-    padding-left:  230px ;
-    padding-right: 230px;
+.started1 {
+  padding-left: 230px;
+  padding-right: 230px;
 }
-.ddots , .ddots1 ,.drdots , .square1{
-    position: relative;
-    
+.ddots,
+.ddots1,
+.drdots,
+.square1 {
+  position: relative;
 }
-.dots{
-    position: absolute;
-     top: -60px;
+.dots {
+  position: absolute;
+  top: -60px;
 }
-.dots1{
-    position: absolute;
-    left: 50%;
-    top: -60px;
+.dots1 {
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  z-index: -1;
 }
-.triangles{
-    position: absolute;
-    top: 75%;
-    left: 85%;
+.triangles {
+  position: absolute;
+  top: 75%;
+  left: 85%;
 }
-.triangles1{
-    position: absolute;
-    right: 85%;
+.triangles1 {
+  position: absolute;
+  right: 85%;
+  top: -60%;
 }
-.dots3{
-    position: absolute;
-        align-items: center;
-        justify-content: center;
-        top: -1%;
-        left: 32%;
-        z-index: 0;
+.dots3 {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: -1%;
+  left: 32%;
+  z-index: 0;
 }
-.squares{
-   padding-right: 30px;
-
-    
-    
+.triangles2 {
+  position: absolute;
+  left: 86%;
+  top: -2%;
+}
+.squares {
+  position: absolute;
+  top: 65%;
+  left: 70%;
+}
+.triangles3 {
+  position: absolute;
+  top: -27%;
+  right: 85%;
 }

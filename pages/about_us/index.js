@@ -39,7 +39,7 @@ const About = () => {
           <img className={styles.img1} src={Image1.src}></img>
         </div>
         <div className={styles.paracontainer}>
-          <h2 className={styles.vsn}>OUR MISSION</h2>
+          <h2 className={styles.msn}>OUR MISSION</h2>
 
           <p>
             <b>Our</b> vision is to be a reputable, sustainable, and desirable
@@ -54,6 +54,7 @@ const About = () => {
       </div>
       <div className={styles.howstart}>
         <ThreeTriangles className={styles.triangles1} />
+
         <h2 className={styles.started}>HOW IT STARTED</h2>
         <p className={styles.started1}>
           Established in 2020, KitchenDotCom is a unit of Ideago Interiors. It
@@ -90,14 +91,14 @@ const About = () => {
           etc. We are a one-stop destination for material selection, products,
           fitting and installation, repairing ,etc.
         </p>
+        <ThreeTriangles className={styles.triangles2} />
       </div>
       <div className={styles.drdots}>
         <DoodleDots className={styles.dots3} />
         <img className={styles.img2} src={Image2.src}></img>
         <h3 className={styles.he3}> Mr. Abhishek Gupta</h3>
-        <div className={styles.square1}>
-          <TwoSquares className={styles.squares} />
-        </div>
+        <ThreeTriangles className={styles.triangles3} />
+        <TwoSquares className={styles.squares} />
       </div>
 
       <ThreeTriangles className={styles.triangles} />
