@@ -12,11 +12,13 @@ const About = () => {
   return (
     <div className={styles.container}>
       <img className={styles.bgimg} src={Background.src}></img>
+      <ThreeTriangles className={styles.triangles4} />
 
       <h1 className={styles.abt}>About Us</h1>
       <div className={styles.ourvision}>
         <div className={styles.paracontainer}>
           <h2 className={styles.vsn}>OUR VISION</h2>
+          <hr className={styles.line}></hr>
 
           <p>
             <b>Our</b> vision is to be a reputable, sustainable, and desirable
@@ -40,6 +42,7 @@ const About = () => {
         </div>
         <div className={styles.paracontainer}>
           <h2 className={styles.msn}>OUR MISSION</h2>
+          <hr className={styles.line1}></hr>
 
           <p>
             <b>Our</b> vision is to be a reputable, sustainable, and desirable
@@ -56,6 +59,7 @@ const About = () => {
         <ThreeTriangles className={styles.triangles1} />
 
         <h2 className={styles.started}>HOW IT STARTED</h2>
+        <hr className={styles.line2}></hr>
         <p className={styles.started1}>
           Established in 2020, KitchenDotCom is a unit of Ideago Interiors. It
           aims to become a brand in the industry of modular kitchens. With more
@@ -72,6 +76,7 @@ const About = () => {
       </div>
       <div className={styles.howstart}>
         <h2 className={styles.started}>DIRECTOR’S DESK</h2>
+        <hr className={styles.line3}></hr>
         <p className={styles.started1}>
           Our director Mr. Abhishek Gupta who is the creative mind behind this
           firm, has been leading it since its establishment in 2018. A man of

@@ -4,6 +4,8 @@
 
 .bgimg {
   width: 100vw;
+  z-index: 1;
+  position: relative;
 }
 
 .ourvision {
@@ -20,6 +22,9 @@
 }
 .abt {
   margin-top: 13%;
+  z-index: 1;
+  top: -2%;
+  position: absolute;
   padding-left: 80px;
 }
 .vsn {
@@ -108,4 +113,35 @@
   position: absolute;
   top: -27%;
   right: 85%;
+}
+.line {
+  width: 13%;
+  border: 4px solid #f4b32a;
+  position: relative;
+  top: -5%;
+  left: -35%;
+}
+.line1 {
+  width: 13%;
+  border: 4px solid #f4b32a;
+  position: relative;
+  top: -5%;
+}
+.line2 {
+  width: 7%;
+  border: 4px solid #f4b32a;
+  position: relative;
+  margin-top: -1%;
+}
+.line3{
+    width: 7%;
+  border: 4px solid #f4b32a;
+  position: relative;
+  margin-top: -1%;
+}
+.triangles4 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: 0;
 }
