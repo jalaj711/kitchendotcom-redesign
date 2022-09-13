@@ -18,13 +18,23 @@
   margin-top: -5%;
 }
 .v1{
-        // position: absolute;
-    border-radius: 20%;
-    padding-left: 25%;
+      border-radius: 20%;
+    padding-left: 29%;
+    z-index: 1;
+    position: relative;
     
 }
 .v2{
     // position: absolute;
     border-radius: 20%;
     padding-left: 10%;
+}
+.circle{
+        border-radius: 50%;
+    background-color: white;
+    width: 101px;
+    height: 85px;
+    position: relative;
+    left: 27%;
+    
 }

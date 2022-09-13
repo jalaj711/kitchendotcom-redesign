@@ -12,6 +12,60 @@
   display: flex;
   padding: 12px;
 }
+
+@media (max-width: 600px) {
+  .ourvision {
+    flex-direction: column;
+    position: relative;
+  }
+  .line {
+    position: absolute;
+    width: 37% !important;
+
+    margin-top: -7%;
+    left: -13% !important;
+  }
+  .line1 {
+    position: absolute;
+    width: 50% !important ;
+    margin-top: -7%;
+  }
+  .paracontainer {
+    flex-direction: column;
+  }
+  .howstart {
+    flex-direction: column-reverse;
+  }
+
+  .dots {
+    position: absolute;
+
+    width: 35%;
+    height: 60%;
+    top: 1% !important;
+    left: 10% !important;
+  }
+  .triangles4 {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+
+    left: 75% !important;
+    top: 10% !important;
+  }
+  .triangles {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+
+    left: 75% !important;
+    top: 60% !important;
+  }
+  .dots{
+    width: 30% !important;
+  }
+}
+
 .img1 {
   width: 70%;
   height: 70%;
@@ -74,6 +128,7 @@
 .dots {
   position: absolute;
   top: -60px;
+  z-index: 0 !important;
 }
 .dots1 {
   position: absolute;
@@ -133,8 +188,8 @@
   position: relative;
   margin-top: -1%;
 }
-.line3{
-    width: 7%;
+.line3 {
+  width: 7%;
   border: 4px solid #f4b32a;
   position: relative;
   margin-top: -1%;
