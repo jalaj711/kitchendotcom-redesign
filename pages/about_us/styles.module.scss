@@ -14,10 +14,22 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    overflow-x: hidden;
+  }
   .ourvision {
     flex-direction: column;
     position: relative;
   }
+  .started1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10% !important;
+    padding: 0% !important;
+  }
+
   .line {
     position: absolute;
     width: 37% !important;
@@ -29,6 +41,17 @@
     position: absolute;
     width: 50% !important ;
     margin-top: -7%;
+  }
+  .line2,
+  .line3 {
+    position: absolute;
+    width: 50% !important;
+    margin-top: -6% !important;
+  }
+  .img2 {
+    position: absolute;
+    width: 54% !important;
+    height: 45% !important;
   }
   .paracontainer {
     flex-direction: column;
@@ -45,12 +68,19 @@
     top: 1% !important;
     left: 10% !important;
   }
+  .dots3 {
+    position: absolute;
+    width: 35%;
+    height: 60%;
+    top: -13% !important;
+    left: 4% !important;
+  }
   .triangles4 {
     position: absolute;
     width: 40%;
     height: 40%;
 
-    left: 75% !important;
+    left: 70% !important;
     top: 10% !important;
   }
   .triangles {
@@ -58,11 +88,15 @@
     width: 40%;
     height: 40%;
 
-    left: 75% !important;
+    left: 70% !important;
     top: 60% !important;
   }
-  .dots{
-    width: 30% !important;
+  .dots1 {
+    position: absolute;
+
+    width: 35%;
+    height: 60%;
+    top: -2% !important;
   }
 }
 
@@ -128,13 +162,12 @@
 .dots {
   position: absolute;
   top: -60px;
-  z-index: 0 !important;
 }
 .dots1 {
   position: absolute;
   left: 50%;
   top: -60px;
-  z-index: -1;
+  z-index: 0;
 }
 .triangles {
   position: absolute;
