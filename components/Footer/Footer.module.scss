@@ -13,6 +13,25 @@
     "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings footer-locations"
     "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings footer-locations"
     "footer-copyrights footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
+  @media (max-width: 768px) {
+    padding: 8px 16px 4px 16px;
+    grid-template-areas:
+      "footer-main footer-main"
+      "footer-main footer-main"
+      "footer-get-in-touch footer-get-in-touch"
+      "footer-get-in-touch footer-get-in-touch"
+      "footer-get-in-touch footer-get-in-touch"
+      "footer-about-us footer-offerings"
+      "footer-about-us footer-offerings"
+      "footer-about-us footer-offerings"
+      "footer-about-us footer-offerings"
+      "footer-locations footer-locations"
+      "footer-locations footer-locations"
+      "footer-locations footer-locations"
+      "footer-locations footer-locations"
+      "footer-copyrights footer-copyrights"
+      "footer-copyrights footer-copyrights";
+  }
 }
 
 .main {
@@ -36,6 +55,10 @@
     font-size: larger;
     font-weight: 600;
   }
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 12px;
+  }
 }
 
 .offerings {
@@ -43,16 +66,32 @@
   ul {
     padding-left: 8px;
   }
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 12px;
+  }
 }
 
 .locations {
   grid-area: footer-locations;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .copyrights {
   grid-area: footer-copyrights;
   display: flex;
   margin-top: 48px;
+  @media (max-width: 768px) {
+    text-align: center;
+    flex-direction: column;
+    margin-top: 12px;
+    div {
+      text-align: center !important;
+      margin-top: 12px;
+    }
+  }
   div {
     flex-grow: 1;
     display: flex;
@@ -84,27 +123,30 @@
   }
 }
 
-.square1, .square2, .square3, .lampImage {
+.square1,
+.square2,
+.square3,
+.lampImage {
   position: absolute;
 }
 
 .square1 {
-  width: 20vw;
-  left: -10vw;
-  bottom: 72px;
+  width: max(20vw, 153px);
+  left: min(-10vw, -76px);
+  bottom: 5vh;
   opacity: 0.8;
 }
 
 .square2 {
-  width: 20vw;
-  right: -5vw;
+  width: max(20vw, 153px);
+  right: min(-5vw, -38px);
   bottom: 12px;
   opacity: 0.8;
 }
 
 .square3 {
-  height: 20vw;
-  bottom: -10vw;
+  height: max(20vw, 153px);
+  bottom: min(-10vw, -76px);
   left: 20%;
   opacity: 0.5;
   clip: rect(0px, 30vw, 10vw, 0px);
@@ -113,4 +155,7 @@
 .lampImage {
   top: 0;
   right: 12px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
