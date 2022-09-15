@@ -1,16 +1,38 @@
-.bg {
+.img {
+  background: url("../../assets/LandingBG.png");
+  backdrop-filter: blur(5px);
 
-    
-  
-  background: url('../../assets/LandingBG.png');
-  
-    background-repeat: no-repeat;
-    background-size:auto;
-  
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+.container {
+  position: relative;
+}
+.head {
+  position: absolute;
+  margin-top: 17%;
+  left: 6%;
+}
+.enq {
+  background: #f4b32a;
+  border-radius: 42px;
+  padding: 8px 12px;
+  border: none;
+  font-family: 'Signika';
+font-style: normal;
+}
+.more {
+  background-color: transparent;
+  padding-left: 25px;
+  color: #dfdcdc;
+  font-family: 'Signika';
+font-style: normal;
+font-size: 18px;
 }
 
-
-.head1{
-   top: -30%;
-   
-}
