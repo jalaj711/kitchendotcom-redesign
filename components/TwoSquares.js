@@ -15,7 +15,7 @@ export default function TwoSquares(props) {
         height="127.28"
         transform="rotate(-43.2287 0.722794 92.3795)"
         fill="#F2E4C1"
-        fill-opacity="0.45"
+        fillOpacity="0.45"
       />
       <rect
         x="88.5683"
@@ -24,7 +24,7 @@ export default function TwoSquares(props) {
         height="127.28"
         transform="rotate(-43.2287 88.5683 93.0692)"
         fill="#FFE194"
-        fill-opacity="0.36"
+        fillOpacity="0.36"
       />
     </svg>
   );

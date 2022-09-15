@@ -43,6 +43,9 @@
   top: 0;
   right: 0;
   z-index: 10;
+  img {
+    margin-right: -24px;
+  }
 }
 
 .triangle1,
@@ -107,11 +110,15 @@
   padding: 16px;
   padding-bottom: 32px;
   .half {
-    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 60%;
     padding: 16px;
   }
   .half2 {
-    flex-basis: 50%;
+    flex-basis: 40%;
     padding: 16px;
     display: flex;
     justify-content: center;
@@ -140,7 +147,12 @@
   }
 }
 
-.triangle3, .square1, .square2, .circle5, .circle6, .circle7 {
+.triangle3,
+.square1,
+.square2,
+.circle5,
+.circle6,
+.circle7 {
   position: absolute;
   z-index: 0;
 }
@@ -160,7 +172,9 @@
   bottom: -5vw;
   right: 5vw;
 }
-.circle5, .circle6, .circel7 {
+.circle5,
+.circle6,
+.circel7 {
   width: 10vw;
   height: 10vw;
   filter: blur(200px);
@@ -202,9 +216,100 @@
     p {
       margin: 0px;
     }
+    p {
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.63);
+    }
+    h4 {
+      font-weight: 600;
+    }
   }
 }
 
 .allCards {
   display: flex;
+}
+
+.colorDesignGrid {
+  display: grid;
+  width: 100%;
+  padding: 0 24px;
+  grid-template-areas:
+    "kitchen-card kitchen-card kitchen-card"
+    "kitchen-card kitchen-card kitchen-card"
+    "kitchen-card kitchen-card kitchen-card"
+    "kitchen-card kitchen-card kitchen-card";
+}
+
+.colorDesignCard {
+  max-width: calc(30vw - 36px);
+  margin: 16px;
+
+  img {
+    border-radius: 16px;
+    max-width: calc(30vw - 36px);
+  }
+  .colorPaletteElement {
+    width: 48px;
+    height: 48px;
+    margin: 0 4px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  .lamps {
+    display: none;
+  }
+  .imageWithSquare {
+    max-width: 50vw;
+    img {
+      max-width: 50vw;
+      transform: translate(-16px, 16px);
+    }
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .kitchenLayout {
+    h2,
+    p {
+      max-width: 80vw;
+    }
+  }
+  .allCards {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .colorDesignGrid {
+    padding: 0;
+    grid-template-areas:
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card"
+      "kitchen-card";
+  }
+  .colorDesignCard {
+    max-width: calc(90vw - 36px);
+    margin: 16px 0;
+    img {
+      max-width: calc(90vw - 36px);
+    }
+    .colorPaletteElement {
+      width: 36px;
+      height: 36px;
+    }
+  }
 }

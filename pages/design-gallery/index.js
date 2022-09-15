@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "./styles.module.scss";
 import LandingImage from "../../assets/design-gallery/landing.png";
 import DesignGallery2 from "../../assets/design-gallery/2.png";
@@ -9,6 +10,7 @@ import DoodlesEllipse from "../../components/DoodleDotsEllipse";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import TwoSquares from "../../components/TwoSquares";
 import LampImage from "../../assets/lamp.png";
+import ColorPalettes from "./color-palettes.json";
 
 function KitchenCard({ title, image, details }) {
   return (
@@ -19,6 +21,24 @@ function KitchenCard({ title, image, details }) {
       <div className={styles.text}>
         <h4>{title}</h4>
         <p>{details}</p>
+      </div>
+    </div>
+  );
+}
+
+function ColorDesignsElement({ image, colors }) {
+  return (
+    <div className={styles.colorDesignCard}>
+      <img src={image} />
+      <h4>Color Palette</h4>
+      <div>
+        {colors.map((elem, index) => (
+          <span
+            key={index}
+            className={styles.colorPaletteElement}
+            style={{ background: elem }}
+          />
+        ))}
       </div>
     </div>
   );
@@ -101,12 +121,25 @@ export default function ContactUs() {
             image={DesignGallery6.src}
           />
         </div>
+
         <ThreeTriangles className={styles.triangle3} />
         <TwoSquares className={styles.square1} />
         <TwoSquares className={styles.square2} />
         <div className={styles.circle5} />
         <div className={styles.circle6} />
         <div className={styles.circle7} />
+        <div>
+          <h2>Color designs we offer</h2>
+          <div className={styles.colorDesignGrid}>
+            {ColorPalettes.map((elem, index) => (
+              <ColorDesignsElement
+                key={index}
+                colors={elem.colors}
+                image={elem.image}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
