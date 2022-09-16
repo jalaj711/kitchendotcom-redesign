@@ -1,38 +1,72 @@
-.img {
-  background: url("../../assets/LandingBG.png");
-  backdrop-filter: blur(5px);
-
+.container {
+  background: url("../../assets/Group1.png");
+  backdrop-filter: brightness(0.6);
   width: 100%;
-  height: 100vh;
-  background-position: center;
+  height: 100%;
+  // background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
   top: 0%;
   left: 0%;
 }
-.container {
-  position: relative;
+.v1 {
+  
+
+  margin-top: 20px;
 }
-.head {
-  position: absolute;
-  margin-top: 17%;
-  left: 6%;
+
+
+.head{
+  padding-left: 10% ;
+  
+  margin-top: 13%;
+  
+  color: #fff;
+}
+.wec {
+  margin-top: 3%;
+  text-align: center;
+  align-items: center;
+  // right: 40%;
+  
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 65px;
+  color: #fff;
 }
 .enq {
   background: #f4b32a;
   border-radius: 42px;
   padding: 8px 12px;
   border: none;
-  font-family: 'Signika';
-font-style: normal;
+  font-family: "Signika";
+  font-style: normal;
 }
 .more {
   background-color: transparent;
   padding-left: 25px;
   color: #dfdcdc;
-  font-family: 'Signika';
-font-style: normal;
-font-size: 18px;
+  font-family: "Signika";
+  font-style: normal;
+  font-size: 18px;
+}
+.p1{
+ color: #fff;
+ margin-top: -6%;
+}
+.vectors{
+  display: flex;
+  padding-left: 8%;
+  margin-top: -3%;
+}
+.v1{
+  max-width: 20vw;
+}
+.img1{
+padding-left: 23%;
+}
+.des{
+  margin-top: -6%;
 }
 
