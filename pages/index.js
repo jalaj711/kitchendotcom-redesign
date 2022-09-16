@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Button from '../components/Button/Button'
 import Input from '../components/Input/Input'
-import ImageWithSquare from '../components/ImageWithSquare/ImageWithSquare'
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
 
         <Button>Submit</Button>
         <Input type="text" placeholder="First Name" />
-        <ImageWithSquare src="https://s3.amazonaws.com/pocket-curatedcorpusapi-prod-images/b315ccda-47b0-49c5-99a0-12afdd067d85.jpeg" />
         <p>
           Get started by editing{' '}
           <code>pages/index.js</code>

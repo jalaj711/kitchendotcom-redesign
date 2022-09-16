@@ -129,7 +129,7 @@ export default function ContactUs() {
         <div className={styles.circle6} />
         <div className={styles.circle7} />
         <div>
-          <h2>Color designs we offer</h2>
+          <h2>Some color combinations</h2>
           <div className={styles.colorDesignGrid}>
             {ColorPalettes.map((elem, index) => (
               <ColorDesignsElement
