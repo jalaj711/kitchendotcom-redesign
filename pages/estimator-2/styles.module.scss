@@ -1,0 +1,90 @@
+@use "../../styles/theme";
+
+.container {
+  background-color: theme.$bg2;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.card {
+  border-bottom-right-radius: 48px;
+  border-top-left-radius: 48px;
+  background-color: theme.$offwhite;
+  width: min-content;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  svg, button {
+    margin-top: 8px
+  }
+}
+
+.head {
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.decoratives * {
+  position: absolute;
+  z-index: 0;
+}
+
+.circle {
+  width: max(150px, 40vw);
+  height: max(150px, 40vw);
+  background-color: theme.$primary;
+  border-radius: 50%;
+  filter: blur(400px);
+  z-index: 0;
+}
+
+.kitchenTypeCard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  border: 2px solid theme.$primary;
+  margin: 0 16px;
+  box-shadow: 0px 8px 24px #ccc;
+  .imageHolder {
+    background-color: theme.$primary_light;
+    padding: 0;
+    flex-grow: 1;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    flex-direction: column ;
+  }
+  .textHolder {
+    background-color: white;
+    padding: 16px 8px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .activeHolder {
+    margin: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid theme.$primary;
+    align-self: flex-end;
+  }
+}
+
+.kitchenTypeHolder {
+  display: flex;
+  padding: 32px 16px;
+}
