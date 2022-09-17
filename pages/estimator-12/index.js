@@ -1,13 +1,17 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import DoodleDots from "../../components/DoodleDotsEllipse";
+import Button from "../../components/Button/Button";
+import ThreeTriangles from "../../components/ThreeTriangles";
 const Estimator12 = () => {
   return (
     <div className={styles.container}>
+      <ThreeTriangles className={styles.tri} />
       <div className={styles.head}>
         <DoodleDots className={styles.dots} />
         <h1 className={styles.head1}>Kitchen Price Estimate Steps</h1>
       </div>
+
       <div className={styles.card}>
         <div className={styles.head2}>
           <h2 className={styles.mod}>
@@ -28,7 +32,7 @@ const Estimator12 = () => {
             <h3>Premium</h3>
 
             <p>
-              An exquisite kitchen with sleek fixtures, hardware, cabinets 
+              An exquisite kitchen with sleek fixtures, hardware, cabinets
               fittings for an elegant and smooth cooking experiences.
             </p>
           </div>
@@ -53,6 +57,14 @@ const Estimator12 = () => {
           </div>
         </div>
       </div>
+      {/* <ThreeTriangles className={styles.tri} /> */}
+
+      <div className={styles.buttons1}>
+        <button className={styles.back}>Back</button>
+
+        <button className={styles.next}>Next</button>
+      </div>
+      <DoodleDots className={styles.dots1} />
     </div>
   );
 };
