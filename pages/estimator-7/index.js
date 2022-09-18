@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
-import Image from "../../assets/estimator/estimator-3-main.png";
+import Image from "../../assets/estimator/estimator-7-main.png";
 const Estimater2 = () => {
   return (
     <div className={styles.container}>
