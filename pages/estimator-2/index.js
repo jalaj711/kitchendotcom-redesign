@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import SVG from "../../assets/estimator-1.svg";
@@ -8,11 +8,19 @@ import ParallelShapeKitchen from "../../assets/estimator/parallel-shape-kitchen.
 import StraightShapeKitchen from "../../assets/estimator/straight-kitchen.svg";
 import UShapeKitchen from "../../assets/estimator/u-shape-kitchen.svg";
 
-const KitchenTypeCard = ({ image, name, isActive }) => {
+const KitchenTypeCard = ({ image, name, isActive, onClick }) => {
   return (
-    <div class={styles.kitchenTypeCard}>
-      <div class={styles.imageHolder}>
-        <span class={styles.activeHolder} />
+    <div
+      className={styles.kitchenTypeCard}
+      onClick={onClick}
+      style={isActive ? { boxShadow: "0px 8px 12px #f9c24e" } : {}}
+    >
+      <div className={styles.imageHolder}>
+        <span
+          className={
+            isActive ? styles.selectedHolder : styles.notSelectedHolder
+          }
+        />
         <img src={image} />
       </div>
       <div className={styles.textHolder}>{name}</div>
@@ -21,6 +29,7 @@ const KitchenTypeCard = ({ image, name, isActive }) => {
 };
 
 const Estimater2 = () => {
+  const [active, setActive] = useState(-1);
   return (
     <div className={styles.container}>
       <div className={styles.head}>
@@ -38,7 +47,8 @@ const Estimater2 = () => {
               key={index}
               image={elem.image}
               name={elem.name}
-              isActive={false}
+              isActive={index === active}
+              onClick={() => setActive(index)}
             />
           ))}
         </div>
