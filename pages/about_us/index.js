@@ -7,12 +7,13 @@ import Background from "../../assets/MainBG.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import DoodleDots from "../../components/DoodleDotsEllipse";
 import TwoSquares from "../../components/TwoSquares";
+import Footer from "../../components/Footer/Footer";
 import Navbar from '../../components/NavBar/NavBar'
 
 const About = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className={styles.container}>
         <img className={styles.bgimg} src={Background.src}></img>
         <ThreeTriangles className={styles.triangles4} />
@@ -60,25 +61,24 @@ const About = () => {
         </div>
         <div className={styles.howstart}>
           <ThreeTriangles className={styles.triangles1} />
-          
-            <h2 className={styles.started}>HOW IT STARTED</h2>
-            <hr className={styles.line2}></hr>
-            <p className={styles.started1}>
-              Established in 2020, KitchenDotCom is a unit of Ideago Interiors.
-              It aims to become a brand in the industry of modular kitchens.
-              With more than 200 happy and satisfied clients so far, we wish to
-              expand our client base in the whole country. Our work is creative
-              as well as pocket-friendly. The designers and other workers at
-              KitchenDotCom work together in a coordinated manner to achieve the
-              common goal of the company. We are best known for our innovative
-              designs and products, creative layouts for the kitchen,
-              cooperative workforce for amazing customer service, our on-time
-              delivery and our easy-to-maintain products. We keep on updating
-              our products and services according to the invaluable feedback
-              from our clients.
-            </p>
-          </div>
-        
+
+          <h2 className={styles.started}>HOW IT STARTED</h2>
+          <hr className={styles.line2}></hr>
+          <p className={styles.started1}>
+            Established in 2020, KitchenDotCom is a unit of Ideago Interiors. It
+            aims to become a brand in the industry of modular kitchens. With
+            more than 200 happy and satisfied clients so far, we wish to expand
+            our client base in the whole country. Our work is creative as well
+            as pocket-friendly. The designers and other workers at KitchenDotCom
+            work together in a coordinated manner to achieve the common goal of
+            the company. We are best known for our innovative designs and
+            products, creative layouts for the kitchen, cooperative workforce
+            for amazing customer service, our on-time delivery and our
+            easy-to-maintain products. We keep on updating our products and
+            services according to the invaluable feedback from our clients.
+          </p>
+        </div>
+
         <div className={styles.howstart}>
           <h2 className={styles.started}>DIRECTOR’S DESK</h2>
           <hr className={styles.line3}></hr>
@@ -118,6 +118,7 @@ const About = () => {
         <div className={styles.circle2} />
         <div className={styles.circle3} />
       </div>
+      <Footer />
     </>
   );
 };

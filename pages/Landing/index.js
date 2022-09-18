@@ -1,20 +1,64 @@
-import styles from './styles.module.scss'
-import React from 'react';
-import Image from '../../assets/LandingBG.png'
+import styles from "./styles.module.scss";
+import React from "react";
+import Image from "../../assets/Group1.png";
+import Navbar from "../../components/NavBar/NavBar";
+import Image1 from "../../assets/Flipboard.png";
+import Image2 from "../../assets/Picture.png";
+import Image3 from "../../assets/Cost.png";
 
 const Landing = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.img}>
-        <img className={styles.Landing} src={Image.src}></img>
+    <>
+      <Navbar className={styles.nav} />
+      <div className={styles.container}>
+        <div className={styles.head}>
+          <h1 className={styles.head1}>
+            We Help You To Make Best Design Modular Kitchen
+          </h1>
+          <div className={styles.button}>
+            <button className={styles.enq}>ENQUIRY NOW</button>
+            <buttom className={styles.more}>Learn More</buttom>
+          </div>
+        </div>
+        <div className={styles.div2}>
+          <h1 className={styles.wec}>We can do for you</h1>
+          <div className={styles.vectors}>
+            <div className={styles.v1}>
+              <img className={styles.img1} src={Image1.src} />
+              <h2>PROJECT GALLERY</h2>
+              <p className={styles.p1}>
+                Start an online interior design project today! Our Project
+                Gallery. See some of the modern kitchen our clients have
+                completed with their Decorist designers and our ongoing
+                projects.
+              </p>
+            </div>
+            <div className={styles.v2}>
+              <img className={styles.img2} src={Image2.src} />
+              <h2 className={styles.head2}>DESIGN GALLERY</h2>
+              <p className={styles.p2}>
+                The Design Gallery at Kitchendotcom offers an elegantmodern
+                kitchen. You'll also find our team of creative designers that
+                are ready to help you transfor your kitchen into the perfect
+                expression of your style. It's an interactive process where you
+                tell us what look you want and we help make your (custom) vision
+                a reality!
+              </p>
+            </div>
+            <div className={styles.v3}>
+              <img className={styles.img3} src={Image3.src} />
+              <h2 className={styles.head3}>Kitchen Price Estimator</h2>
+              <p className={styles.p3}>
+                Estimate the price of your modular kitchen in the most
+                transparent way - it's simple, easy, and takes a few steps.
+                Simply select the options that you would want for your kitchen
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className={styles.heading}>
-        <h1 className={styles.head1}>
-          We Help You To Make Best Design Modular Kitchen
-        </h1>
-      </div>
-    </div>
+    </>
   );
-}
+};
 
 export default Landing;
