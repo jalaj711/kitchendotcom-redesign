@@ -1,0 +1,90 @@
+@use "../../styles/theme";
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.card {
+  width: min-content;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  svg, button {
+    margin-top: 8px
+  }
+}
+
+.head {
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.imageWithSquare {
+  background: theme.$primary;
+  position: relative;
+  z-index: 10;
+  margin-right: 64px;
+  width: 40vw;
+  height: fit-content;
+  img {
+    transform: translate(32px, 32px);
+    width: 40vw;
+  }
+}
+
+.decoratives * {
+  position: absolute;
+  z-index: 0;
+}
+
+.circle {
+  width: max(150px, 40vw);
+  height: max(150px, 40vw);
+  background-color: theme.$primary;
+  border-radius: 50%;
+  filter: blur(400px);
+  z-index: 0;
+}
+
+.kitchenTypeHolder {
+  display: flex;
+  padding: 32px 16px;
+  align-items: center;
+}
+
+.rightBar, .dataForm {
+  background-color: theme.$primary;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+  min-width: 400px;
+}
+
+.rightBar {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    padding: 16px;
+    flex-grow: 1;
+  }
+}
+
+.dataForm {
+  background-color: theme.$offwhite;
+  padding: 16px;
+  align-self: flex-end;
+  input {
+    width: 100%;
+  }
+}
