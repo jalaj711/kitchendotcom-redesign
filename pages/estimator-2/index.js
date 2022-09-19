@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import ThreeTriangles from "../../components/ThreeTriangles";
-import SVG from "../../assets/estimator-1.svg";
 import Button from "../../components/Button/Button";
 import LShapeKitchen from "../../assets/estimator/l-shape-kitchen.svg";
 import ParallelShapeKitchen from "../../assets/estimator/parallel-shape-kitchen.svg";

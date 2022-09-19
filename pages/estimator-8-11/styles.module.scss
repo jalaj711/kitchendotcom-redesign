@@ -1,0 +1,85 @@
+@use "../../styles/theme";
+
+.container {
+  background-color: theme.$bg2;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.card {
+  border-bottom-right-radius: 48px;
+  border-top-left-radius: 48px;
+  background-color: theme.$offwhite;
+  width: min-content;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  min-width: 70vw;
+  svg, button {
+    margin-top: 8px
+  }
+}
+
+.head {
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.decoratives * {
+  position: absolute;
+  z-index: 0;
+}
+
+.circle {
+  width: max(150px, 40vw);
+  height: max(150px, 40vw);
+  background-color: theme.$primary;
+  border-radius: 50%;
+  filter: blur(400px);
+  z-index: 0;
+}
+
+.kitchenTypeCard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  background-color: theme.$primary;
+  margin: 0 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+  min-width: 50vw;
+}
+
+.kitchenTypeHolder {
+  padding: 32px 16px;
+  .dimensions {
+    display: flex;
+    width: 100%;
+    table {
+      text-align: center;
+      width: 100%;
+      font-weight: 600;
+      margin-top: 36px;
+      tr {
+        margin-top: 12px;
+      }
+      input {
+        border-radius: 20px;
+        height: 40px;
+        border: 3px solid theme.$primary;
+      }
+    }
+  }
+}
