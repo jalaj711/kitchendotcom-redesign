@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import DoodleDots from "../../components/DoodleDotsEllipse";
-import Image1 from "../../assets/Rectangle91.png";
+import Image1 from "../../assets/Rectangle991.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 
-const Estimator13 = () => {
+const Estimator14 = () => {
   return (
     <div className={styles.container}>
       <DoodleDots className={styles.dots} />
@@ -16,10 +16,10 @@ const Estimator13 = () => {
         <div className={styles.div1}>
           <div className={styles.v1}>
             <ThreeTriangles className={styles.tri1} />
-            <h2 className={styles.ess}>Essentials</h2>
+            <h2 className={styles.ess}>Premium</h2>
             <p className={styles.ran}>
-              A range that has the basic unit and accessories necessary for a
-              comfortable modular kitchen.
+              An exquisite kitchen with sleek fixtures, hardware, cabinets &
+              fittings for an elegant and smooth cooking experiences.
             </p>
           </div>
           <div className={styles.img}>
@@ -28,18 +28,19 @@ const Estimator13 = () => {
           <div className={styles.para}>
             <h4>PRO TIP:</h4>
             <p className={styles.p1}>
-              If you’re lookingfor a kitchen with the necessary units for an
-              easycooking time this is yours pick!{" "}
+              Consider this if you’re looking for a exclusive
+              accessories,cabinets and more to make your version of the
+              masterchef kitchen.
             </p>
           </div>
         </div>
         <div className={styles.div2}>
           <div className={styles.v2}>
             <div className={styles.pre}>
-              <h3>Premium</h3>
+              <h3>Essentials</h3>
               <p className={styles.p2}>
-                An exquisite kitchen with sleek fixtures, hardware, cabinets &
-                fittings for an elegant and smooth cooking experiences.
+                A range that has the basic unit and accessories necessary for a
+                comfortable modular kitchen.
               </p>
             </div>
           </div>
@@ -78,4 +79,4 @@ const Estimator13 = () => {
   );
 };
 
-export default Estimator13;
+export default Estimator14;
