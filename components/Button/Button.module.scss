@@ -9,3 +9,17 @@
     text-transform: uppercase;
     font-family: 'Spectral';
 }
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.large {
+    padding: 12px 24px;
+    font-size: larger;
+}
+
+.secondary {
+    background-color: theme.$bg2;
+    border: 2px solid theme.$primary;
+}
