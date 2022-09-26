@@ -1,0 +1,88 @@
+@use "../../styles/theme";
+
+.head {
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.img {
+  padding-left: 25px;
+}
+.card {
+  width: min-content;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  svg,
+  button {
+    margin-top: 8px;
+  }
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+}
+
+.rightChoices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectionUnit {
+  background: #fff5e1;
+  border: 2px solid theme.$primary;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin: 12px 16px;
+  h2,
+  h3,
+  p {
+    margin: 4px 8px;
+  }
+
+  span, img {
+    margin: 16px 0;
+  }
+}
+
+.buttons {
+  button {
+    margin: 0 24px;
+  }
+}
+
+.decoratives * {
+  position: absolute;
+  z-index: 0;
+}
+
+.circle {
+  width: max(150px, 40vw);
+  height: max(150px, 40vw);
+  background-color: theme.$primary;
+  border-radius: 50%;
+  filter: blur(400px);
+  z-index: 0;
+}
