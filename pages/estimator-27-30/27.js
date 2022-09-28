@@ -48,8 +48,8 @@ const Estimator27 = () => {
         </div>
 
         <div className={styles.buttons}>
-          <Button large secondary>Back</Button>
-          <Button large>Next</Button>
+          <Button secondary>Back</Button>
+          <Button>Next</Button>
         </div>
       </div>
 

@@ -43,10 +43,10 @@ const Estimator27 = () => {
         </div>
 
         <div className={styles.buttons}>
-          <Button large secondary>
+          <Button secondary>
             Back
           </Button>
-          <Button large>Next</Button>
+          <Button>Next</Button>
         </div>
       </div>
 
