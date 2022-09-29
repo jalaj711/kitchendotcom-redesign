@@ -1,0 +1,97 @@
+@use "../../styles/theme";
+
+.container {
+  background-color: theme.$bg2;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.card {
+  border-bottom-right-radius: 48px;
+  border-top-left-radius: 48px;
+  background-color: theme.$offwhite;
+  width: min-content;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  min-width: 70vw;
+  svg, button {
+    margin-top: 8px
+  }
+}
+
+.head {
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.decoratives * {
+  position: absolute;
+  z-index: 0;
+}
+
+.circle {
+  width: max(150px, 40vw);
+  height: max(150px, 40vw);
+  background-color: theme.$primary;
+  border-radius: 50%;
+  filter: blur(400px);
+  z-index: 0;
+}
+
+.buttons {
+  z-index: 2;
+  position: relative;
+  margin-top: 24px;
+  button {
+    margin: 0 24px;
+  }
+}
+
+.kitchenTypeCard {
+  padding: 36px;
+  min-width: 50vw;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.choice {
+  background: white;
+  border: 3px solid theme.$primary;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 16px;
+  margin-left: 16px;
+  min-height: 125px;
+  min-width: 300px;
+  display: flex;
+  .radio {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid theme.$primary;
+    display: flex;
+  }
+  h4 {
+    margin: 0 0;
+  }
+  .choiceContent {
+    margin-left: 12px;
+  }
+}
