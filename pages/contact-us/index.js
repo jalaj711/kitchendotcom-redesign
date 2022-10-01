@@ -15,6 +15,7 @@ import TwoSquares from "../../components/TwoSquares";
 import Image from "next/image";
 import NavBar from "../../components/NavBar/NavBar";
 import ContactUsImage from "../../assets/contact-us.jpeg";
+import Footer from "../../components/Footer/Footer";
 
 export default function ContactUs() {
   return (
@@ -86,6 +87,7 @@ export default function ContactUs() {
         <div className={styles.circle2} />
         <div className={styles.circle3} />
       </div>
+      <Footer />
     </>
   );
 }

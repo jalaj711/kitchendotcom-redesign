@@ -11,6 +11,7 @@ import ThreeTriangles from "../../components/ThreeTriangles";
 import TwoSquares from "../../components/TwoSquares";
 import LampImage from "../../assets/lamp.png";
 import ColorPalettes from "./color-palettes.json";
+import Footer from "../../components/Footer/Footer";
 
 function KitchenCard({ title, image, details }) {
   return (
@@ -141,6 +142,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
