@@ -87,7 +87,26 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .kitchenTypeHolder {
+    flex-direction: column;
+  }
+  .kitchenTypeCard {
+    margin-top: 12px;
+  }
+}
+
 .kitchenTypeHolder {
   display: flex;
   padding: 32px 16px;
+}
+.buttons {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  button {
+    margin-left: 12px;
+  }
 }
