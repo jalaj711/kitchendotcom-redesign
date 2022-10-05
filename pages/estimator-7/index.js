@@ -33,9 +33,9 @@ const Estimater2 = () => {
             </div>
           </div>
         </div>
-        <div style={{ width: "100%" }}>
-          <Button style={{ float: "left" }}>Previous</Button>
-          <Button style={{ float: "right" }}>Next</Button>
+        <div className={styles.buttons}>
+          <Button secondary>Back</Button>
+          <Button>Next</Button>
         </div>
       </div>
 

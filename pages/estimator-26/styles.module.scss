@@ -14,7 +14,7 @@
 .card {
   border-bottom-right-radius: 48px;
   border-top-left-radius: 48px;
-  background-color: theme.$offwhite;
+  background-color: #FFF5E1;
   width: min-content;
   padding: 16px;
   display: flex;
@@ -87,7 +87,7 @@
     border-radius: 12px;
     background-color: white;
     border: 1px solid theme.$primary;
-    display: flex;
+    display: block;
   }
   h4 {
     margin: 0 0;

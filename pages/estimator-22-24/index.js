@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./styles.module.scss";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
 import Image from "../../assets/estimator/22.png";
-import Input from "../../components/Input/Input";
 
 const Estimater2 = () => {
   return (
@@ -20,14 +19,11 @@ const Estimater2 = () => {
             <button className={styles.button}>Yes</button>
           </div>
         </div>
-        
       </div>
       <div className={styles.buttons}>
-          <Button secondary>
-            Back
-          </Button>
-          <Button>Next</Button>
-        </div>
+        <Button secondary>Back</Button>
+        <Button>Next</Button>
+      </div>
 
       <div className={styles.decoratives}>
         <ThreeTriangles

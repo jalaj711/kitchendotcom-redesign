@@ -16,9 +16,6 @@
   padding: 32px;
 }
 
-.img {
-  padding-left: 25px;
-}
 .card {
   width: min-content;
   padding: 16px;
@@ -78,4 +75,18 @@
   border-radius: 50%;
   filter: blur(400px);
   z-index: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .choices {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .selectionUnit {
+    img {
+      width: 70vw;
+    }
+  }
 }

@@ -27,6 +27,9 @@
   svg, button {
     margin-top: 8px
   }
+  h3 {
+    margin-top: 0;
+  }
 }
 
 .head {
@@ -73,24 +76,41 @@
 .choice {
   background: white;
   border: 3px solid theme.$primary;
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 16px;
   margin-left: 16px;
-  min-height: 125px;
-  min-width: 300px;
+  width: 206px;
   display: flex;
-  .radio {
-    height: 24px;
-    width: 24px;
-    border-radius: 12px;
-    background-color: white;
-    border: 1px solid theme.$primary;
-    display: block;
+  flex-direction: column;
+  .topImage{
+    position: relative;
+    height: 127px;
+    .radio {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid theme.$primary;
+      display: block;
+      z-index: 4;
+    }
+    img {
+      width: 200px;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+    }
   }
-  h4 {
-    margin: 0 0;
-  }
-  .choiceContent {
-    margin-left: 12px;
+  .choiceTitle {
+    padding: 12px;
+    text-align: center;
+    h4 {
+      margin: 0 0;
+    }
   }
 }
