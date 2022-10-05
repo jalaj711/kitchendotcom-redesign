@@ -76,3 +76,17 @@
   filter: blur(400px);
   z-index: 0;
 }
+
+@media screen and (max-width: 800px) {
+  .choices {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .selectionUnit {
+    img {
+      width: 70vw;
+    }
+  }
+}
