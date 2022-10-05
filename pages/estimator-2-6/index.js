@@ -36,20 +36,34 @@ const Estimater2 = () => {
       </div>
       <div className={styles.card}>
         <div className={styles.kitchenTypeHolder}>
-          {[
-            { image: LShapeKitchen.src, name: "L - Shaped Design" },
-            { image: UShapeKitchen.src, name: "U - Shaped Design" },
-            { image: StraightShapeKitchen.src, name: "Straight Shaped Design" },
-            { image: ParallelShapeKitchen.src, name: "Parallel Shaped Design" },
-          ].map((elem, index) => (
-            <KitchenTypeCard
-              key={index}
-              image={elem.image}
-              name={elem.name}
-              isActive={index === active}
-              onClick={() => setActive(index)}
-            />
-          ))}
+          <div className={styles.kitchenTypeHolderRow}>
+          <KitchenTypeCard
+            image={LShapeKitchen.src}
+            name="L - Shaped Design"
+            isActive={active === 0}
+            onClick={() => setActive(0)}
+          />
+          <KitchenTypeCard
+            image={UShapeKitchen.src}
+            name={"U - Shaped Design"}
+            isActive={active === 1}
+            onClick={() => setActive(1)}
+          />
+          </div>
+          <div className={styles.kitchenTypeHolderRow}>
+          <KitchenTypeCard
+            image={StraightShapeKitchen.src}
+            name="Straight Shaped Design"
+            isActive={active === 2}
+            onClick={() => setActive(2)}
+          />
+          <KitchenTypeCard
+            image={ParallelShapeKitchen.src}
+            name={"Parallel Shaped Design"}
+            isActive={active === 3}
+            onClick={() => setActive(3)}
+          />
+          </div>
         </div>
       </div>
       <div className={styles.buttons}>
