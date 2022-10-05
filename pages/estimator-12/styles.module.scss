@@ -1,93 +1,98 @@
+@use "../../styles/theme";
+
 .container {
-  background: #d3d3d3;
-}
-
-.dots {
-  margin-top: -7%;
-
-  position: relative;
-  left: -5%;
-}
-.dots1{
-    position: relative;
-    left: 89%;
-    margin-top: 1%;
-}
-.head1 {
-  padding-left: 30%;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 56px;
-  margin-top: -51px;
+  background-color: theme.$bg2;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
 }
 
 .card {
-  width: 70%;
-  bottom: 0%;
-
-  background: #fff5e1;
-  // box-shadow: 0px 4px 29px 4px rgba(255, 255, 255, 0.25);
-  border-radius: 92px 0px;
-  justify-content: center;
-
-  text-align: center;
-  padding: 30px;
-  position: relative;
+  border-bottom-right-radius: 48px;
+  border-top-left-radius: 48px;
+  background-color: theme.$offwhite;
+  width: min-content;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-}
-.div1 {
-  width: 30%;
-  height: 30%;
-  background: #fff;
-  border: 3px solid #f4b32a;
-  border-radius: 26px;
-}
-.div2 {
-  background-color: #fff;
-  width: 30%;
-  height: 30%;
-  border: 3px solid #f4b32a;
-  border-radius: 26px;
-}
-.row1,
-.row2 {
-  display: flex;
-  padding: 32px 15px;
-  justify-content: space-evenly;
-}
-.buttons1 {
-  position: relative;
-  margin-top: 20px;
-  padding-left: 20px;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  z-index: 2;
+  position: relative;
+  min-width: 70vw;
+  svg, button {
+    margin-top: 8px
+  }
 }
-.back {
-  background: #fff0cf;
-  border: 1px solid #ffd56b;
-  border-radius: 24px 0px;
-  width: 169px;
-  height: 52px;
 
-  font-size: 22px;
-  line-height: 33px;
-  float: left;
+.head {
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
 }
-.next {
-  background: #f4b32a;
-  border: 1px solid #ffd56b;
-  border-radius: 24px 0px;
-  width: 169px;
-  height: 52px;
 
-  font-size: 22px;
-  line-height: 33px;
-}
-.tri {
+.decoratives * {
   position: absolute;
-  left: 84%;
-  top: 35%;
+  z-index: 0;
 }
 
+.circle {
+  width: max(150px, 40vw);
+  height: max(150px, 40vw);
+  background-color: theme.$primary;
+  border-radius: 50%;
+  filter: blur(400px);
+  z-index: 0;
+}
+
+.buttons {
+  z-index: 2;
+  position: relative;
+  margin-top: 24px;
+  button {
+    margin: 0 24px;
+  }
+}
+
+.kitchenTypeCard {
+  padding: 36px;
+  min-width: 50vw;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.choice {
+  background: white;
+  border: 3px solid theme.$primary;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 16px;
+  margin-left: 16px;
+  min-height: 125px;
+  min-width: 300px;
+  max-width: 375px;
+  display: flex;
+  .radio {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid theme.$primary;
+    display: flex;
+  }
+  h4 {
+    margin: 0 0;
+  }
+  .choiceContent {
+    margin-left: 12px;
+  }
+}

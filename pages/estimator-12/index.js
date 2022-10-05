@@ -1,72 +1,96 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import DoodleDots from "../../components/DoodleDotsEllipse";
-import Button from "../../components/Button/Button";
 import ThreeTriangles from "../../components/ThreeTriangles";
-const Estimator12 = () => {
+import Button from "../../components/Button/Button";
+import Input from "../../components/Input/Input";
+
+const Estimater2 = () => {
   return (
     <div className={styles.container}>
-      <ThreeTriangles className={styles.tri} />
       <div className={styles.head}>
-        <DoodleDots className={styles.dots} />
-        <h1 className={styles.head1}>Kitchen Price Estimate Steps</h1>
+        <h1 className={styles.est}>Kitchen Price Estimate Steps</h1>
       </div>
-
       <div className={styles.card}>
-        <div className={styles.head2}>
-          <h2 className={styles.mod}>
-            What kind of modular kitchen package would you prefer?
-          </h2>
-        </div>
-        <div className={styles.row1}>
-          <div className={styles.div1}>
-            <div className={styles.ess}>
-              <h3>Essentials</h3>
+        <h2>What kind of modular kitchen package would you prefer? </h2>
+        <div className={styles.kitchenTypeHolder}>
+          <div className={styles.row}>
+            <div className={styles.choice}>
+              <div>
+                <span className={styles.radio} />
+              </div>
+              <div className={styles.choiceContent}>
+                <h4>Essentials</h4>
+                <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  A range that has the basic unit and accessories necessary for
+                  a comfortable modular kitchen.
+                </div>
+              </div>
             </div>
-            <p>
-              A range that has the basic unit and accessories necessary for a
-              comfortable modular kitchen.
-            </p>
-          </div>
-          <div className={styles.div2}>
-            <h3>Premium</h3>
-
-            <p>
-              An exquisite kitchen with sleek fixtures, hardware, cabinets
-              fittings for an elegant and smooth cooking experiences.
-            </p>
-          </div>
-        </div>
-        <div className={styles.row2}>
-          <div className={styles.div1}>
-            <div className={styles.ess}>
-              <h3>Luxe</h3>
+            <div className={styles.choice}>
+              <div>
+                <span className={styles.radio} />
+              </div>
+              <div className={styles.choiceContent}>
+                <h4>Premium</h4>
+                <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  An exquisite kitchen with sleek fixtures, hardware, cabinets &
+                  fittings for an elegant and smooth cooking experiences.
+                </div>
+              </div>
             </div>
-            <p>
-              Lixurious dream kitchen that’s a fine blend of aesthetics and high
-              functionality complete with swanky units and accessories.
-            </p>
           </div>
-          <div className={styles.div2}>
-            <h3>Build your own package</h3>
-
-            <p>
-              Select materials, finishes, accessories and more of your choices
-              from a range of collections for your kitchen.
-            </p>
+          <div className={styles.row} style={{ marginBottom: 12 }}>
+            <div className={styles.choice}>
+              <div>
+                <span className={styles.radio} />
+              </div>
+              <div className={styles.choiceContent}>
+                <h4>Luxe</h4>
+                <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  Lixurious dream kitchen that’s a fine blend of aesthetics and
+                  high functionality complete with swanky units and accessories.
+                </div>
+              </div>
+            </div>
+            <div className={styles.choice}>
+              <div>
+                <span className={styles.radio} />
+              </div>
+              <div className={styles.choiceContent}>
+                <h4>Build your own package</h4>
+                <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  Select materials, finishes, accessories and more of your
+                  choices from a range of collections for your kitchen.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      {/* <ThreeTriangles className={styles.tri} /> */}
-
-      <div className={styles.buttons1}>
-        <button className={styles.back}>Back</button>
-
-        <button className={styles.next}>Next</button>
+      <div className={styles.buttons}>
+        <Button secondary>Back</Button>
+        <Button>Next</Button>
       </div>
-      <DoodleDots className={styles.dots1} />
+
+      <div className={styles.decoratives}>
+        <ThreeTriangles
+          style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
+        />
+        <ThreeTriangles
+          style={{
+            top: "30%",
+            right: "min(-50px, -25vw)",
+            width: "max(150px, 50vw)",
+          }}
+        />
+        <span style={{ top: "0%", left: "0%" }} className={styles.circle} />
+        <span style={{ top: "40%", left: "15%" }} className={styles.circle} />
+        <span style={{ top: "0%", left: "65%" }} className={styles.circle} />
+        <span style={{ top: "20%", left: "100%" }} className={styles.circle} />
+        <span style={{ top: "40%", left: "100%" }} className={styles.circle} />
+      </div>
     </div>
   );
 };
 
-export default Estimator12;
+export default Estimater2;
