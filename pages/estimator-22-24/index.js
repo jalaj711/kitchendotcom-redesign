@@ -8,7 +8,7 @@ const Estimater2 = () => {
   return (
     <div className={styles.container}>
       <div className={styles.head}>
-        <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
+        <h1 className={styles.est}>Kitchen Price Estimator Step 22</h1>
       </div>
       <div className={styles.card}>
         <h2>How about adding a Countertop?</h2>
