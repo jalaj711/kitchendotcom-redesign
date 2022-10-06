@@ -96,3 +96,13 @@
     margin-left: 12px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    margin-top: 0;;
+    .choice {
+      margin-top: 12px;
+    }
+  }
+}
