@@ -58,11 +58,6 @@
   }
 }
 
-.kitchenTypeCard {
-  padding: 36px;
-  min-width: 50vw;
-}
-
 .dimensions {
   margin-top: 24px;
   display: flex;
@@ -77,5 +72,13 @@
     min-width: 100px;
     margin: 0 16px;;
     font-family: 'Spectral';
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    img {
+      width: 70vw;
+    }
   }
 }
