@@ -118,6 +118,11 @@
 }
 
 @media screen and (max-width: 500px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+    filter: blur(60px);
+  }
   .kitchenTypeHolder {
     flex-direction: column;
     .kitchenTypeHolderRow {
