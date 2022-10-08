@@ -1,7 +1,7 @@
 @use "../../styles/theme";
 
 .container {
-  background-color: #fff;
+  background-color: theme.$bg2;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -11,19 +11,17 @@
   padding: 32px;
 }
 
-.card {
-  width: min-content;
-  padding: 16px;
+.backgroundCard {
+  background-color: #ffeabc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  padding: 32px;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
   position: relative;
-  svg,
-  button {
-    margin-top: 8px;
-  }
+  z-index: 100;
 }
 
 .head {
@@ -83,7 +81,8 @@
 }
 
 .dataForm {
-  background-color: theme.$offwhite;
+  width: 100%;
+  background-color: #fdd990;
   padding: 16px;
   align-self: flex-end;
   input {
@@ -102,7 +101,18 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-width:500px) {
+.rightBarTitle {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) and (min-width: 500px) {
+  .rightBarTitle {
+    img {
+      max-width: 20vw;
+      height: fit-content;
+      align-self: center;
+    }
+  }
   .kitchenTypeHolder {
     flex-direction: column;
     .imageWithSquare {
@@ -125,6 +135,19 @@
 }
 
 @media screen and (max-width: 500px) {
+  .rightBarTitle {
+    flex-direction: column;
+    h2 {
+      margin-bottom: -16px;
+    }
+    img {
+      max-height: 30vw;
+      width: fit-content;
+      // max-width: 30vw;
+      // height: fit-content;
+      align-self: center;
+    }
+  }
   .kitchenTypeHolder {
     flex-direction: column;
     .imageWithSquare {
