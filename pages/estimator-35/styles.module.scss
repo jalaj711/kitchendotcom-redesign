@@ -24,8 +24,9 @@
   z-index: 2;
   position: relative;
   min-width: 70vw;
-  svg, button {
-    margin-top: 8px
+  svg,
+  button {
+    margin-top: 8px;
   }
   h3 {
     margin-top: 0;
@@ -81,7 +82,7 @@
   width: 206px;
   display: flex;
   flex-direction: column;
-  .topImage{
+  .topImage {
     position: relative;
     height: 127px;
     .radio {
@@ -112,5 +113,18 @@
     h4 {
       margin: 0 0;
     }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .kitchenTypeHolder {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 570px) {
+  .row {
+    flex-direction: column;
+    max-width: 80vw;
   }
 }

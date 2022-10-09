@@ -22,6 +22,8 @@ const Landing = () => {
         </div>
         <div className={styles.div2}>
           <h1 className={styles.wec}>We can do for you</h1>
+        </div>
+        <div className={styles.content}>
           <div className={styles.vectors}>
             <div className={styles.v1}>
               <img className={styles.img1} src={Image1.src} />
@@ -33,7 +35,7 @@ const Landing = () => {
                 projects.
               </p>
             </div>
-            <div className={styles.v2}>
+            <div className={styles.v1}>
               <img className={styles.img2} src={Image2.src} />
               <h2 className={styles.head2}>DESIGN GALLERY</h2>
               <p className={styles.p2}>
@@ -45,7 +47,7 @@ const Landing = () => {
                 a reality!
               </p>
             </div>
-            <div className={styles.v3}>
+            <div className={styles.v1}>
               <img className={styles.img3} src={Image3.src} />
               <h2 className={styles.head3}>Kitchen Price Estimator</h2>
               <p className={styles.p3}>

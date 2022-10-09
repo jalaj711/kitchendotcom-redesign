@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import DoodleDots from "../../components/DoodleDotsEllipse";
-import Image1 from "../../assets/Rectangle3492.png";
+import Image1 from "../../assets/Rectangle21.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
 
@@ -16,24 +16,26 @@ const Estimator13 = () => {
       <div className={styles.card}>
         <div className={styles.section}>
           <div className={styles.b0}>
-            <h2>HDHMR</h2>
+            <h2>BWP Plywood</h2>
             <p className={styles.ran}>
-              Has high strength and density, and a solid screw-holding capacity.
+              Is waterproof and withstands prolonged exposure to water and
+              moisture.
             </p>
 
             <img className={styles.img1} src={Image1.src} />
 
             <p className={styles.p1}>
-              <b>PRO TIP: </b>Makes for a good choice as it has load-bearing
-              capacity at a lower cost.
+              <b>PRO TIP: </b>Looking for a waterproof material? Then consider
+              this one!
             </p>
           </div>
 
           <div className={styles.sec2}>
             <div className={styles.b1}>
-              <h3>MR Plywood</h3>
+              <h3>HDHMR</h3>
               <p className={styles.p2}>
-                Is moisture and termite resistant and does not wear off easily.
+                Has high strength and density, and a solid screw-holding
+                capacity.
               </p>
             </div>
             <div className={styles.b1}>
@@ -44,10 +46,9 @@ const Estimator13 = () => {
               </p>
             </div>
             <div className={styles.b1}>
-              <h3>BWP Plywood</h3>
+              <h3>MR Plywood</h3>
               <p className={styles.p2}>
-                Is waterproof and withstands prolonged exposure to water and
-                moisture.
+                Is moisture and termite resistant and does not wear off easily.
               </p>
             </div>
           </div>

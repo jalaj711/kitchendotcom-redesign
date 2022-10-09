@@ -94,3 +94,20 @@
     margin-left: 12px;
   }
 }
+@media screen and (max-width: 1000px){
+  .kitchenTypeHolder{
+     flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 570px){
+.row{
+flex-direction: column ;
+max-width: 80vw;
+
+}
+.choice{
+  margin: 10px;
+}
+}
