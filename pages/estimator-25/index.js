@@ -7,6 +7,7 @@ import Input from "../../components/Input/Input";
 const Estimater2 = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.backgroundCard}>
       <div className={styles.head}>
         <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
       </div>
@@ -52,6 +53,7 @@ const Estimater2 = () => {
         <Button>Next</Button>
       </div>
 
+      </div>
       <div className={styles.decoratives}>
         <ThreeTriangles
           style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
