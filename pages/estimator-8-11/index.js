@@ -18,6 +18,7 @@ const Estimater2 = () => {
   ];
   return (
     <div className={styles.container}>
+      <div className={styles.backgroundCard}>
       <div className={styles.head}>
         <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
       </div>
@@ -53,9 +54,11 @@ const Estimater2 = () => {
           </div>
         </div>
         <div style={{ width: "100%" }}>
-          <Button style={{ float: "left" }}>Previous</Button>
+          <Button style={{ float: "left" }} secondary>Previous</Button>
           <Button style={{ float: "right" }}>Next</Button>
         </div>
+      </div>
+
       </div>
 
       <div className={styles.decoratives}>

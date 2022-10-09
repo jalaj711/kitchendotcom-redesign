@@ -1,5 +1,4 @@
 @use "../../styles/theme";
-
 .container {
   background-color: theme.$bg2;
   display: flex;
@@ -9,6 +8,19 @@
   justify-content: center;
   align-items: center;
   padding: 32px;
+}
+
+.backgroundCard {
+  background-color: #ffeabc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  position: relative;
+  z-index: 100;
 }
 
 .card {
