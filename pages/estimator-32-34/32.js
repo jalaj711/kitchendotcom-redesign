@@ -7,46 +7,47 @@ import Button from "../../components/Button/Button";
 const Estimator27 = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.head}>
-        <h1 className={styles.est}> Kitchen Price Estimate Steps</h1>
-      </div>
-      <div className={styles.card}>
-        <div className={styles.choices}>
-          <div className={styles.selectionUnit}>
-            <h2>Basic </h2>
-            <span>
-              A basic range of accessories usually required to get your ideal
-              kitchen started.
-            </span>
-            <img src={Image1.src} />
-            <p>
-              <b>Pro Tip: </b>Consider this if you need basic units within a
-              budget for a comfortable cooking experience.
-            </p>
-          </div>
-          <div className={styles.rightChoices}>
-            <div className={styles.selectionUnit}>
-              <h3>Intermediate</h3>
-              <p>
-                A fine range of fittings, cabinets, and more for a smooth
-                culinary experience.
-              </p>
-            </div>
-            <div className={styles.selectionUnit}>
-              <h3>Premium</h3>
-              <p>
-                A showstopper kitchen with an exclusive range you were always
-                looking for.
-              </p>
-            </div>
-          </div>
+      <div className={styles.backgroundCard}>
+        {" "}
+        <div className={styles.head}>
+          <h1 className={styles.est}> Kitchen Price Estimate Steps</h1>
         </div>
+        <div className={styles.card}>
+          <div className={styles.choices}>
+            <div className={styles.selectionUnit}>
+              <h2>Basic </h2>
+              <span>
+                A basic range of accessories usually required to get your ideal
+                kitchen started.
+              </span>
+              <img src={Image1.src} />
+              <p>
+                <b>Pro Tip: </b>Consider this if you need basic units within a
+                budget for a comfortable cooking experience.
+              </p>
+            </div>
+            <div className={styles.rightChoices}>
+              <div className={styles.selectionUnit}>
+                <h3>Intermediate</h3>
+                <p>
+                  A fine range of fittings, cabinets, and more for a smooth
+                  culinary experience.
+                </p>
+              </div>
+              <div className={styles.selectionUnit}>
+                <h3>Premium</h3>
+                <p>
+                  A showstopper kitchen with an exclusive range you were always
+                  looking for.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div className={styles.buttons}>
-          <Button secondary>
-            Back
-          </Button>
-          <Button>Next</Button>
+          <div className={styles.buttons}>
+            <Button secondary>Back</Button>
+            <Button>Next</Button>
+          </div>
         </div>
       </div>
 
