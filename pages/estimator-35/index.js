@@ -12,67 +12,69 @@ import Image5 from "../../assets/estimator/35-5.png";
 const Estimater2 = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.head}>
-        <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
-      </div>
-      <div className={styles.card}>
-        <h2>Select the on-site services you would require. </h2>
-        <h3>Price will not be added in the Estimates</h3>
-        <div className={styles.kitchenTypeHolder}>
-          <div className={styles.row}>
-            <div className={styles.choice}>
-              <div className={styles.topImage}>
-                <span className={styles.radio} />
-                <img src={Image1.src} className={styles.image}/>
+      <div className={styles.backgroundCard}>
+        <div className={styles.head}>
+          <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
+        </div>
+        <div className={styles.card}>
+          <h2>Select the on-site services you would require. </h2>
+          <h3>Price will not be added in the Estimates</h3>
+          <div className={styles.kitchenTypeHolder}>
+            <div className={styles.row}>
+              <div className={styles.choice}>
+                <div className={styles.topImage}>
+                  <span className={styles.radio} />
+                  <img src={Image1.src} className={styles.image} />
+                </div>
+                <div className={styles.choiceTitle}>
+                  <h4>Painting</h4>
+                </div>
               </div>
-              <div className={styles.choiceTitle}>
-                <h4>Painting</h4>
+              <div className={styles.choice}>
+                <div className={styles.topImage}>
+                  <span className={styles.radio} />
+                  <img src={Image2.src} className={styles.image} />
+                </div>
+                <div className={styles.choiceTitle}>
+                  <h4>Plumbing</h4>
+                </div>
               </div>
-            </div>
-            <div className={styles.choice}>
-              <div className={styles.topImage}>
-                <span className={styles.radio} />
-                <img src={Image2.src} className={styles.image}/>
-              </div>
-              <div className={styles.choiceTitle}>
-                <h4>Plumbing</h4>
-              </div>
-            </div>
-            <div className={styles.choice}>
-              <div className={styles.topImage}>
-                <span className={styles.radio} />
-                <img src={Image3.src} className={styles.image}/>
-              </div>
-              <div className={styles.choiceTitle}>
-                <h4>Electrical</h4>
-              </div>
-            </div>
-          </div>
-          <div className={styles.row}>
-            <div className={styles.choice}>
-              <div className={styles.topImage}>
-                <span className={styles.radio} />
-                <img src={Image4.src} className={styles.image}/>
-              </div>
-              <div className={styles.choiceTitle}>
-                <h4>Platform</h4>
+              <div className={styles.choice}>
+                <div className={styles.topImage}>
+                  <span className={styles.radio} />
+                  <img src={Image3.src} className={styles.image} />
+                </div>
+                <div className={styles.choiceTitle}>
+                  <h4>Electrical</h4>
+                </div>
               </div>
             </div>
-            <div className={styles.choice}>
-              <div className={styles.topImage}>
-                <span className={styles.radio} />
-                <img src={Image5.src} className={styles.image}/>
+            <div className={styles.row}>
+              <div className={styles.choice}>
+                <div className={styles.topImage}>
+                  <span className={styles.radio} />
+                  <img src={Image4.src} className={styles.image} />
+                </div>
+                <div className={styles.choiceTitle}>
+                  <h4>Platform</h4>
+                </div>
               </div>
-              <div className={styles.choiceTitle}>
-                <h4>Dado</h4>
+              <div className={styles.choice}>
+                <div className={styles.topImage}>
+                  <span className={styles.radio} />
+                  <img src={Image5.src} className={styles.image} />
+                </div>
+                <div className={styles.choiceTitle}>
+                  <h4>Dado</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.buttons}>
-        <Button secondary>Back</Button>
-        <Button>Next</Button>
+        <div className={styles.buttons}>
+          <Button secondary>Back</Button>
+          <Button>Next</Button>
+        </div>
       </div>
 
       <div className={styles.decoratives}>
