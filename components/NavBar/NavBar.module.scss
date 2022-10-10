@@ -7,14 +7,11 @@
   width: 100vw;
   display: flex;
   z-index: 1000;
+  padding: 16px 24px;
+  color: white;
   span {
     margin: 0 16px;
     font-size: x-large;
     font-weight: 600;
-  }
-  div {
-    padding: 16px 24px;
-    width: 100vw;
-    display: flex;
   }
 }
