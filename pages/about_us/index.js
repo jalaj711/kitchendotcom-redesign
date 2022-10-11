@@ -3,7 +3,7 @@ import Image from "../../assets/Rectangle213.jpg";
 import Image1 from "../../assets/Rectangle252.jpg";
 import styles from "./styles.module.scss";
 import Image2 from "../../assets/Rectangle226.jpg";
-import Background from "../../assets/MainBG.png";
+import Background from "../../assets/Rectangle288.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import DoodleDots from "../../components/DoodleDotsEllipse";
 import TwoSquares from "../../components/TwoSquares";

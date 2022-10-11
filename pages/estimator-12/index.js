@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
-import Input from "../../components/Input/Input";
+// import Input from "../../components/Input/Input";
+import TwoSquares from "../../components/TwoSquares";
+
 
 const Estimater2 = () => {
   return (
@@ -73,10 +75,10 @@ const Estimater2 = () => {
       </div>
 
       <div className={styles.decoratives}>
-        <ThreeTriangles
+        <TwoSquares
           style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
         />
-        <ThreeTriangles
+        <TwoSquares
           style={{
             top: "30%",
             right: "min(-50px, -25vw)",
