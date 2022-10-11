@@ -4,18 +4,21 @@
   width: 100%;
   height: 100%;
   // background-position: center;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+  min-height: 100vh;
   top: 0%;
   left: 0%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
 }
 .v1 {
   margin-top: 10px;
-  h2{
+  h2 {
     margin: 4px 8px;
   }
-  p{
+  p {
     margin: 10px 20px;
   }
 }
@@ -23,12 +26,12 @@
 .head {
   padding-left: 10%;
 
-  margin-top: 13%;
+ 
 
   color: #fff;
 }
 .wec {
-  margin-top: 2%;
+  
   text-align: center;
   align-items: center;
   // right: 40%;
@@ -63,14 +66,11 @@
   justify-content: center;
   text-align: center;
   align-items: center;
- 
 }
-
 
 .des {
   margin-top: -6%;
 }
-
 
 .head2 {
   text-align: center;
@@ -82,4 +82,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+  .vectors{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

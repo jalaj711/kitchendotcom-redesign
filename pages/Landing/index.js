@@ -9,8 +9,9 @@ import Image3 from "../../assets/Cost.png";
 const Landing = () => {
   return (
     <>
-      <Navbar className={styles.nav} />
       <div className={styles.container}>
+        <Navbar className={styles.nav} />
+        <div style={{ flexGrow: 1 }}></div>
         <div className={styles.head}>
           <h1 className={styles.head1}>
             We Help You To Make Best Design Modular Kitchen
@@ -20,6 +21,7 @@ const Landing = () => {
             <buttom className={styles.more}>Learn More</buttom>
           </div>
         </div>
+        <div style={{ flexGrow: 1 }}></div>
         <div className={styles.div2}>
           <h1 className={styles.wec}>We can do for you</h1>
         </div>
