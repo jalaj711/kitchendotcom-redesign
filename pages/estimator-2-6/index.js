@@ -31,46 +31,47 @@ const Estimater2 = () => {
   const [active, setActive] = useState(-1);
   return (
     <div className={styles.container}>
-      <div className={styles.head}>
-        <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
-      </div>
-      <div className={styles.card}>
-        <div className={styles.kitchenTypeHolder}>
-          <div className={styles.kitchenTypeHolderRow}>
-          <KitchenTypeCard
-            image={LShapeKitchen.src}
-            name="L - Shaped Design"
-            isActive={active === 0}
-            onClick={() => setActive(0)}
-          />
-          <KitchenTypeCard
-            image={UShapeKitchen.src}
-            name={"U - Shaped Design"}
-            isActive={active === 1}
-            onClick={() => setActive(1)}
-          />
-          </div>
-          <div className={styles.kitchenTypeHolderRow}>
-          <KitchenTypeCard
-            image={StraightShapeKitchen.src}
-            name="Straight Shaped Design"
-            isActive={active === 2}
-            onClick={() => setActive(2)}
-          />
-          <KitchenTypeCard
-            image={ParallelShapeKitchen.src}
-            name={"Parallel Shaped Design"}
-            isActive={active === 3}
-            onClick={() => setActive(3)}
-          />
+      <div className={styles.backgroundCard}>
+        <div className={styles.head}>
+          <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.kitchenTypeHolder}>
+            <div className={styles.kitchenTypeHolderRow}>
+              <KitchenTypeCard
+                image={LShapeKitchen.src}
+                name="L - Shaped Design"
+                isActive={active === 0}
+                onClick={() => setActive(0)}
+              />
+              <KitchenTypeCard
+                image={UShapeKitchen.src}
+                name={"U - Shaped Design"}
+                isActive={active === 1}
+                onClick={() => setActive(1)}
+              />
+            </div>
+            <div className={styles.kitchenTypeHolderRow}>
+              <KitchenTypeCard
+                image={StraightShapeKitchen.src}
+                name="Straight Shaped Design"
+                isActive={active === 2}
+                onClick={() => setActive(2)}
+              />
+              <KitchenTypeCard
+                image={ParallelShapeKitchen.src}
+                name={"Parallel Shaped Design"}
+                isActive={active === 3}
+                onClick={() => setActive(3)}
+              />
+            </div>
           </div>
         </div>
+        <div className={styles.buttons}>
+          <Button secondary>Back</Button>
+          <Button>Next</Button>
+        </div>
       </div>
-      <div className={styles.buttons}>
-        <Button secondary>Back</Button>
-        <Button>Next</Button>
-      </div>
-
       <div className={styles.decoratives}>
         <ThreeTriangles
           style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}

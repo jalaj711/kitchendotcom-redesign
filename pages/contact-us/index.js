@@ -8,7 +8,7 @@ import FacebookIcon from "../../assets/Facebook.svg";
 import InstagramIcon from "../../assets/Instagram.svg";
 import TwitterIcon from "../../assets/Twitter.svg";
 import WhatsAppIcon from "../../assets/WhatsApp.svg";
-import Background from "../../assets/MainBG.png";
+import Background from "../../assets/contact-us-top.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import DoodleDots from "../../components/DoodleDotsEllipse";
 import TwoSquares from "../../components/TwoSquares";
@@ -24,7 +24,7 @@ export default function ContactUs() {
       <div className={styles.top}>
         <img src={Background.src} className={styles.bg} alt="bg" />
         <div className={styles.title}>
-          <h3>Get in touch!</h3>
+          <h1>Get in touch!</h1>
           <div>Have an inquiry or some feedback for us?</div>
           <div>Fill out the form below to contact our team.</div>
         </div>

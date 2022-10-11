@@ -11,6 +11,19 @@
   padding: 32px;
 }
 
+.backgroundCard {
+  background-color: #ffeabc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  position: relative;
+  z-index: 100;
+}
+
 .card {
   border-bottom-right-radius: 48px;
   border-top-left-radius: 48px;
@@ -105,6 +118,11 @@
 }
 
 @media screen and (max-width: 500px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+    filter: blur(60px);
+  }
   .kitchenTypeHolder {
     flex-direction: column;
     .kitchenTypeHolderRow {

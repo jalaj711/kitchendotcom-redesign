@@ -10,7 +10,18 @@
   align-items: center;
   padding: 32px;
 }
-
+.backgroundCard {
+  background-color: #ffeabc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  position: relative;
+  z-index: 100;
+}
 .card {
   border-bottom-right-radius: 48px;
   border-top-left-radius: 48px;
@@ -24,8 +35,9 @@
   z-index: 2;
   position: relative;
   min-width: 70vw;
-  svg, button {
-    margin-top: 8px
+  svg,
+  button {
+    margin-top: 8px;
   }
 }
 
@@ -94,20 +106,19 @@
     margin-left: 12px;
   }
 }
-@media screen and (max-width: 1000px){
-  .kitchenTypeHolder{
-     flex-direction: column  ;
+@media screen and (max-width: 1000px) {
+  .kitchenTypeHolder {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-@media screen and (max-width: 570px){
-.row{
-flex-direction: column ;
-max-width: 80vw;
-
-}
-.choice{
-  margin: 10px;
-}
+@media screen and (max-width: 570px) {
+  .row {
+    flex-direction: column;
+    max-width: 80vw;
+  }
+  .choice {
+    margin: 10px;
+  }
 }
