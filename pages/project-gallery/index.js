@@ -5,6 +5,7 @@ import ChooseUs1 from "../../assets/project-gallery/ChooseUs1.png";
 import ChooseUs2 from "../../assets/project-gallery/ChooseUs2.png";
 import ChooseUs3 from "../../assets/project-gallery/ChooseUs3.png";
 import Footer from "../../components/Footer/Footer";
+import Carousel from "../../components/Carousel/Carousel";
 
 function KitchenCard({ title, image, details }) {
   return (
@@ -48,7 +49,41 @@ export default function ContactUs() {
             <div className={styles.chooseUsTitle}>15</div>
             <div className={styles.chooseUsCaption}>Award Wins</div>
           </div>
-        </div>  
+        </div>
+      </div>
+      <div className={styles.container}>
+        <h1 className={styles.h1}>We have done some great work</h1>
+        <Carousel
+          images={[BG.src, ChooseUs1.src, ChooseUs2.src, ChooseUs3.src]}
+        />
+      </div>
+
+      <div className={styles.container} style={{ backgroundColor: "#f3f3f3" }}>
+        <h1 className={styles.h1}>
+          Creative Solutions by Professinal Designers.
+        </h1>
+        <p>
+          We, at KitchenDotCom, seek to provide effective and sustainable
+          solutions to our clients. The multi-usable units provided by us, are
+          boon for those having space constraints. The special 3-D walkthrough
+          provided by us gives the client to have an outlook of the kitchen
+          before it is prepared. We provide you with detachable units that can
+          be repaired and cleaned separately without altering the whole kitchen.
+          Effective consultation at every step of designing eliminates any kind
+          of mismatch between the clients&apos; expectations and the final outcome.
+        </p>
+        <Carousel
+          images={[BG.src, ChooseUs1.src, ChooseUs2.src, ChooseUs3.src]}
+        />
+      </div>
+      <div className={styles.container}>
+        <h1 className={styles.h1}>We&apos;ll let our clients do the talking</h1>
+        <p>
+        Here&apos;s what they have to say
+        </p>
+        <Carousel
+          images={[BG.src, ChooseUs1.src, ChooseUs2.src, ChooseUs3.src]}
+        />
       </div>
       <Footer />
     </>
