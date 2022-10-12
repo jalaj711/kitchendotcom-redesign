@@ -1,0 +1,99 @@
+@use "../../styles/theme";
+
+.controls {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.controlDot {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #aaa;
+    margin-right: 8px;
+    transition: all 300ms;
+}
+
+.activeControlDot {
+    width: 36px;
+    background-color: theme.$primary;
+}
+
+.colorDesignGrid {
+    display: grid;
+    width: 100%;
+    padding: 0 24px;
+    justify-content: space-evenly;
+    grid-template-areas:
+      "kitchen-card kitchen-card kitchen-card"
+      "kitchen-card kitchen-card kitchen-card"
+      "kitchen-card kitchen-card kitchen-card"
+      "kitchen-card kitchen-card kitchen-card";
+  }
+  
+  .colorDesignCard {
+    max-width: calc(25vw - 36px);
+    margin: 16px;
+    text-align: left;
+    
+  
+    img {
+      border-radius: 16px;
+      max-width: calc(25vw - 36px);
+    }
+    .colorPaletteElement {
+      width: 36px;
+      height: 36px;
+      margin: 0 4px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .colorDesignGrid {
+      padding: 0;
+      grid-template-areas:
+        "kitchen-card kitchen-card"
+        "kitchen-card kitchen-card"
+        "kitchen-card kitchen-card"
+        "kitchen-card kitchen-card"
+        "kitchen-card kitchen-card"
+        "kitchen-card kitchen-card";
+    }
+    .colorDesignCard {
+      max-width: calc(45vw - 36px);
+      margin: 16px 0;
+      img {
+        max-width: calc(45vw - 36px);
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .colorDesignGrid {
+      grid-template-areas:
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card"
+        "kitchen-card";
+    }
+    .colorDesignCard {
+      max-width: calc(90vw - 36px);
+      img {
+        max-width: calc(90vw - 36px);
+      }
+    }
+  }
+  

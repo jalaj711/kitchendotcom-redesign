@@ -10,6 +10,7 @@
   img {
     width: 100vw;
     max-height: 50vh;
+    min-height: 40vh;
     object-fit: cover;
     filter: brightness(0.7);
   }
@@ -35,6 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   h1 {
     max-width: 40vw;
@@ -42,8 +44,8 @@
   }
 
   p {
-    text-align: center;
     max-width: 70vw;
+    color: #464646;
   }
 }
 
@@ -128,6 +130,15 @@
 }
 
 @media (max-width: 768px) {
+  .landing {
+  div {
+    top: 32px;
+    left: 32px;
+  }
+  h2 {
+    margin-left: 16px;
+  }
+}
   .imageWithSquare {
     max-width: 60vw;
     img {
@@ -135,9 +146,6 @@
     }
   }
   .container {
-    p {
-      display: none;
-    }
     .half2 {
       padding: 0;
       .imageWithSquare {

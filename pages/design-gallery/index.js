@@ -5,10 +5,9 @@ import DesignGallery3 from "../../assets/design-gallery/3.png";
 import DesignGallery4 from "../../assets/design-gallery/4.jpeg";
 import DesignGallery5 from "../../assets/design-gallery/5.jpeg";
 import DesignGallery6 from "../../assets/design-gallery/6.jpeg";
-import DoodlesEllipse from "../../components/DoodleDotsEllipse";
 import BG from "../../assets/design-gallery/top-bg.png";
-import ColorPalettes from "./color-palettes.json";
 import Footer from "../../components/Footer/Footer";
+import Carousel from "./Carousel";
 
 function KitchenCard({ title, image, details }) {
   return (
@@ -24,25 +23,7 @@ function KitchenCard({ title, image, details }) {
   );
 }
 
-function ColorDesignsElement({ image, colors }) {
-  return (
-    <div className={styles.colorDesignCard}>
-      <img src={image} />
-      <h4>Color Palette</h4>
-      <div>
-        {colors.map((elem, index) => (
-          <span
-            key={index}
-            className={styles.colorPaletteElement}
-            style={{ background: elem }}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default function ContactUs() {
+export default function DesignGallery() {
   return (
     <>
       <div className={styles.landing}>
@@ -97,15 +78,7 @@ export default function ContactUs() {
         </div>
         <div>
           <h2>Some color combinations</h2>
-          <div className={styles.colorDesignGrid}>
-            {ColorPalettes.map((elem, index) => (
-              <ColorDesignsElement
-                key={index}
-                colors={elem.colors}
-                image={elem.image}
-              />
-            ))}
-          </div>
+          <Carousel />
         </div>
       </div>
       <Footer />
