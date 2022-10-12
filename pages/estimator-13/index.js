@@ -3,12 +3,12 @@ import styles from "./styles.module.scss";
 import DoodleDots from "../../components/DoodleDotsEllipse";
 import Image1 from "../../assets/Rectangle91.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
-import Button from '../../components/Button/Button'
+import Button from "../../components/Button/Button";
+import TwoSquares from "../../components/TwoSquares";
 
 const Estimator13 = () => {
   return (
     <div className={styles.container}>
-      <DoodleDots className={styles.dots} />
       <div className={styles.head}>
         <h1 className={styles.est}> Kitchen Price Estimate Steps</h1>
       </div>
@@ -32,25 +32,40 @@ const Estimator13 = () => {
 
           <div className={styles.sec2}>
             <div className={styles.b1}>
-              <h3>Premium</h3>
-              <p className={styles.p2}>
-                An exquisite kitchen with sleek fixtures, hardware, cabinets &
-                fittings for an elegant and smooth cooking experiences.
-              </p>
+              <div>
+                <span className={styles.radio}></span>
+              </div>
+              <div>
+                <h3>Premium</h3>
+                <p className={styles.p2}>
+                  An exquisite kitchen with sleek fixtures, hardware, cabinets &
+                  fittings for an elegant and smooth cooking experiences.
+                </p>
+              </div>
             </div>
             <div className={styles.b1}>
-              <h3>Luxe</h3>
-              <p className={styles.p2}>
-                Lixurious dream kitchen that’s a fine blend of aesthetics and
-                high functionality complete with swanky units and accessories.
-              </p>
+              <div>
+                <span className={styles.radio}></span>
+              </div>
+              <div>
+                <h3>Luxe</h3>
+                <p className={styles.p2}>
+                  Lixurious dream kitchen that’s a fine blend of aesthetics and
+                  high functionality complete with swanky units and accessories.
+                </p>
+              </div>
             </div>
             <div className={styles.b1}>
-              <h3>Build your own package</h3>
-              <p className={styles.p2}>
-                Select materials, finishes, accessories and more of your choices
-                from a range of collections for your kitchen.
-              </p>
+              <div>
+                <span className={styles.radio}></span>
+              </div>
+              <div>
+                <h3>Build your own package</h3>
+                <p className={styles.p2}>
+                  Select materials, finishes, accessories and more of your
+                  choices from a range of collections for your kitchen.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -59,8 +74,18 @@ const Estimator13 = () => {
           <Button>Next</Button>
         </div>
       </div>
-
-      <DoodleDots className={styles.dots1} />
+      <div className={styles.decoratives}>
+        <TwoSquares
+          style={{ top: "90%", left: "-22vw", width: "max(150px, 50vw)" }}
+        />
+        <TwoSquares
+          style={{
+            top: "-4%",
+            right: "min(-50px, -20vw)",
+            width: "max(150px, 50vw)",
+          }}
+        />
+      </div>
     </div>
   );
 };

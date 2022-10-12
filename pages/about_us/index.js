@@ -3,7 +3,7 @@ import Image from "../../assets/Rectangle213.jpg";
 import Image1 from "../../assets/Rectangle252.jpg";
 import styles from "./styles.module.scss";
 import Image2 from "../../assets/Rectangle226.jpg";
-import Background from "../../assets/MainBG.png";
+import Background from "../../assets/Rectangle288.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import DoodleDots from "../../components/DoodleDotsEllipse";
 import TwoSquares from "../../components/TwoSquares";
@@ -16,7 +16,7 @@ const About = () => {
       <Navbar />
       <div className={styles.container}>
         <img className={styles.bgimg} src={Background.src}></img>
-        <ThreeTriangles className={styles.triangles4} />
+        {/* <ThreeTriangles className={styles.triangles4} /> */}
 
         <h1 className={styles.abt}>About Us</h1>
         <div className={styles.ourvision}>
@@ -35,13 +35,13 @@ const About = () => {
             </p>
           </div>
           <div className={styles.ddots}>
-            <DoodleDots className={styles.dots} />
+            {/* <DoodleDots className={styles.dots} /> */}
             <img className={styles.img1} src={Image.src}></img>
           </div>
         </div>
         <div className={styles.ourvision}>
           <div className={styles.ddots1}>
-            <DoodleDots className={styles.dots1} />
+            {/* <DoodleDots className={styles.dots1} /> */}
             <img className={styles.img1} src={Image1.src}></img>
           </div>
           <div className={styles.paracontainer}>
@@ -60,7 +60,7 @@ const About = () => {
           </div>
         </div>
         <div className={styles.howstart}>
-          <ThreeTriangles className={styles.triangles1} />
+          {/* <ThreeTriangles className={styles.triangles1} /> */}
 
           <h2 className={styles.started}>HOW IT STARTED</h2>
           <hr className={styles.line2}></hr>
@@ -101,17 +101,17 @@ const About = () => {
             etc. We are a one-stop destination for material selection, products,
             fitting and installation, repairing ,etc.
           </p>
-          <ThreeTriangles className={styles.triangles2} />
+          {/* <ThreeTriangles className={styles.triangles2} /> */}
         </div>
         <div className={styles.drdots}>
-          <DoodleDots className={styles.dots3} />
+          {/* <DoodleDots className={styles.dots3} /> */}
           <img className={styles.img2} src={Image2.src}></img>
           <h3 className={styles.he3}> Mr. Abhishek Gupta</h3>
-          <ThreeTriangles className={styles.triangles3} />
-          <TwoSquares className={styles.squares} />
+          {/* <ThreeTriangles className={styles.triangles3} />
+          <TwoSquares className={styles.squares} /> */}
         </div>
 
-        <ThreeTriangles className={styles.triangles} />
+        {/* <ThreeTriangles className={styles.triangles} /> */}
         {/* <DoodleDots className={styles.dots} /> */}
         {/* <TwoSquares className={styles.squares} /> */}
         <div className={styles.circle1} />

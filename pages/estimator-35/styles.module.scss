@@ -139,5 +139,9 @@
   .row {
     flex-direction: column;
     max-width: 80vw;
+    margin-top: 0;
+  }
+  .choice{
+    margin-top: 8px;
   }
 }

@@ -1,19 +1,15 @@
+@use "../../styles/theme";
 .container {
-  background: #d3d3d3;
+  background-color: theme.$bg2;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
 }
 
-.dots {
-  position: relative;
-  width: 200px;
-  left: -6px;
-}
-
-.est {
-  position: relative;
-  left: 14%;
-  margin-top: -5%;
-  align-self: flex-start;
-}
 .card {
   display: flex;
   align-items: center;
@@ -29,11 +25,21 @@
 
   border-radius: 20px 0px;
   padding: 16px 24px;
-  max-width: min-content;
-  min-width: 350px;
+  max-width: 375px;
+  min-width: 300px;
   margin: 30px;
   display: flex;
-  flex-direction: column;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #f4b32a;
+    border-radius: 50%;
+    margin: 4px;
+
+    background-color: white;
+  }
 
   h2,
   h3 {
@@ -100,4 +106,8 @@
   .dots {
     width: 39px;
   }
+}
+.decoratives * {
+  position: absolute;
+  z-index: 0;
 }
