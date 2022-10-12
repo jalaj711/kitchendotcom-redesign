@@ -1,0 +1,33 @@
+// .test {
+//     background: white;
+// }
+
+// .carousel {
+//     display: flex;
+//     flex-direction: column;
+
+// }
+
+// .leftImage {
+    
+// }
+
+.controls > * {
+    margin-right: 8px;
+}
+
+.controls {
+    button {
+        background: none;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        font-size: 24px;
+        border: none;
+        
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
