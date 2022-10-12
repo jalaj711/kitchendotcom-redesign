@@ -74,20 +74,7 @@
     margin: 0 40px;
   }
 }
-.dots1 {
-  left: 90%;
-  margin-top: -5%;
-  position: relative;
-}
-.tri {
-  position: absolute;
-  right: -10%;
-}
-.tri1 {
-  position: absolute;
-  left: -10%;
-  margin-top: 8%;
-}
+
 @media screen and (max-width: 1000px) {
   .section {
     flex-direction: column;
@@ -103,9 +90,7 @@
   .est {
     max-width: 80vw;
   }
-  .dots {
-    width: 39px;
-  }
+  
 }
 .decoratives * {
   position: absolute;

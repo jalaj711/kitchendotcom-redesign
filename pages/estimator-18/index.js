@@ -4,11 +4,11 @@ import DoodleDots from "../../components/DoodleDotsEllipse";
 import Image1 from "../../assets/Rectangle3492.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
+import TwoSquares from "../../components/TwoSquares";
 
 const Estimator13 = () => {
   return (
     <div className={styles.container}>
-      <DoodleDots className={styles.dots} />
       <div className={styles.head}>
         <h1 className={styles.est}> Kitchen Price Estimate Steps</h1>
       </div>
@@ -31,24 +31,40 @@ const Estimator13 = () => {
 
           <div className={styles.sec2}>
             <div className={styles.b1}>
-              <h3>MR Plywood</h3>
-              <p className={styles.p2}>
-                Is moisture and termite resistant and does not wear off easily.
-              </p>
+              <div>
+                <span className={styles.radio}></span>
+              </div>
+              <div>
+                <h3>MR Plywood</h3>
+                <p className={styles.p2}>
+                  Is moisture and termite resistant and does not wear off
+                  easily.
+                </p>
+              </div>
             </div>
             <div className={styles.b1}>
-              <h3>BWR Plywood</h3>
-              <p className={styles.p2}>
-                Is water resistant and works well in areas prone to water
-                exposure.
-              </p>
+              <div>
+                <span className={styles.radio}></span>
+              </div>
+              <div>
+                <h3>BWR Plywood</h3>
+                <p className={styles.p2}>
+                  Is water resistant and works well in areas prone to water
+                  exposure.
+                </p>
+              </div>
             </div>
             <div className={styles.b1}>
-              <h3>BWP Plywood</h3>
-              <p className={styles.p2}>
-                Is waterproof and withstands prolonged exposure to water and
-                moisture.
-              </p>
+              <div>
+                <span className={styles.radio}></span>
+              </div>
+              <div>
+                <h3>BWP Plywood</h3>
+                <p className={styles.p2}>
+                  Is waterproof and withstands prolonged exposure to water and
+                  moisture.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -57,8 +73,18 @@ const Estimator13 = () => {
           <Button>Next</Button>
         </div>
       </div>
-
-      <DoodleDots className={styles.dots1} />
+      <div className={styles.decoratives}>
+        <TwoSquares
+          style={{ top: "90%", left: "-22vw", width: "max(150px, 50vw)" }}
+        />
+        <TwoSquares
+          style={{
+            top: "-4%",
+            right: "min(-50px, -20vw)",
+            width: "max(150px, 50vw)",
+          }}
+        />
+      </div>
     </div>
   );
 };
