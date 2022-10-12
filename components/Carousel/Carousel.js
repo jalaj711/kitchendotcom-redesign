@@ -7,7 +7,6 @@ const formatNumber = n =>  n > 9 ? n : '0' + n
 
 export default function CustomCarousel({ images }) {
   const [current, setCurrent] = useState(0);
-  console.log(styles);
   return (
     <div className={styles.carousel}>
       <div className={styles.images}>
