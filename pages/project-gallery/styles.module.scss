@@ -18,6 +18,7 @@
   color: white;
   img {
     width: 100vw;
+    min-height: 40vh;
     max-height: 50vh;
     object-fit: cover;
     filter: brightness(0.7);
@@ -72,9 +73,40 @@
   justify-content: center;
   img {
     margin-right: 8px;
-    height: min-content;
+    height: auto;
+    width: 25vw;
   }
 }
 
+.additonalContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
+  .landing {
+    div {
+      top: 32px;
+      left: 32px;
+    }
+    h2 {
+      margin-left: 16px;
+    }
+  }
+  .chooseUsHolder {
+    flex-direction: column;
+    .chooseUsCard {
+      margin: 16px 0;
+    }
+  }
+
+  .videoCarousel1 {
+    flex-direction: column;
+    img {
+      margin-top: 16px;
+    }
+  }
 }

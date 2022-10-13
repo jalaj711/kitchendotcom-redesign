@@ -91,7 +91,7 @@ export default function ContactUs() {
         <Carousel
           images={[Carousel_3_1.src, Carousel_3_1.src, Carousel_3_1.src, Carousel_3_1.src, Carousel_3_1.src]}
           additionalElements={[
-            (<div key={1} style={{textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+            (<div key={1} className={styles.additionalContainer}>
               <h2>Modern Kitchen</h2>
               <p style={{maxWidth: '60vw', color: '#3c3c3c'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui pretium interdum sagittis sagittis faucibus. Et sit viverra pellentesque nulla ipsum. Eu, cursus pellentesque nunc proin urna justo est dignissim. Aliquet et cursus aliquet feugiat rhoncus, nunc et id. At pellentesque est nibh ultricies arcu in. Quis lectus arcu dictum mi. Commodo.</p>
             </div>)

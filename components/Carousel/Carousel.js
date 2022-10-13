@@ -22,7 +22,7 @@ export default function CustomCarousel({ images, additionalElements }) {
         >
           {images.map((elem, index) => (
             <div key={index} className={styles.imageContainer}>
-              <img src={elem} style={{ width: "min-content !important"}} />
+              <img src={elem} style={{ width: "min-content !important", maxWidth: '70vw'}} />
               {
                 additionalElements && additionalElements[index]
               }
