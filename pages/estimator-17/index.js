@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
+import TwoSquares from "../../components/TwoSquares";
 
 const Estimater2 = () => {
   return (
@@ -73,21 +74,16 @@ const Estimater2 = () => {
       </div>
 
       <div className={styles.decoratives}>
-        <ThreeTriangles
-          style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
+        <TwoSquares
+          style={{ top: "90%", left: "-22vw", width: "max(150px, 50vw)" }}
         />
-        <ThreeTriangles
+        <TwoSquares
           style={{
-            top: "30%",
-            right: "min(-50px, -25vw)",
+            top: "-4%",
+            right: "min(-50px, -20vw)",
             width: "max(150px, 50vw)",
           }}
         />
-        <span style={{ top: "0%", left: "0%" }} className={styles.circle} />
-        <span style={{ top: "40%", left: "15%" }} className={styles.circle} />
-        <span style={{ top: "0%", left: "65%" }} className={styles.circle} />
-        <span style={{ top: "20%", left: "100%" }} className={styles.circle} />
-        <span style={{ top: "40%", left: "100%" }} className={styles.circle} />
       </div>
     </div>
   );
