@@ -10,11 +10,11 @@ function ColorDesignsElement({ image, colors }) {
       <img src={image} />
       <h4>Color Palette</h4>
       <div>
-        {colors.map((elem, index) => (
+        {colors.map((color, index) => (
           <span
             key={index}
             className={styles.colorPaletteElement}
-            style={{ background: elem }}
+            style={{ background: color }}
           />
         ))}
       </div>
@@ -35,13 +35,13 @@ export default function ColourElementsCarousel() {
         selectedItem={current}
         onChange={(index) => setCurrent(index)}
       >
-        {ColorPalettes.map((elem, index) => (
+        {ColorPalettes.map((paletteSheet, index) => (
           <div key={index} className={styles.colorDesignGrid}>
-            {elem.map((elem, index) => (
+            {paletteSheet.map((palette, index) => (
               <ColorDesignsElement
                 key={index}
-                colors={elem.colors}
-                image={elem.image}
+                colors={palette.colors}
+                image={palette.image}
               />
             ))}
           </div>

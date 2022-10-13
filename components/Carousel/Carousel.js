@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const formatNumber = n =>  n > 9 ? n : '0' + n
 
-export default function CustomCarousel({ images }) {
+export default function CustomCarousel({ images, additionalElements }) {
   const [current, setCurrent] = useState(0);
   return (
     <div className={styles.carousel}>
@@ -21,8 +21,11 @@ export default function CustomCarousel({ images }) {
           onChange={(index) => setCurrent(index)}
         >
           {images.map((elem, index) => (
-            <div key={index} className={styles.leftImageContainer}>
-              <img src={elem} className={styles.leftImage} />
+            <div key={index} className={styles.imageContainer}>
+              <img src={elem} style={{ width: "min-content !important"}} />
+              {
+                additionalElements && additionalElements[index]
+              }
             </div>
           ))}
         </Carousel>
@@ -30,7 +33,7 @@ export default function CustomCarousel({ images }) {
       <div className={styles.controls}>
         <button onClick={() => setCurrent(current - 1)} className={styles.prevButton}>&lt;</button>
         <span className={styles.currentStatus}>
-          <b>{formatNumber(current)}</b>/{formatNumber(images.length)}
+          <b>{formatNumber(current+1)}</b>/{formatNumber(images.length)}
         </span>
         <button onClick={() => setCurrent(current + 1)} className={styles.nextButton}>&gt;</button>
       </div>
