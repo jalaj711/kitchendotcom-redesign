@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Image1 from "../../assets/estimator/laminate-3.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
+import TwoSquares from "../../components/TwoSquares";
 
 const Estimator29 = () => {
   return (
@@ -57,13 +58,13 @@ const Estimator29 = () => {
       </div>
 
       <div className={styles.decoratives}>
-        <ThreeTriangles
-          style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
+        <TwoSquares
+          style={{ top: "90%", left: "-22vw", width: "max(150px, 50vw)" }}
         />
-        <ThreeTriangles
+        <TwoSquares
           style={{
-            top: "30%",
-            right: "min(-50px, -25vw)",
+            top: "-4%",
+            right: "min(-50px, -20vw)",
             width: "max(150px, 50vw)",
           }}
         />
@@ -77,4 +78,4 @@ const Estimator29 = () => {
   );
 };
 
-export default Estimator27;
+export default Estimator29;

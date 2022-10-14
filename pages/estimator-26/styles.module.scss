@@ -101,13 +101,16 @@
     border: 1px solid theme.$primary;
     display: block;
   }
+  
   h4 {
     margin: 0 0;
   }
   .choiceContent {
     margin-left: 12px;
   }
+ 
 }
+
 @media screen and (max-width: 1000px) {
   .kitchenTypeHolder {
     flex-direction: column;
@@ -125,3 +128,7 @@
     margin-top: 8px;
   }
 }
+
+ 
+
+

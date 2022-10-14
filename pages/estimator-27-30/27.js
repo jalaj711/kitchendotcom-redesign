@@ -3,6 +3,8 @@ import styles from "./styles.module.scss";
 import Image1 from "../../assets/estimator/laminate-1.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
+import TwoSquares from "../../components/TwoSquares";
+
 
 const Estimator27 = () => {
   return (
@@ -26,25 +28,40 @@ const Estimator27 = () => {
             </div>
             <div>
               <div className={styles.selectionUnit}>
-                <h3>PVC laminate</h3>
-                <p>
-                  Is waterproof and withstands prolonged exposure to water and
-                  moisture.
-                </p>
+                <div>
+                  <span className={styles.radio}></span>
+                </div>
+                <div>
+                  <h3>PVC laminate</h3>
+                  <p>
+                    Is waterproof and withstands prolonged exposure to water and
+                    moisture.
+                  </p>
+                </div>
               </div>
               <div className={styles.selectionUnit}>
-                <h3>Anti-scratch Acrylic</h3>
-                <p>
-                  Is an elegant, reflective, glossy finish that is scratch
-                  resistant.
-                </p>
+                <div>
+                  <span className={styles.radio}></span>
+                </div>
+                <div>
+                  <h3>Anti-scratch Acrylic</h3>
+                  <p>
+                    Is an elegant, reflective, glossy finish that is scratch
+                    resistant.
+                  </p>
+                </div>
               </div>
               <div className={styles.selectionUnit}>
-                <h3>Glossy PU</h3>
-                <p>
-                  Comes with a slick look, high durability, and a polished
-                  finish.
-                </p>
+                <div>
+                  <span className={styles.radio}></span>
+                </div>
+                <div>
+                  <h3>Glossy PU</h3>
+                  <p>
+                    Comes with a slick look, high durability, and a polished
+                    finish.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -57,13 +74,13 @@ const Estimator27 = () => {
       </div>
 
       <div className={styles.decoratives}>
-        <ThreeTriangles
-          style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
+        <TwoSquares
+          style={{ top: "90%", left: "-22vw", width: "max(150px, 50vw)" }}
         />
-        <ThreeTriangles
+        <TwoSquares
           style={{
-            top: "30%",
-            right: "min(-50px, -25vw)",
+            top: "-4%",
+            right: "min(-50px, -20vw)",
             width: "max(150px, 50vw)",
           }}
         />
