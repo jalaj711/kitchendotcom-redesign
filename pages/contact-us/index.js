@@ -20,13 +20,15 @@ import Footer from "../../components/Footer/Footer";
 export default function ContactUs() {
   return (
     <>
-    <NavBar />
+      <NavBar />
       <div className={styles.top}>
         <img src={Background.src} className={styles.bg} alt="bg" />
         <div className={styles.title}>
           <h1>Get in touch!</h1>
-          <div>Have an inquiry or some feedback for us?</div>
-          <div>Fill out the form below to contact our team.</div>
+          <p>
+            Have an inquiry or some feedback for us? <br />
+            Fill out the form below to contact our team.
+          </p>
         </div>
       </div>
       <div className={styles.wrapper}>
@@ -80,12 +82,6 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-        <ThreeTriangles className={styles.triangles} />
-        <DoodleDots className={styles.dots} />
-        <TwoSquares className={styles.squares} />
-        <div className={styles.circle1} />
-        <div className={styles.circle2} />
-        <div className={styles.circle3} />
       </div>
       <Footer />
     </>

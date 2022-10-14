@@ -2,11 +2,11 @@
 
 .h1 {
   font-size: 30px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .h2 {
   font-size: 24px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .landing {
@@ -18,6 +18,7 @@
   color: white;
   img {
     width: 100vw;
+    min-height: 40vh;
     max-height: 50vh;
     object-fit: cover;
     filter: brightness(0.7);
@@ -32,14 +33,13 @@
   }
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 32px 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   padding: 48px;
   text-align: center;
 
@@ -65,9 +65,48 @@
       font-size: 16px;
     }
   }
+}
 
+.videoCarousel1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-right: 8px;
+    height: auto;
+    width: 25vw;
+  }
+}
+
+.additonalContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
+  .landing {
+    div {
+      top: 32px;
+      left: 32px;
+    }
+    h2 {
+      margin-left: 16px;
+    }
+  }
+  .chooseUsHolder {
+    flex-direction: column;
+    .chooseUsCard {
+      margin: 16px 0;
+    }
+  }
 
+  .videoCarousel1 {
+    flex-direction: column;
+    img {
+      margin-top: 16px;
+    }
+  }
 }
