@@ -86,6 +86,7 @@ const Estimator13 = () => {
             width: "max(150px, 50vw)",
           }}
         />
+        
       </div>
     </div>
   );
