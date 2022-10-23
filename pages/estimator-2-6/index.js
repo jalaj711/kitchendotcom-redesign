@@ -6,6 +6,8 @@ import LShapeKitchen from "../../assets/estimator/l-shape-kitchen.svg";
 import ParallelShapeKitchen from "../../assets/estimator/parallel-shape-kitchen.svg";
 import StraightShapeKitchen from "../../assets/estimator/straight-kitchen.svg";
 import UShapeKitchen from "../../assets/estimator/u-shape-kitchen.svg";
+import FetchFromApi from "../../utils/fetchFromApi";
+import URLs from "../../utils/urls";
 
 const KitchenTypeCard = ({ image, name, isActive, onClick }) => {
   return (
@@ -29,6 +31,36 @@ const KitchenTypeCard = ({ image, name, isActive, onClick }) => {
 
 const Estimater2 = () => {
   const [active, setActive] = useState(-1);
+
+  const handleClick = () => {
+    var kitchenLayout;
+    switch (active) {
+      case 0:
+        kitchenLayout = "L-Shaped";
+        break;
+      case 1:
+        kitchenLayout = "Straight";
+        break;
+      case 2:
+        kitchenLayout = "U-Shaped";
+        break;
+      case 3:
+        kitchenLayout = "Parallel";
+        break;
+    }
+    if (kitchenLayout) {
+      FetchFromApi.post(URLs.ESTIMATOR_2_6_SELECT_LAYOUT, { kitchenLayout })
+        .then((res) => {
+          if (res.status == 200) {
+            return res.json();
+          }
+        })
+        .then((res) => {
+          console.log(res);
+          alert("Submitted sucesfulyy");
+        });
+    }
+  };
   return (
     <div className={styles.container}>
       <div className={styles.backgroundCard}>
@@ -69,7 +101,7 @@ const Estimater2 = () => {
         </div>
         <div className={styles.buttons}>
           <Button secondary>Back</Button>
-          <Button>Next</Button>
+          <Button onClick={handleClick}>Next</Button>
         </div>
       </div>
       <div className={styles.decoratives}>
