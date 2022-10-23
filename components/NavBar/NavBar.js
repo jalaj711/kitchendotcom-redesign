@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./NavBar.module.scss";
 import Hamburger from "../../assets/hamburger.svg";
+import Link from "next/link";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -19,11 +20,11 @@ export default function NavBar() {
         <a href="#">Kitchendotcom</a>
         <span style={{ flexGrow: 1 }} />
         <div className={styles.hideOnSmall}>
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Blog</a>
-          <a href="#">Cities</a>
-          <a href="#">Contact us</a>
+          <Link href="/">Home</Link>
+          <Link href="/about-us">About Us</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/cities">Cities</Link>
+          <Link href="/contact-us">Contact us</Link>
         </div>
       </nav>
       <div
@@ -33,21 +34,21 @@ export default function NavBar() {
         style={{ display: open ? "block" : "none" }}
       >
         <div className={styles.mobileNav}>
-          <a href="#" onClick={() => setOpen(false)}>
+          <Link href="/" onClick={() => setOpen(false)}>
             Home
-          </a>
-          <a href="#" onClick={() => setOpen(false)}>
+          </Link>
+          <Link href="/about-us" onClick={() => setOpen(false)}>
             About Us
-          </a>
-          <a href="#" onClick={() => setOpen(false)}>
+          </Link>
+          <Link href="/blog" onClick={() => setOpen(false)}>
             Blog
-          </a>
-          <a href="#" onClick={() => setOpen(false)}>
+          </Link>
+          <Link href="/cities" onClick={() => setOpen(false)}>
             Cities
-          </a>
-          <a href="#" onClick={() => setOpen(false)}>
+          </Link>
+          <Link href="/contact-us" onClick={() => setOpen(false)}>
             Contact us
-          </a>
+          </Link>
         </div>
       </div>
     </>
