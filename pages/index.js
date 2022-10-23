@@ -53,7 +53,7 @@ const Landing = () => {
               <h2 className={styles.head3}>Kitchen Price Estimator</h2>
               <p className={styles.p3}>
                 Estimate the price of your modular kitchen in the most
-                transparent way - it's simple, easy, and takes a few steps.
+                transparent way - it&apos;s simple, easy, and takes a few steps.
                 Simply select the options that you would want for your kitchen
               </p>
             </div>

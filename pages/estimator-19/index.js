@@ -24,7 +24,7 @@ const Estimator13 = () => {
             <img className={styles.img1} src={Image1.src} />
 
             <p className={styles.p1}>
-              <b>PRO TIP: </b>Works well if you're on a budget and looking for a
+              <b>PRO TIP: </b>Works well if you&apos;re on a budget and looking for a
               durable material.
             </p>
           </div>
