@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "next": "12.3.0",
@@ -18,5 +19,6 @@
     "eslint": "8.23.0",
     "eslint-config-next": "12.3.0",
     "sass": "^1.54.9"
-  }
+  },
+  "proxy": "http://localhost:8000/"
 }
