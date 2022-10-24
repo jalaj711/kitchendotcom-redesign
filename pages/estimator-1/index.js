@@ -4,8 +4,10 @@ import SVG from "../../assets/estimator/estimator-1.svg";
 import SVGSmall from "../../assets/estimator/estimator-1-small.svg";
 import Button from "../../components/Button/Button";
 import BG from "../../assets/estimator/estimator-1-bg.png"
+import { useRouter } from "next/router";
 
 const Estimater1 = () => {
+  const router = useRouter()
   return (
     <div className={styles.container} style={{background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${BG.src})`}}>
       <div className={styles.head}>
@@ -16,7 +18,7 @@ const Estimater1 = () => {
       <div className={styles.card}>
         <img src={SVG.src} className={styles.imageBig} />
         <img src={SVGSmall.src} className={styles.imageSmall} />
-        <Button>Next</Button>
+        <Button onClick={() => router.push('/estimator-2-6')}>Next</Button>
       </div>
     </div>
   );

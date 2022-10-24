@@ -8,6 +8,7 @@ import StraightShapeKitchen from "../../assets/estimator/straight-kitchen.svg";
 import UShapeKitchen from "../../assets/estimator/u-shape-kitchen.svg";
 import FetchFromApi from "../../utils/fetchFromApi";
 import URLs from "../../utils/urls";
+import { useRouter } from "next/router";
 
 const KitchenTypeCard = ({ image, name, isActive, onClick }) => {
   return (
@@ -31,6 +32,7 @@ const KitchenTypeCard = ({ image, name, isActive, onClick }) => {
 
 const Estimater2 = () => {
   const [active, setActive] = useState(-1);
+  const router = useRouter()
 
   const handleClick = () => {
     var kitchenLayout;
@@ -52,13 +54,16 @@ const Estimater2 = () => {
       FetchFromApi.post(URLs.ESTIMATOR_2_6_SELECT_LAYOUT, { kitchenLayout })
         .then((res) => {
           if (res.status == 200) {
-            return res.json();
+            return res.json().then((res) => {
+              if(res.success){
+                router.push(res.next)
+              }
+            });
           }
         })
-        .then((res) => {
-          console.log(res);
-          alert("Submitted sucesfulyy");
-        });
+        
+    } else {
+      alert("Please select one option")
     }
   };
   return (
@@ -100,7 +105,7 @@ const Estimater2 = () => {
           </div>
         </div>
         <div className={styles.buttons}>
-          <Button secondary>Back</Button>
+          <Button secondary onClick={router.back}>Back</Button>
           <Button onClick={handleClick}>Next</Button>
         </div>
       </div>
