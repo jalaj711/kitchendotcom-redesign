@@ -1,11 +1,10 @@
-// .container {
-//   background-color: #fff4dc;
-// }
-
 .bgimg {
   width: 100vw;
   z-index: 1;
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  filter: brightness(0.7);
+  
 }
 
 .ourvision {
@@ -236,3 +235,5 @@
   left: 30%;
   z-index: 0;
 }
+
+  
