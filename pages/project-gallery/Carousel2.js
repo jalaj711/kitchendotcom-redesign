@@ -22,14 +22,23 @@ export default function CustomCarousel({ data }) {
         >
           {data.map((elem, index) => (
             <div key={index} className={styles.imageContainer}>
-              <img src={"/media/" + elem.image} className={styles.img} alt="" />
+              <video
+                controls
+                src={"/media/" + elem.video}
+                className={styles.img}
+                alt=""
+              />
               <div key={elem.id} className={styles.additionalContainer}>
-                <h2>{elem.project_name}</h2>
+                <div className={styles.projectName}>
+                  <img src={"/media/" + elem.image} />
+                  <h2>{elem.project_name}</h2>
+                </div>
                 <div className={styles.feedbackHolder}>
                   <p style={{ maxWidth: "60vw", color: "#3c3c3c" }}>
                     {elem.feedback}
                   </p>
                 </div>
+                <h2>{elem.user_name}</h2>
               </div>
             </div>
           ))}

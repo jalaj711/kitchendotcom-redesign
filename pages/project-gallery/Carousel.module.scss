@@ -44,3 +44,16 @@
   align-content: center;
   justify-content: center;
 }
+
+.projectName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 48px !important;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 16px;
+    }
+}
