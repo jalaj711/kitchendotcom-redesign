@@ -5,8 +5,35 @@ import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
 import Image from "../../assets/estimator/estimator-7-main.png";
 import LoginImage from "../../assets/estimator/7.png";
+import FetchFromApi from "../../utils/fetchFromApi";
+import URLs from "../../utils/urls";
+import { useRouter } from "next/router";
+
+
 
 const Estimater2 = () => {
+  const router=useRouter()
+  const handleClick = () => {
+    var name = document.getElementById("name").value;
+    var number = document.getElementById("number").value;
+    var email = document.getElementById("email").value;
+
+    if (name && number && email) {
+      FetchFromApi.post(URLs.ESTIMATOR_7, {
+        name,number,email,
+      }).then((res) => {
+        if (res.status == 200) {
+          return res.json().then((res) => {
+            if (res.success) {
+              // router.push(res.next);
+            }
+          });
+        }
+      });
+    } else {
+      alert("Please select one option");
+    }
+  };
   return (
     <div className={styles.container}>
       <div className={styles.backgroundCard}>
@@ -26,22 +53,24 @@ const Estimater2 = () => {
               <div className={styles.dataForm}>
                 <div>
                   <div>Your full name:</div>
-                  <Input type="text" />
+                  <Input type="text" id="name" />
                 </div>
                 <div>
                   <div>Your phone number:</div>
-                  <Input type="text" />
+                  <Input type="text" id="number" />
                 </div>
                 <div>
                   <div>Your email id:</div>
-                  <Input type="text" />
+                  <Input type="text" id="email" />
                 </div>
               </div>
             </div>
           </div>
           <div className={styles.buttons}>
-            <Button secondary>Back</Button>
-            <Button>Next</Button>
+            <Button secondary onClick={router.back}>
+              Back
+            </Button>
+            <Button onClick={handleClick}>Next</Button>
           </div>
         </div>
       </div>

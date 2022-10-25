@@ -88,6 +88,11 @@
     background-color: white;
     border: 1px solid theme.$primary;
     display: flex;
+
+  }
+  .radioActive{
+    background-color: theme.$primary;
+    padding: 2px ;
   }
   h4 {
     margin: 0 0;
