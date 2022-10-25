@@ -1,4 +1,4 @@
-// .test {
+
 //     background: white;
 // }
 
@@ -30,4 +30,12 @@
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.1);
     }
+}
+
+.img {
+    width: min-content !important;
+    max-width: 50vw;
+    max-height: 50vh;
+    object-fit: cover;
+    border-radius: 8px;
 }
