@@ -8,8 +8,12 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/api/:path",
-        destination: "http://localhost:8000/:path/",
+        source: "/media/:path*",
+        destination: "http://127.0.0.1:8000/media/:path*/",
+      },
+      {
+        source: "/backend/:path",
+        destination: "http://127.0.0.1:8000/:path/",
       },
     ];
   },
