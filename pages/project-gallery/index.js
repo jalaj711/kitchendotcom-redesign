@@ -4,16 +4,14 @@ import BG from "../../assets/project-gallery/bg.png";
 import ChooseUs1 from "../../assets/project-gallery/ChooseUs1.png";
 import ChooseUs2 from "../../assets/project-gallery/ChooseUs2.png";
 import ChooseUs3 from "../../assets/project-gallery/ChooseUs3.png";
-import Carousel_1_1 from "../../assets/project-gallery/carousel-1-1.png";
-import Carousel_1_2 from "../../assets/project-gallery/carousel-1-2.png";
-import Carousel_1_3 from "../../assets/project-gallery/carousel-1-3.png";
-import Carousel_3_1 from "../../assets/project-gallery/carousel-3-1.png";
 import Footer from "../../components/Footer/Footer";
 import Carousel1 from "./Carousel1";
 import Carousel2 from "./Carousel2";
 import URLs from "../../utils/urls";
 import fetchFromApi from "../../utils/fetchFromApi";
 import { useEffect, useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function ContactUs() {
   const [data, setData] = useState({ loaded: false });
@@ -26,22 +24,9 @@ export default function ContactUs() {
             loaded: true,
             designs: [],
             feedbacks: result.feedbacks,
-            videos: res.videos,
+            videos: result.videos,
           };
           result.designs.map((elem) => a.designs.push("/media/" + elem.image));
-          // result.feedbacks.map((elem) =>
-          //   a.feedbacks.push({
-          //     image: elem.image,
-          //     element: (
-          //       <div key={elem.id} className={styles.additionalContainer}>
-          //         <h2>{elem.project_name}</h2>
-          //         <p style={{ maxWidth: "60vw", color: "#3c3c3c" }}>
-          //           {elem.feedback}
-          //         </p>
-          //       </div>
-          //     ),
-          //   })
-          // );
           setData(a);
         });
       }
@@ -84,11 +69,27 @@ export default function ContactUs() {
           </div>
           <div className={styles.container}>
             <h1 className={styles.h1}>We have done some great work</h1>
-            <div className={styles.videoCarousel1}>
+            {/* <div className={styles.videoCarousel1}>
               <img alt="" src={Carousel_1_1.src} />
               <img alt="" src={Carousel_1_2.src} />
               <img alt="" src={Carousel_1_3.src} />
-            </div>
+            </div> */}
+            <Carousel
+              showThumbs={false}
+              autoPlay={true}
+              interval={3000}
+              infiniteLoop={true}
+              showStatus={false}
+            >
+              {data.videos.map((elem, index) => (
+                <video
+                  key={index}
+                  controls
+                  src={"/media/" + elem.video}
+                  style={{ width: "min-content !important", maxWidth: "70vw", maxHeight: '50vh' }}
+                />
+              ))}
+            </Carousel>
           </div>
           <div
             className={styles.container}
