@@ -3,7 +3,8 @@ const URLs = {
     ESTIMATOR_7:'/backend/estimator-7/',
     ESTIMATOR_12:'/backend/estimator-12/',
     ESTIMATOR_8_11_SELECT_DIMENSIONS: '/backend/select-dimensions/',
-    PROJECT_GALLERY: '/backend/projects/'
+    PROJECT_GALLERY: '/backend/projects/',
+    CONTACT_US: '/backend/contact-us/',
 }
 
 export default URLs;

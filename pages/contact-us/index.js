@@ -9,15 +9,40 @@ import InstagramIcon from "../../assets/Instagram.svg";
 import TwitterIcon from "../../assets/Twitter.svg";
 import WhatsAppIcon from "../../assets/WhatsApp.svg";
 import Background from "../../assets/contact-us-top.png";
-import ThreeTriangles from "../../components/ThreeTriangles";
-import DoodleDots from "../../components/DoodleDotsEllipse";
-import TwoSquares from "../../components/TwoSquares";
 import Image from "next/image";
 import NavBar from "../../components/NavBar/NavBar";
 import ContactUsImage from "../../assets/contact-us.jpeg";
 import Footer from "../../components/Footer/Footer";
+import { useState } from "react";
+import FetchFromApi from "../../utils/fetchFromApi";
+import URLs from "../../utils/urls";
 
 export default function ContactUs() {
+  const [data, setData] = useState({
+    first_name: null,
+    last_name: null,
+    email: null,
+    city: null,
+    message: null,
+  });
+
+  const handleClick = (evt) => {
+    evt.preventDefault();
+    if (data.first_name && data.email && data.city && data.message) {
+      FetchFromApi.post(URLs.CONTACT_US, data).then((res) => {
+        if (res.status == 200) {
+          return res.json().then((res) => {
+            if (res.success) {
+              alert("Your message has been submitted succesfully!");
+              // router.push(res.next);
+            }
+          });
+        }
+      });
+    } else {
+      alert("Please fill out the required fields");
+    }
+  };
   return (
     <>
       <NavBar />
@@ -38,16 +63,49 @@ export default function ContactUs() {
               <h2>Send a Message</h2>
               <form>
                 <div>
-                  <Input placeholder="Your First Name" />
+                  <Input
+                    placeholder="Your First Name*"
+                    onChange={(evt) =>
+                      setData({ ...data, first_name: evt.target.value })
+                    }
+                    value={data.first_name}
+                    required
+                  />
                   <Input
                     placeholder="Your Last Name"
                     style={{ marginLeft: "12px" }}
+                    onChange={(evt) =>
+                      setData({ ...data, last_name: evt.target.value })
+                    }
+                    value={data.last_name}
                   />
                 </div>
-                <Input placeholder="Your Email Address" />
-                <Input placeholder="Your Location" />
-                <Input placeholder="How can we help?" />
-                <Button>Submit</Button>
+                <Input
+                  placeholder="Your Email Address*"
+                  onChange={(evt) =>
+                    setData({ ...data, email: evt.target.value })
+                  }
+                  value={data.email}
+                  type="email"
+                  required
+                />
+                <Input
+                  placeholder="Your Location*"
+                  onChange={(evt) =>
+                    setData({ ...data, city: evt.target.value })
+                  }
+                  value={data.city}
+                  required
+                />
+                <Input
+                  placeholder="How can we help?*"
+                  onChange={(evt) =>
+                    setData({ ...data, message: evt.target.value })
+                  }
+                  value={data.message}
+                  required
+                />
+                <Button onClick={handleClick}>Submit</Button>
               </form>
             </div>
             <div className={styles.details}>
