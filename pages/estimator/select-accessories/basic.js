@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.module.scss";
+import styles from "./styles32_34.module.scss";
 import Image1 from "../../../assets/estimator/32.png";
 import Button from "../../../components/Button/Button";
 import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
