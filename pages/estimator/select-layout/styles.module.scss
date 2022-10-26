@@ -2,6 +2,7 @@
 
 .container {
   background-color: #ffeabc;
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -9,7 +10,6 @@
   justify-content: center;
   align-items: center;
   padding: 32px;
-  position: relative;
 }
 
 .backgroundCard {
