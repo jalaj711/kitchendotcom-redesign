@@ -131,6 +131,17 @@
   }
 }
 
+.radio.active::before {
+  display: block;
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, -25%);
+  font-size: smaller;
+  color: theme.$primary;
+}
+
 @media screen and (max-width: 768px) {
   .row {
     flex-direction: column;

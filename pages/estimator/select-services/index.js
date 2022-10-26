@@ -15,72 +15,88 @@ import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
 
 const Estimater2 = () => {
-  const [active, setActive] = React.useState(-1);
+  const [active, setActive] = React.useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
   const router = useRouter();
   const handleClick = () => {
-    var kitchenLayout;
-    switch (active) {
-      case 0:
-        kitchenLayout = "L-Shaped";
-        break;
-      case 1:
-        kitchenLayout = "Straight";
-        break;
-      case 2:
-        kitchenLayout = "U-Shaped";
-        break;
-      case 3:
-        kitchenLayout = "Parallel";
-        break;
-    }
-    if (kitchenLayout) {
-      FetchFromApi.post(URLs.ESTIMATOR_2_6_SELECT_LAYOUT, {
-        kitchenLayout,
-      }).then((res) => {
-        if (res.status == 200) {
-          return res.json().then((res) => {
-            if (res.success) {
-              router.push(res.next);
-            }
-          });
-        }
-      });
-    } else {
-      alert("Please select one option");
-    }
+    const items = [
+      "Painting",
+      "Plumbing",
+      "Electrical",
+      "Platform",
+      "Dado"
+    ];
+
+    FetchFromApi.post(URLs.ESTIMATOR_35_SELECT_SERVICES, {
+      services: items.filter((_e, index) => active[index]),
+    }).then((res) => {
+      if (res.status == 200) {
+        return res.json().then((res) => {
+          if (res.success) {
+            router.push(res.next);
+          }
+        });
+      }
+    });
   };
   return (
     <div className={styles.container}>
       <div className={styles.backgroundCard}>
         <div className={styles.head}>
-          <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
+          <h1 className={styles.est}>Kitchen Price Estimator Steps</h1>
         </div>
         <div className={styles.card}>
           <h2>Select the on-site services you would require. </h2>
           <h3>Price will not be added in the Estimates</h3>
           <div className={styles.kitchenTypeHolder}>
             <div className={styles.row}>
-              <div className={styles.choice}>
+              <div className={styles.choice} 
+                onClick={() => {
+                  var arr = active.slice();
+                  arr[0] = !arr[0];
+                  setActive(arr);
+                }}>
                 <div className={styles.topImage}>
-                  <span className={styles.radio} />
+                  <span className={`${styles.radio} ${
+                      active[0] ? styles.active : ""
+                    }`} />
                   <img src={Image1.src} className={styles.image} />
                 </div>
                 <div className={styles.choiceTitle}>
                   <h4>Painting</h4>
                 </div>
               </div>
-              <div className={styles.choice}>
+              <div className={styles.choice} 
+                onClick={() => {
+                  var arr = active.slice();
+                  arr[1] = !arr[1];
+                  setActive(arr);
+                }}>
                 <div className={styles.topImage}>
-                  <span className={styles.radio} />
+                  <span className={`${styles.radio} ${
+                      active[1] ? styles.active : ""
+                    }`} />
                   <img src={Image2.src} className={styles.image} />
                 </div>
                 <div className={styles.choiceTitle}>
                   <h4>Plumbing</h4>
                 </div>
               </div>
-              <div className={styles.choice}>
+              <div className={styles.choice} 
+                onClick={() => {
+                  var arr = active.slice();
+                  arr[2] = !arr[2];
+                  setActive(arr);
+                }}>
                 <div className={styles.topImage}>
-                  <span className={styles.radio} />
+                  <span className={`${styles.radio} ${
+                      active[2] ? styles.active : ""
+                    }`} />
                   <img src={Image3.src} className={styles.image} />
                 </div>
                 <div className={styles.choiceTitle}>
@@ -89,18 +105,32 @@ const Estimater2 = () => {
               </div>
             </div>
             <div className={styles.row}>
-              <div className={styles.choice}>
+              <div className={styles.choice} 
+                onClick={() => {
+                  var arr = active.slice();
+                  arr[3] = !arr[3];
+                  setActive(arr);
+                }}>
                 <div className={styles.topImage}>
-                  <span className={styles.radio} />
+                  <span className={`${styles.radio} ${
+                      active[3] ? styles.active : ""
+                    }`} />
                   <img src={Image4.src} className={styles.image} />
                 </div>
                 <div className={styles.choiceTitle}>
                   <h4>Platform</h4>
                 </div>
               </div>
-              <div className={styles.choice}>
+              <div className={styles.choice} 
+                onClick={() => {
+                  var arr = active.slice();
+                  arr[4] = !arr[4];
+                  setActive(arr);
+                }}>
                 <div className={styles.topImage}>
-                  <span className={styles.radio} />
+                  <span className={`${styles.radio} ${
+                      active[4] ? styles.active : ""
+                    }`} />
                   <img src={Image5.src} className={styles.image} />
                 </div>
                 <div className={styles.choiceTitle}>
