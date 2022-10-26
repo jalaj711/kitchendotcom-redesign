@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import ThreeTriangles from "../../components/ThreeTriangles";
-import Button from "../../components/Button/Button";
-import UShapeKitchen from "../../assets/estimator/u-shape-dimension.svg";
-import Input from "../../components/Input/Input";
-import FetchFromApi from "../../utils/fetchFromApi";
-import URLs from "../../utils/urls";
+import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
+import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
+import Button from "../../../components/Button/Button";
+import ParallelShapeKitchen from "../../../assets/estimator/parallel-dimension.svg";
+import Input from "../../../components/Input/Input";
+import FetchFromApi from "../../../utils/fetchFromApi";
+import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
 
 const Estimater2 = () => {
@@ -43,7 +44,7 @@ const Estimater2 = () => {
           <h2>Now refer to your choosen layout here and add the measurment</h2>
           <div className={styles.kitchenTypeHolder}>
             <div className={styles.kitchenTypeCard}>
-              <img src={UShapeKitchen.src} />
+              <img src={ParallelShapeKitchen.src} />
             </div>
             <div className={styles.dimensions}>
               <table>
@@ -109,63 +110,23 @@ const Estimater2 = () => {
                       />
                     </td>
                   </tr>
-                  <tr>
-                    <td>C</td>
-                    <td>
-                      <Input
-                        type="number"
-                        value={currentDimensions.c_feet}
-                        onChange={(evt) =>
-                          setCurrentDimensions({
-                            ...currentDimensions,
-                            c_feet: Number(evt.target.value),
-                          })
-                        }
-                      />
-                    </td>
-                    <td>
-                      <Input
-                        type="number"
-                        value={currentDimensions.c_inches}
-                        onChange={(evt) =>
-                          setCurrentDimensions({
-                            ...currentDimensions,
-                            c_inches: Number(evt.target.value),
-                          })
-                        }
-                      />
-                    </td>
-                  </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div style={{ width: "100%" }}>
-            <Button style={{ float: "left" }} secondary onClick={router.back}>
-              Previous
-            </Button>
-            <Button style={{ float: "right" }} onClick={handleClick}>Next</Button>
+          
           </div>
+          <div style={{ width: "100%" }} className={styles.buttons}>
+          <Button style={{ float: "left" }} secondary onClick={router.back}>
+            Previous
+          </Button>
+          <Button style={{ float: "right" }} onClick={handleClick}>
+            Next
+          </Button>
         </div>
       </div>
-
-      <div className={styles.decoratives}>
-        <ThreeTriangles
-          style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
-        />
-        <ThreeTriangles
-          style={{
-            top: "30%",
-            right: "min(-50px, -25vw)",
-            width: "max(150px, 50vw)",
-          }}
-        />
-        <span style={{ top: "0%", left: "0%" }} className={styles.circle} />
-        <span style={{ top: "40%", left: "15%" }} className={styles.circle} />
-        <span style={{ top: "0%", left: "65%" }} className={styles.circle} />
-        <span style={{ top: "20%", left: "100%" }} className={styles.circle} />
-        <span style={{ top: "40%", left: "100%" }} className={styles.circle} />
-      </div>
+      <TwoSquaresTopRight className={styles.square1} />
+      <TwoSquaresBottomLeft className={styles.square2} />
     </div>
   );
 };

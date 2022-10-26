@@ -18,7 +18,7 @@ const Estimater1 = () => {
       <div className={styles.card}>
         <img src={SVG.src} className={styles.imageBig} />
         <img src={SVGSmall.src} className={styles.imageSmall} />
-        <Button onClick={() => router.push('/estimator-2-6')}>Next</Button>
+        <Button onClick={() => router.push('/estimator/select-layout')}>Next</Button>
       </div>
     </div>
   );

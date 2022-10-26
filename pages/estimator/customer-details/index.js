@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import ThreeTriangles from "../../components/ThreeTriangles";
-import Button from "../../components/Button/Button";
-import Input from "../../components/Input/Input";
-import Image from "../../assets/estimator/estimator-7-main.png";
-import LoginImage from "../../assets/estimator/7.png";
-import FetchFromApi from "../../utils/fetchFromApi";
-import URLs from "../../utils/urls";
+import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
+import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
+import Button from "../../../components/Button/Button";
+import Input from "../../../components/Input/Input";
+import Image from "../../../assets/estimator/estimator-7-main.png";
+import LoginImage from "../../../assets/estimator/7.png";
+import FetchFromApi from "../../../utils/fetchFromApi";
+import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
 
 
@@ -66,32 +67,18 @@ const Estimater2 = () => {
               </div>
             </div>
           </div>
-          <div className={styles.buttons}>
-            <Button secondary onClick={router.back}>
-              Back
-            </Button>
-            <Button onClick={handleClick}>Next</Button>
-          </div>
+          <div style={{ width: "100%" }} className={styles.buttons}>
+          <Button style={{ float: "left" }} secondary onClick={router.back}>
+            Previous
+          </Button>
+          <Button style={{ float: "right" }} onClick={handleClick}>
+            Next
+          </Button>
+        </div>
         </div>
       </div>
-
-      <div className={styles.decoratives}>
-        <ThreeTriangles
-          style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
-        />
-        <ThreeTriangles
-          style={{
-            top: "30%",
-            right: "min(-50px, -25vw)",
-            width: "max(150px, 50vw)",
-          }}
-        />
-        <span style={{ top: "0%", left: "0%" }} className={styles.circle} />
-        <span style={{ top: "40%", left: "15%" }} className={styles.circle} />
-        <span style={{ top: "0%", left: "65%" }} className={styles.circle} />
-        <span style={{ top: "20%", left: "100%" }} className={styles.circle} />
-        <span style={{ top: "40%", left: "100%" }} className={styles.circle} />
-      </div>
+      <TwoSquaresTopRight className={styles.square1} />
+      <TwoSquaresBottomLeft className={styles.square2} />
     </div>
   );
 };
