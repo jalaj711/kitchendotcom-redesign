@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import Image1 from "../../../assets/estimator/laminate-3.png";
 import Button from "../../../components/Button/Button";
 import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
 import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
@@ -8,7 +7,7 @@ import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
-const Estimator29 = () => {
+const Estimater26 = () => {
   const [active, setActive] = React.useState("");
   const router = useRouter();
   const handleClick = () => {
@@ -33,37 +32,14 @@ const Estimator29 = () => {
     <div className={styles.container}>
       <div className={styles.backgroundCard}>
         <div className={styles.head}>
-          <h1 className={styles.est}> Kitchen Price Estimate Steps</h1>
+          <h1 className={styles.est}>Kitchen Price Estimator Steps</h1>
         </div>
         <div className={styles.card}>
-          <div className={styles.choices}>
-            <div
-              className={styles.selectionUnit}
-              onClick={() => setActive("Anti-scratch Acrylic")}
-            >
-              <div>
-                <span
-                  className={`${styles.radio} ${
-                    active === "Anti-scratch Acrylic" ? styles.active : ""
-                  }`}
-                ></span>
-              </div>
-              <div className={styles.primarySelection}>
-                <h2>Anti-scratch Acrylic</h2>
-                <span>
-                  Is an elegant, reflective, glossy finish that is scratch
-                  resistant.
-                </span>
-                <img src={Image1.src} />
-                <p>
-                  <b>Pro Tip: </b>Dreaming of a chic kitchen with a touch of
-                  luxury? Go for this one.
-                </p>
-              </div>
-            </div>
-            <div>
+          <h2>Pick a finish for base &amp; wall cabinets </h2>
+          <div className={styles.kitchenTypeHolder}>
+            <div className={styles.row}>
               <div
-                className={styles.selectionUnit}
+                className={styles.choice}
                 onClick={() => setActive("Laminate")}
               >
                 <div>
@@ -71,18 +47,18 @@ const Estimator29 = () => {
                     className={`${styles.radio} ${
                       active === "Laminate" ? styles.active : ""
                     }`}
-                  ></span>
+                  />
                 </div>
-                <div>
-                  <h3>Laminate</h3>
-                  <p>
+                <div className={styles.choiceContent}>
+                  <h4>Laminate</h4>
+                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
                     Is a smooth, durable finish which gives a clean and rich
                     look.
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
-                className={styles.selectionUnit}
+                className={styles.choice}
                 onClick={() => setActive("PVC Laminate")}
               >
                 <div>
@@ -90,18 +66,38 @@ const Estimator29 = () => {
                     className={`${styles.radio} ${
                       active === "PVC Laminate" ? styles.active : ""
                     }`}
-                  ></span>
+                  />
                 </div>
+                <div className={styles.choiceContent}>
+                  <h4>PVC laminate</h4>
+                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                    Has a lustrous surface that enhances your modular kitchen.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.row} style={{ marginBottom: 12 }}>
+              <div
+                className={styles.choice}
+                onClick={() => setActive("Anti-scratch Acrylic")}
+              >
                 <div>
-                  <h3>PVC laminate</h3>
-                  <p>
-                    Is waterproof and withstands prolonged exposure to water and
-                    moisture.
-                  </p>
+                  <span
+                    className={`${styles.radio} ${
+                      active === "Anti-scratch Acrylic" ? styles.active : ""
+                    }`}
+                  />
+                </div>
+                <div className={styles.choiceContent}>
+                  <h4>Anti-scratch Acrylic</h4>
+                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                    Is an elegant, reflective, glossy finish that is scratch
+                    resistant.
+                  </div>
                 </div>
               </div>
               <div
-                className={styles.selectionUnit}
+                className={styles.choice}
                 onClick={() => setActive("Glossy PU")}
               >
                 <div>
@@ -109,27 +105,30 @@ const Estimator29 = () => {
                     className={`${styles.radio} ${
                       active === "Glossy PU" ? styles.active : ""
                     }`}
-                  ></span>
+                  />
                 </div>
-                <div>
-                  <h3>Glossy PU</h3>
-                  <p>
+                <div className={styles.choiceContent}>
+                  <h4>Glossy PU</h4>
+                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
                     Comes with a slick look, high durability, and a polished
                     finish.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div style={{ width: "100%" }} className={styles.buttons}>
-            <Button style={{ float: "left" }} secondary onClick={router.back}>
-              Previous
-            </Button>
-            <Button style={{ float: "right" }} onClick={handleClick}>
-              Next
-            </Button>
-          </div>
+        </div>
+        <div style={{ width: "100%" }} className={styles.buttons}>
+          <Button
+            style={{ float: "left" }}
+            secondary
+            onClick={router.back}
+          >
+            Previous
+          </Button>
+          <Button style={{ float: "right" }} onClick={handleClick}>
+            Next
+          </Button>
         </div>
       </div>
       <TwoSquaresTopRight className={styles.square1} />
@@ -138,4 +137,4 @@ const Estimator29 = () => {
   );
 };
 
-export default Estimator29;
+export default Estimater26;

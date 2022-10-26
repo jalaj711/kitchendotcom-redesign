@@ -9,27 +9,13 @@ import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
 const Estimator27 = () => {
-  const [active, setActive] = React.useState(-1);
+  const [active, setActive] = React.useState("");
   const router = useRouter();
   const handleClick = () => {
-    var kitchenLayout;
-    switch (active) {
-      case 0:
-        kitchenLayout = "L-Shaped";
-        break;
-      case 1:
-        kitchenLayout = "Straight";
-        break;
-      case 2:
-        kitchenLayout = "U-Shaped";
-        break;
-      case 3:
-        kitchenLayout = "Parallel";
-        break;
-    }
-    if (kitchenLayout) {
-      FetchFromApi.post(URLs.ESTIMATOR_2_6_SELECT_LAYOUT, {
-        kitchenLayout,
+    var accessories = active;
+    if (accessories) {
+      FetchFromApi.post(URLs.ESTIMATOR_26_30_SELECT_FINISH, {
+        accessories,
       }).then((res) => {
         if (res.status == 200) {
           return res.json().then((res) => {
@@ -51,9 +37,16 @@ const Estimator27 = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.choices}>
-            <div className={styles.selectionUnit}>
+            <div
+              className={styles.selectionUnit}
+              onClick={() => setActive("Laminate")}
+            >
               <div>
-                <span className={styles.radio}></span>
+                <span
+                  className={`${styles.radio} ${
+                    active === "Laminate" ? styles.active : ""
+                  }`}
+                ></span>
               </div>
               <div className={styles.primarySelection}>
                 <h2>Laminate</h2>
@@ -68,9 +61,16 @@ const Estimator27 = () => {
               </div>
             </div>
             <div>
-              <div className={styles.selectionUnit}>
+              <div
+                className={styles.selectionUnit}
+                onClick={() => setActive("PVC Laminate")}
+              >
                 <div>
-                  <span className={styles.radio}></span>
+                  <span
+                    className={`${styles.radio} ${
+                      active === "PVC Laminate" ? styles.active : ""
+                    }`}
+                  ></span>
                 </div>
                 <div>
                   <h3>PVC laminate</h3>
@@ -80,9 +80,16 @@ const Estimator27 = () => {
                   </p>
                 </div>
               </div>
-              <div className={styles.selectionUnit}>
+              <div
+                className={styles.selectionUnit}
+                onClick={() => setActive("Anti-scratch Acrylic")}
+              >
                 <div>
-                  <span className={styles.radio}></span>
+                  <span
+                    className={`${styles.radio} ${
+                      active === "Anti-scratch Acrylic" ? styles.active : ""
+                    }`}
+                  ></span>
                 </div>
                 <div>
                   <h3>Anti-scratch Acrylic</h3>
@@ -92,9 +99,16 @@ const Estimator27 = () => {
                   </p>
                 </div>
               </div>
-              <div className={styles.selectionUnit}>
+              <div
+                className={styles.selectionUnit}
+                onClick={() => setActive("Glossy PU")}
+              >
                 <div>
-                  <span className={styles.radio}></span>
+                  <span
+                    className={`${styles.radio} ${
+                      active === "Glossy PU" ? styles.active : ""
+                    }`}
+                  ></span>
                 </div>
                 <div>
                   <h3>Glossy PU</h3>

@@ -80,6 +80,18 @@
   background-color: white;
   border: 1px solid theme.$primary;
   display: block;
+  position: relative;
+}
+
+.radio.active::before {
+  display: block;
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, -25%);
+  font-size: smaller;
+  color: theme.$primary;
 }
 .buttons {
   margin-top: 24px;
