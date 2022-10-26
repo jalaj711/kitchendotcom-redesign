@@ -10,27 +10,13 @@ import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
 
 const Estimator27 = () => {
-  const [active, setActive] = React.useState(-1);
+  const [active, setActive] = React.useState("");
   const router = useRouter();
   const handleClick = () => {
-    var kitchenLayout;
-    switch (active) {
-      case 0:
-        kitchenLayout = "L-Shaped";
-        break;
-      case 1:
-        kitchenLayout = "Straight";
-        break;
-      case 2:
-        kitchenLayout = "U-Shaped";
-        break;
-      case 3:
-        kitchenLayout = "Parallel";
-        break;
-    }
-    if (kitchenLayout) {
-      FetchFromApi.post(URLs.ESTIMATOR_2_6_SELECT_LAYOUT, {
-        kitchenLayout,
+    var accessories = active;
+    if (accessories) {
+      FetchFromApi.post(URLs.ESTIMATOR_31_34_SELECT_ACCESSORIES, {
+        accessories,
       }).then((res) => {
         if (res.status == 200) {
           return res.json().then((res) => {
@@ -52,9 +38,11 @@ const Estimator27 = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.choices}>
-            <div className={styles.selectionUnit}>
+            <div className={styles.selectionUnit} onClick={() => setActive("Basic")}>
               <div>
-                <span className={styles.radio}></span>
+                <span className={`${styles.radio} ${
+                      active === "Basic" ? styles.active : ""
+                    }`}></span>
               </div>
               <div className={styles.primarySelection}>
                 <h2>Basic</h2>
@@ -70,9 +58,11 @@ const Estimator27 = () => {
               </div>
             </div>
             <div className={styles.rightChoices}>
-              <div className={styles.selectionUnit}>
+              <div className={styles.selectionUnit} onClick={() => setActive("Intermediate")}>
                 <div>
-                  <span className={styles.radio}></span>
+                  <span className={`${styles.radio} ${
+                      active === "Intermediate" ? styles.active : ""
+                    }`}></span>
                 </div>
                 <div>
                   <h3>Intermediate</h3>
@@ -82,9 +72,11 @@ const Estimator27 = () => {
                   </p>
                 </div>
               </div>
-              <div className={styles.selectionUnit}>
+              <div className={styles.selectionUnit} onClick={() => setActive("Premium")}>
                 <div>
-                  <span className={styles.radio}></span>
+                  <span className={`${styles.radio} ${
+                      active === "Premium" ? styles.active : ""
+                    }`}></span>
                 </div>
                 <div>
                   <h3>Premium</h3>

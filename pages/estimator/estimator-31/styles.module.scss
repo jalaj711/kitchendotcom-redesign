@@ -101,6 +101,7 @@
     background-color: white;
     border: 1px solid theme.$primary;
     display: block;
+    position: relative;
   }
   h4 {
     margin: 0 0;
@@ -108,6 +109,17 @@
   .choiceContent {
     margin-left: 12px;
   }
+}
+
+.radio.active::before {
+  display: block;
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 0);
+  font-size: smaller;
+  color: theme.$primary;
 }
 
 @media screen and (max-width: 768px) {

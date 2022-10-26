@@ -14,7 +14,7 @@ import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
-const Estimater2 = () => {
+const Estimator36 = () => {
   const [active, setActive] = React.useState([
     false,
     false,
@@ -198,4 +198,4 @@ const Estimater2 = () => {
   );
 };
 
-export default Estimater2;
+export default Estimator36;
