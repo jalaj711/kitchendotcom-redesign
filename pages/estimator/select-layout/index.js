@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import ThreeTriangles from "../../components/ThreeTriangles";
-import Button from "../../components/Button/Button";
-import LShapeKitchen from "../../assets/estimator/l-shape-kitchen.svg";
-import ParallelShapeKitchen from "../../assets/estimator/parallel-shape-kitchen.svg";
-import StraightShapeKitchen from "../../assets/estimator/straight-kitchen.svg";
-import UShapeKitchen from "../../assets/estimator/u-shape-kitchen.svg";
-import FetchFromApi from "../../utils/fetchFromApi";
-import URLs from "../../utils/urls";
+import Button from "../../../components/Button/Button";
+import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
+import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
+import LShapeKitchen from "../../../assets/estimator/l-shape-kitchen.svg";
+import ParallelShapeKitchen from "../../../assets/estimator/parallel-shape-kitchen.svg";
+import StraightShapeKitchen from "../../../assets/estimator/straight-kitchen.svg";
+import UShapeKitchen from "../../../assets/estimator/u-shape-kitchen.svg";
+import FetchFromApi from "../../../utils/fetchFromApi";
+import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
 
 const KitchenTypeCard = ({ image, name, isActive, onClick }) => {
@@ -15,7 +16,11 @@ const KitchenTypeCard = ({ image, name, isActive, onClick }) => {
     <div
       className={styles.kitchenTypeCard}
       onClick={onClick}
-      style={isActive ? { boxShadow: "0px 8px 12px #f9c24e" } : {}}
+      style={
+        isActive
+          ? { boxShadow: "0px 8px 12px #f9c24e", border: "3px solid #f9c24e" }
+          : {}
+      }
     >
       <div className={styles.imageHolder}>
         <span
@@ -32,7 +37,7 @@ const KitchenTypeCard = ({ image, name, isActive, onClick }) => {
 
 const Estimater2 = () => {
   const [active, setActive] = useState(-1);
-  const router = useRouter()
+  const router = useRouter();
 
   const handleClick = () => {
     var kitchenLayout;
@@ -51,26 +56,26 @@ const Estimater2 = () => {
         break;
     }
     if (kitchenLayout) {
-      FetchFromApi.post(URLs.ESTIMATOR_2_6_SELECT_LAYOUT, { kitchenLayout })
-        .then((res) => {
-          if (res.status == 200) {
-            return res.json().then((res) => {
-              if(res.success){
-                router.push(res.next)
-              }
-            });
-          }
-        })
-        
+      FetchFromApi.post(URLs.ESTIMATOR_2_6_SELECT_LAYOUT, {
+        kitchenLayout,
+      }).then((res) => {
+        if (res.status == 200) {
+          return res.json().then((res) => {
+            if (res.success) {
+              router.push(res.next);
+            }
+          });
+        }
+      });
     } else {
-      alert("Please select one option")
+      alert("Please select one option");
     }
   };
   return (
     <div className={styles.container}>
       <div className={styles.backgroundCard}>
         <div className={styles.head}>
-          <h1 className={styles.est}>Kitchen Price Estimator Step 2</h1>
+          <h1 className={styles.est}>Kitchen Price Estimator Steps</h1>
         </div>
         <div className={styles.card}>
           <div className={styles.kitchenTypeHolder}>
@@ -104,28 +109,21 @@ const Estimater2 = () => {
             </div>
           </div>
         </div>
-        <div className={styles.buttons}>
+        {/* <div >
           <Button secondary onClick={router.back}>Back</Button>
           <Button onClick={handleClick}>Next</Button>
+        </div> */}
+        <div style={{ width: "100%" }} className={styles.buttons}>
+          <Button style={{ float: "left" }} secondary onClick={router.back}>
+            Previous
+          </Button>
+          <Button style={{ float: "right" }} onClick={handleClick}>
+            Next
+          </Button>
         </div>
       </div>
-      <div className={styles.decoratives}>
-        <ThreeTriangles
-          style={{ top: "70%", left: "-25vw", width: "max(150px, 50vw)" }}
-        />
-        <ThreeTriangles
-          style={{
-            top: "30%",
-            right: "min(-50px, -25vw)",
-            width: "max(150px, 50vw)",
-          }}
-        />
-        <span style={{ top: "0%", left: "0%" }} className={styles.circle} />
-        <span style={{ top: "40%", left: "15%" }} className={styles.circle} />
-        <span style={{ top: "0%", left: "65%" }} className={styles.circle} />
-        <span style={{ top: "20%", left: "100%" }} className={styles.circle} />
-        <span style={{ top: "40%", left: "100%" }} className={styles.circle} />
-      </div>
+      <TwoSquaresTopRight className={styles.square1} />
+      <TwoSquaresBottomLeft className={styles.square2} />
     </div>
   );
 };
