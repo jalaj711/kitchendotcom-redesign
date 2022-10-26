@@ -80,6 +80,16 @@ const Estimator27 = () => {
                     look.
                   </p>
                 </div>
+                <div>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/laminate")
+                    }
+                  >
+                    &#9432;
+                  </span>
+                </div>
               </div>
               <div
                 className={styles.selectionUnit}
@@ -99,6 +109,16 @@ const Estimator27 = () => {
                     moisture.
                   </p>
                 </div>
+                <div>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/pvc-laminate")
+                    }
+                  >
+                    &#9432;
+                  </span>
+                </div>
               </div>
               <div
                 className={styles.selectionUnit}
@@ -117,6 +137,16 @@ const Estimator27 = () => {
                     Is an elegant, reflective, glossy finish that is scratch
                     resistant.
                   </p>
+                </div>
+                <div>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/anti-scratch-acrylic")
+                    }
+                  >
+                    &#9432;
+                  </span>
                 </div>
               </div>
             </div>

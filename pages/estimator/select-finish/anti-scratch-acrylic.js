@@ -80,6 +80,16 @@ const Estimator29 = () => {
                     look.
                   </p>
                 </div>
+                <div>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/laminate")
+                    }
+                  >
+                    &#9432;
+                  </span>
+                </div>
               </div>
               <div
                 className={styles.selectionUnit}
@@ -99,6 +109,16 @@ const Estimator29 = () => {
                     moisture.
                   </p>
                 </div>
+                <div>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/pvc-laminate")
+                    }
+                  >
+                    &#9432;
+                  </span>
+                </div>
               </div>
               <div
                 className={styles.selectionUnit}
@@ -117,6 +137,16 @@ const Estimator29 = () => {
                     Comes with a slick look, high durability, and a polished
                     finish.
                   </p>
+                </div>
+                <div>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/glossy-pu")
+                    }
+                  >
+                    &#9432;
+                  </span>
                 </div>
               </div>
             </div>

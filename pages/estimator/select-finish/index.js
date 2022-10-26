@@ -56,6 +56,11 @@ const Estimater26 = () => {
                     look.
                   </div>
                 </div>
+                <div>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-finish/laminate')}>
+                    &#9432;
+                  </span>
+                </div>
               </div>
               <div
                 className={styles.choice}
@@ -73,6 +78,11 @@ const Estimater26 = () => {
                   <div style={{ marginTop: 8, color: "#4a4a4a" }}>
                     Has a lustrous surface that enhances your modular kitchen.
                   </div>
+                </div>
+                <div>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-finish/pvc-laminate')}>
+                    &#9432;
+                  </span>
                 </div>
               </div>
             </div>
@@ -94,6 +104,10 @@ const Estimater26 = () => {
                     Is an elegant, reflective, glossy finish that is scratch
                     resistant.
                   </div>
+                </div><div>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-finish/anti-scratch-acrylic')}>
+                    &#9432;
+                  </span>
                 </div>
               </div>
               <div
@@ -114,16 +128,17 @@ const Estimater26 = () => {
                     finish.
                   </div>
                 </div>
+                <div>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-finish/glossy-pu')}>
+                    &#9432;
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div style={{ width: "100%" }} className={styles.buttons}>
-          <Button
-            style={{ float: "left" }}
-            secondary
-            onClick={router.back}
-          >
+          <Button style={{ float: "left" }} secondary onClick={router.back}>
             Previous
           </Button>
           <Button style={{ float: "right" }} onClick={handleClick}>
