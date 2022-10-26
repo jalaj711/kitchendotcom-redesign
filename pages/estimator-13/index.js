@@ -30,7 +30,7 @@ const Estimator13 = () => {
         break;
     }
     if (kitchenLayout) {
-      FetchFromApi.post(URLs.ESTIMATOR_12, {
+      FetchFromApi.post(URLs.ESTIMATOR_13, {
         kitchenLayout,
       }).then((res) => {
         if (res.status == 200) {
