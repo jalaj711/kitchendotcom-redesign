@@ -37,13 +37,16 @@ const Estimator27 = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.choices}>
-            <div className={styles.selectionUnit}onClick={() => setActive("Intermediate")}
-              >
-                <div>
-                  <span
-                    className={`${styles.radio} ${
-                      active === "Intermediate" ? styles.active : ""
-                    }`}></span>
+            <div
+              className={styles.selectionUnit}
+              onClick={() => setActive("Intermediate")}
+            >
+              <div>
+                <span
+                  className={`${styles.radio} ${
+                    active === "Intermediate" ? styles.active : ""
+                  }`}
+                ></span>
               </div>
               <div className={styles.primarySelection}>
                 <h2>Intermediate</h2>
@@ -77,12 +80,27 @@ const Estimator27 = () => {
                     ideal kitchen started.
                   </p>
                 </div>
-              </div>
-              <div className={styles.selectionUnit}onClick={() => setActive("Premium")}>
                 <div>
-                  <span className={`${styles.radio} ${
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-accessories/basic")
+                    }
+                  >
+                    &#9432;
+                  </span>
+                </div>
+              </div>
+              <div
+                className={styles.selectionUnit}
+                onClick={() => setActive("Premium")}
+              >
+                <div>
+                  <span
+                    className={`${styles.radio} ${
                       active === "Premium" ? styles.active : ""
-                    }`}></span>
+                    }`}
+                  ></span>
                 </div>
                 <div>
                   <h3>Premium</h3>
@@ -90,6 +108,16 @@ const Estimator27 = () => {
                     A showstopper kitchen with an exclusive range you were
                     always looking for.
                   </p>
+                </div>
+                <div>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-accessories/premium")
+                    }
+                  >
+                    &#9432;
+                  </span>
                 </div>
               </div>
             </div>

@@ -53,6 +53,11 @@ const Estimater2 = () => {
                     ideal kitchen started.
                   </div>
                 </div>
+                <div>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-accessories/basic')}>
+                    &#9432;
+                  </span>
+                </div>
               </div>
               <div className={styles.choice} onClick={() => setActive("Intermediate")}>
                 <div>
@@ -67,6 +72,12 @@ const Estimater2 = () => {
                     A fine range of fittings, cabinets, and more for a smooth
                     culinary experience.
                   </div>
+                </div>
+
+                <div>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-accessories/intermediate')}>
+                    &#9432;
+                  </span>
                 </div>
               </div>
             </div>
@@ -83,6 +94,11 @@ const Estimater2 = () => {
                     A showstopper kitchen with an exclusive range you were
                     always looking for.
                   </div>
+                </div>
+                <div>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-accessories/premium')}>
+                    &#9432;
+                  </span>
                 </div>
               </div>
             </div>
