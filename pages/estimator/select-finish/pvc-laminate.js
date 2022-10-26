@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./styles.module.scss";
-import Image1 from "../../../assets/estimator/laminate-1.png";
+import styles from "./styles_2730.module.scss";
+import Image1 from "../../../assets/estimator/laminate-2.png";
 import Button from "../../../components/Button/Button";
 import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
 import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
@@ -8,6 +8,7 @@ import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
+
 const Estimator27 = () => {
   const [active, setActive] = React.useState("");
   const router = useRouter();
@@ -33,50 +34,50 @@ const Estimator27 = () => {
     <div className={styles.container}>
       <div className={styles.backgroundCard}>
         <div className={styles.head}>
-          <h1 className={styles.est}> Kitchen Price Estimator Steps</h1>
+          <h1 className={styles.est}> Kitchen Price Estimate Steps</h1>
         </div>
         <div className={styles.card}>
           <div className={styles.choices}>
             <div
               className={styles.selectionUnit}
-              onClick={() => setActive("Laminate")}
+              onClick={() => setActive("PVC Laminate")}
             >
               <div>
                 <span
                   className={`${styles.radio} ${
-                    active === "Laminate" ? styles.active : ""
+                    active === "PVC Laminate" ? styles.active : ""
                   }`}
                 ></span>
               </div>
               <div className={styles.primarySelection}>
-                <h2>Laminate</h2>
+                <h2>PVC Laminate</h2>
                 <span>
-                  Is a smooth, durable finish which gives a clean and rich look.
+                  Has a lustrous surface that enhances your modular kitchen.
                 </span>
                 <img src={Image1.src} />
                 <p>
-                  <b>Pro Tip: </b>Going for that muted, smooth look for your
-                  kitchen? This one&apos;s for you.
+                  <b>Pro Tip: </b>Has a lustrous surface that enhances your
+                  modular kitchen.
                 </p>
               </div>
             </div>
             <div>
               <div
                 className={styles.selectionUnit}
-                onClick={() => setActive("PVC Laminate")}
+                onClick={() => setActive("Laminate")}
               >
                 <div>
                   <span
                     className={`${styles.radio} ${
-                      active === "PVC Laminate" ? styles.active : ""
+                      active === "Laminate" ? styles.active : ""
                     }`}
                   ></span>
                 </div>
                 <div>
-                  <h3>PVC laminate</h3>
+                  <h3>Laminate</h3>
                   <p>
-                    Is waterproof and withstands prolonged exposure to water and
-                    moisture.
+                    Is a smooth, durable finish which gives a clean and rich
+                    look.
                   </p>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./styles.module.scss";
-import Image1 from "../../../assets/estimator/laminate-4.png";
+import styles from "./styles_2730.module.scss";
+import Image1 from "../../../assets/estimator/laminate-3.png";
 import Button from "../../../components/Button/Button";
 import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
 import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
@@ -8,7 +8,7 @@ import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
-const Estimator27 = () => {
+const Estimator29 = () => {
   const [active, setActive] = React.useState("");
   const router = useRouter();
   const handleClick = () => {
@@ -39,25 +39,25 @@ const Estimator27 = () => {
           <div className={styles.choices}>
             <div
               className={styles.selectionUnit}
-              onClick={() => setActive("Glossy PU")}
+              onClick={() => setActive("Anti-scratch Acrylic")}
             >
               <div>
                 <span
                   className={`${styles.radio} ${
-                    active === "Glossy PU" ? styles.active : ""
+                    active === "Anti-scratch Acrylic" ? styles.active : ""
                   }`}
                 ></span>
               </div>
               <div className={styles.primarySelection}>
-                <h2>Glossy PU</h2>
+                <h2>Anti-scratch Acrylic</h2>
                 <span>
-                  Comes with a slick look, high durability, and a polished
-                  finish.
+                  Is an elegant, reflective, glossy finish that is scratch
+                  resistant.
                 </span>
                 <img src={Image1.src} />
                 <p>
-                  <b>Pro Tip: </b>Consider this if you want mirror-like cabinets
-                  that are easy to clean!
+                  <b>Pro Tip: </b>Dreaming of a chic kitchen with a touch of
+                  luxury? Go for this one.
                 </p>
               </div>
             </div>
@@ -102,20 +102,20 @@ const Estimator27 = () => {
               </div>
               <div
                 className={styles.selectionUnit}
-                onClick={() => setActive("Anti-scratch Acrylic")}
+                onClick={() => setActive("Glossy PU")}
               >
                 <div>
                   <span
                     className={`${styles.radio} ${
-                      active === "Anti-scratch Acrylic" ? styles.active : ""
+                      active === "Glossy PU" ? styles.active : ""
                     }`}
                   ></span>
                 </div>
                 <div>
-                  <h3>Anti-scratch Acrylic</h3>
+                  <h3>Glossy PU</h3>
                   <p>
-                    Is an elegant, reflective, glossy finish that is scratch
-                    resistant.
+                    Comes with a slick look, high durability, and a polished
+                    finish.
                   </p>
                 </div>
               </div>
@@ -138,4 +138,4 @@ const Estimator27 = () => {
   );
 };
 
-export default Estimator27;
+export default Estimator29;
