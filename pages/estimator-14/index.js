@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import styles from "./styles.module.scss";
 import DoodleDots from "../../components/DoodleDotsEllipse";
 import Image1 from "../../assets/Rectangle991.png";
