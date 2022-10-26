@@ -1,0 +1,59 @@
+//     background: white;
+// }
+
+// .carousel {
+//     display: flex;
+//     flex-direction: column;
+
+// }
+
+// .leftImage {
+
+// }
+
+.controls > * {
+  margin-right: 8px;
+}
+
+.controls {
+  button {
+    background: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.img {
+  width: min-content !important;
+  max-width: 50vw;
+  max-height: 50vh;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feedbackHolder {
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.projectName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 48px !important;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 16px;
+    }
+}

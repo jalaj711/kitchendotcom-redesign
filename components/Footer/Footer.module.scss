@@ -4,7 +4,30 @@
   width: 100vw;
   background-color: theme.$primary;
   color: theme.$text_on_primary;
-  padding: 16px 24px 8px 24px;
+  background: linear-gradient(98.74deg, #f4b32a 9.75%, #ffe6b2 90.54%);
+  clip-path: polygon(
+    0 16px,
+    7% 12px,
+    14% 10px,
+    21% 10px,
+    28% 12px,
+    34% 16px,
+    40% 24px,
+    46% 34px,
+    50% 40px,
+    54% 46px,
+    60% 50px,
+    66% 52px,
+    70% 52px,
+    77% 50px,
+    83% 46px,
+    89% 42px,
+    95% 38px,
+    100% 34px,
+    100% 100%,
+    0% 100%
+  );
+  padding: 48px 24px 8px 24px;
   display: grid;
   position: relative;
   grid-template-areas:
@@ -14,7 +37,7 @@
     "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings footer-locations"
     "footer-copyrights footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
   @media (max-width: 768px) {
-    padding: 8px 16px 4px 16px;
+    padding: 48px 16px 4px 16px;
     grid-template-areas:
       "footer-main footer-main"
       "footer-main footer-main"
@@ -31,6 +54,29 @@
       "footer-locations footer-locations"
       "footer-copyrights footer-copyrights"
       "footer-copyrights footer-copyrights";
+  }
+  @media (max-width: 500px) {
+    padding: 48px 16px 4px 16px;
+    grid-template-areas:
+      "footer-main"
+      "footer-main"
+      "footer-get-in-touch"
+      "footer-get-in-touch"
+      "footer-get-in-touch"
+      "footer-about-us"
+      "footer-about-us"
+      "footer-about-us"
+      "footer-about-us"
+      "footer-offerings"
+      "footer-offerings"
+      "footer-offerings"
+      "footer-offerings"
+      "footer-locations"
+      "footer-locations"
+      "footer-locations"
+      "footer-locations"
+      "footer-copyrights"
+      "footer-copyrights";
   }
 }
 
@@ -123,38 +169,10 @@
   }
 }
 
-.square1,
-.square2,
-.square3,
-.lampImage {
-  position: absolute;
-}
-
-.square1 {
-  width: max(20vw, 153px);
-  left: min(-10vw, -76px);
-  bottom: 5vh;
-  opacity: 0.8;
-}
-
-.square2 {
-  width: max(20vw, 153px);
-  right: min(-5vw, -38px);
-  bottom: 12px;
-  opacity: 0.8;
-}
-
-.square3 {
-  height: max(20vw, 153px);
-  bottom: min(-10vw, -76px);
-  left: 20%;
-  opacity: 0.5;
-  clip: rect(0px, 30vw, 10vw, 0px);
-}
-
 .lampImage {
   top: 0;
   right: 12px;
+  position: absolute;
   @media (max-width: 768px) {
     display: none;
   }
