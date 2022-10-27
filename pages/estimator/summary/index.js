@@ -5,8 +5,10 @@ import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
+import { useRouter } from "next/router";
 
 const Estimater2 = () => {
+  const router = useRouter()
   const [active, setActive] = useState(false);
   const [data, setData] = useState(null);
   useEffect(() => {
@@ -60,7 +62,7 @@ const Estimater2 = () => {
             >
               {active ? <>Hide Summary &#x25B2;</> : <>Show Summary &#x25BC;</>}
             </div>
-            <div className={styles.downloadfiles}>Download Summary PDF</div>
+            <div className={styles.downloadfiles} onClick={() => router.push('/backend/summary-download')}>Download Summary PDF</div>
           </>
         ) : (
           <h4>Loading...</h4>
