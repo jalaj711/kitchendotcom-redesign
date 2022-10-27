@@ -1,12 +1,50 @@
-import React from "react";
+import React , {useState}from "react";
 import styles from "./styles.module.scss";
 import DoodleDots from "../../components/DoodleDotsEllipse";
 import Image1 from "../../assets/Rectangle3492.png";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
-import TwoSquares from "../../components/TwoSquares";
+import TwoSquares from "../../components/TwoSquaresTopRight";
+import FetchFromApi from "../../utils/fetchFromApi";
+import URLs from "../../utils/urls";
+import { useRouter } from "next/router";
 
 const Estimator13 = () => {
+   const [active, setActive] = useState(-1);
+   const router = useRouter();
+
+   const handleClick = () => {
+     var kitchenLayout;
+     switch (active) {
+       case 0:
+         kitchenLayout = "HDHMR";
+         break;
+       case 1:
+        kitchenLayout = "MR Plywood";
+         break;
+       case 2:
+         kitchenLayout = "BWR Plywood";
+         break;
+       case 3:
+         kitchenLayout = "BWP Plywood";
+         break;
+     }
+     if (kitchenLayout) {
+       FetchFromApi.post(URLs.ESTIMATOR_18, {
+         kitchenLayout,
+       }).then((res) => {
+         if (res.status == 200) {
+           return res.json().then((res) => {
+             if (res.success) {
+               router.push(res.next);
+             }
+           });
+         }
+       });
+     } else {
+       alert("Please select one option");
+     }
+   };
   return (
     <div className={styles.container}>
       <div className={styles.head}>
@@ -15,7 +53,14 @@ const Estimator13 = () => {
 
       <div className={styles.card}>
         <div className={styles.section}>
-          <div className={styles.b0}>
+          <div className={styles.b0} onClick={() => setActive(0)}>
+            <div>
+              <span
+                className={`${styles.radio} ${
+                  active === 0 ? styles.radioActive : ""
+                }`}
+              />
+            </div>
             <h2>HDHMR</h2>
             <p className={styles.ran}>
               Has high strength and density, and a solid screw-holding capacity.
@@ -30,9 +75,13 @@ const Estimator13 = () => {
           </div>
 
           <div className={styles.sec2}>
-            <div className={styles.b1}>
+            <div className={styles.b1} onClick={() => setActive(1)}>
               <div>
-                <span className={styles.radio}></span>
+                <span
+                  className={`${styles.radio} ${
+                    active === 1 ? styles.radioActive : ""
+                  }`}
+                ></span>
               </div>
               <div>
                 <h3>MR Plywood</h3>
@@ -42,9 +91,13 @@ const Estimator13 = () => {
                 </p>
               </div>
             </div>
-            <div className={styles.b1}>
+            <div className={styles.b1} onClick={() => setActive(2)}>
               <div>
-                <span className={styles.radio}></span>
+                <span
+                  className={`${styles.radio} ${
+                    active === 2 ? styles.radioActive : ""
+                  }`}
+                ></span>
               </div>
               <div>
                 <h3>BWR Plywood</h3>
@@ -54,9 +107,13 @@ const Estimator13 = () => {
                 </p>
               </div>
             </div>
-            <div className={styles.b1}>
+            <div className={styles.b1} onClick={() => setActive(3)}>
               <div>
-                <span className={styles.radio}></span>
+                <span
+                  className={`${styles.radio} ${
+                    active === 3 ? styles.radioActive : ""
+                  }`}
+                ></span>
               </div>
               <div>
                 <h3>BWP Plywood</h3>
@@ -69,8 +126,10 @@ const Estimator13 = () => {
           </div>
         </div>
         <div className={styles.buttons1}>
-          <Button secondary>Back</Button>
-          <Button>Next</Button>
+          <Button secondary onClick={router.back}>
+            Back
+          </Button>
+          <Button onClick={handleClick}>Next</Button>
         </div>
       </div>
       <div className={styles.decoratives}>

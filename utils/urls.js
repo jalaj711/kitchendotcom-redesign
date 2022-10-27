@@ -1,4 +1,13 @@
 const URLs = {
+  ESTIMATOR_13: "/backend/estimator-13",
+  ESTIMATOR_14: "/backend/estimator-14",
+  ESTIMATOR_15: "/backend/estimator-15",
+  ESTIMATOR_16: "/backend/estimator-16",
+  ESTIMATOR_17: "/backend/estimator-17",
+  ESTIMATOR_18: "/backend/estimator-18",
+  ESTIMATOR_19: "/backend/estimator-19",
+  ESTIMATOR_20: "/backend/estimator-20",
+  ESTIMATOR_21: "/backend/estimator-21",
   ESTIMATOR_2_6_SELECT_LAYOUT: "/backend/select-layout/",
   ESTIMATOR_7: "/backend/customer-details/",
   ESTIMATOR_8_11_SELECT_DIMENSIONS: "/backend/select-dimensions/",

@@ -3,9 +3,47 @@ import styles from "./styles.module.scss";
 import ThreeTriangles from "../../components/ThreeTriangles";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
-import TwoSquares from "../../components/TwoSquares";
+import TwoSquares from "../../components/TwoSquaresTopRight";
+import FetchFromApi from "../../utils/fetchFromApi";
+import URLs from "../../utils/urls";
+import { useRouter } from "next/router";
 
 const Estimater2 = () => {
+   const [active, setActive] = useState(-1);
+   const router = useRouter();
+
+   const handleClick = () => {
+     var kitchenLayout;
+     switch (active) {
+       case 0:
+         kitchenLayout = "HDHMR";
+         break;
+       case 1:
+         kitchenLayout = "MR Plywood";
+         break;
+       case 2:
+         kitchenLayout = "BWR Plywood";
+         break;
+       case 3:
+         kitchenLayout = "BWP Plywood";
+         break;
+     }
+     if (kitchenLayout) {
+       FetchFromApi.post(URLs.ESTIMATOR_17, {
+         kitchenLayout,
+       }).then((res) => {
+         if (res.status == 200) {
+           return res.json().then((res) => {
+             if (res.success) {
+               router.push(res.next);
+             }
+           });
+         }
+       });
+     } else {
+       alert("Please select one option");
+     }
+   };
   return (
     <div className={styles.container}>
       <div className={styles.head}>
@@ -15,9 +53,13 @@ const Estimater2 = () => {
         <h2>Now refer to your choosen layout here and add the measurment </h2>
         <div className={styles.kitchenTypeHolder}>
           <div className={styles.row}>
-            <div className={styles.choice}>
+            <div className={styles.choice} onClick={() => setActive(0)}>
               <div>
-                <span className={styles.radio} />
+                <span
+                  className={`${styles.radio} ${
+                    active === 0 ? styles.radioActive : ""
+                  }`}
+                />
               </div>
               <div className={styles.choiceContent}>
                 <h4>HDHMR</h4>
@@ -27,9 +69,13 @@ const Estimater2 = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.choice}>
+            <div className={styles.choice} onClick={() => setActive(1)}>
               <div>
-                <span className={styles.radio} />
+                <span
+                  className={`${styles.radio} ${
+                    active === 1 ? styles.radioActive : ""
+                  }`}
+                />
               </div>
               <div className={styles.choiceContent}>
                 <h4>MR Plywood</h4>
@@ -41,9 +87,13 @@ const Estimater2 = () => {
             </div>
           </div>
           <div className={styles.row} style={{ marginBottom: 12 }}>
-            <div className={styles.choice}>
+            <div className={styles.choice} onClick={() => setActive(2)}>
               <div>
-                <span className={styles.radio} />
+                <span
+                  className={`${styles.radio} ${
+                    active === 2 ? styles.radioActive : ""
+                  }`}
+                />
               </div>
               <div className={styles.choiceContent}>
                 <h4>BWR Plywood</h4>
@@ -53,9 +103,13 @@ const Estimater2 = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.choice}>
+            <div className={styles.choice} onClick={() => setActive(3)}>
               <div>
-                <span className={styles.radio} />
+                <span
+                  className={`${styles.radio} ${
+                    active === 3 ? styles.radioActive : ""
+                  }`}
+                />
               </div>
               <div className={styles.choiceContent}>
                 <h4>BWP Plywood</h4>
@@ -69,8 +123,10 @@ const Estimater2 = () => {
         </div>
       </div>
       <div className={styles.buttons}>
-        <Button secondary>Back</Button>
-        <Button>Next</Button>
+        <Button secondary onClick={router.back}>
+          Back
+        </Button>
+        <Button onClick={handleClick}>Next</Button>
       </div>
 
       <div className={styles.decoratives}>
