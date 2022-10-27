@@ -1,0 +1,78 @@
+@use "../../../styles/theme";
+
+.top {
+  position: relative;
+  .title {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10%);
+    color: white;
+    font-family: "Poppins";
+    text-align: center;
+    font-size: larger;
+  }
+  h1,
+  p {
+    margin: 0;
+  }
+}
+.bg {
+  width: 100vw;
+  margin: 0;
+  margin-left: -2px;
+  filter: brightness(0.7);
+  max-height: 50vh;
+  min-height: 40vh;
+  object-fit: cover;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 64px 0;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  background-color: theme.$bg2;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  * {
+    z-index: 1;
+  }
+}
+
+.square2{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.startsFrom {
+  border: 3px dashed #F4B32A;
+  background: #FADB8E;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.summaryHolder {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 600; 
+  table {
+    min-width: 60vw;
+  }
+}
+
+.showSummary {
+  font-weight: 600;
+  cursor: pointer;
+}
