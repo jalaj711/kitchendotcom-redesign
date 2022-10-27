@@ -1,7 +1,8 @@
-@use "../../styles/theme";
+@use "../../../styles/theme";
 
 .container {
-  background-color: theme.$bg2;
+  background-color: #ffeabc;
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -10,11 +11,22 @@
   align-items: center;
   padding: 32px;
 }
+.backgroundCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  position: relative;
+  z-index: 100;
+}
 
 .card {
   border-bottom-right-radius: 48px;
   border-top-left-radius: 48px;
-  background-color: theme.$offwhite;
+  background-color: #fff5e1;
   width: min-content;
   padding: 16px;
   display: flex;
@@ -24,8 +36,9 @@
   z-index: 2;
   position: relative;
   min-width: 70vw;
-  svg, button {
-    margin-top: 8px
+  svg,
+  button {
+    margin-top: 8px;
   }
 }
 
@@ -34,27 +47,27 @@
   position: relative;
   z-index: 2;
 }
-
-.decoratives * {
+.square1 {
+  top: 0;
+  right: 0;
   position: absolute;
   z-index: 0;
 }
 
-.circle {
-  width: max(150px, 40vw);
-  height: max(150px, 40vw);
-  background-color: theme.$primary;
-  border-radius: 50%;
-  filter: blur(400px);
+.square2 {
+  left: 0;
+  bottom: 0;
+  position: absolute;
   z-index: 0;
 }
 
 .buttons {
-  z-index: 2;
-  position: relative;
   margin-top: 24px;
+  z-index: 2;
   button {
-    margin: 0 24px;
+    margin-left: 12px;
+    margin-right: 24px;
+    min-width: 150px;
   }
 }
 
@@ -79,7 +92,7 @@
   margin-left: 16px;
   min-height: 125px;
   min-width: 300px;
-  max-width: 375px;
+  max-width: 350px;
   display: flex;
   .radio {
     height: 24px;
@@ -87,12 +100,8 @@
     border-radius: 12px;
     background-color: white;
     border: 1px solid theme.$primary;
-    display: flex;
-
-  }
-  .radioActive{
-    background-color: theme.$primary;
-    padding: 2px ;
+    display: block;
+    position: relative;
   }
   h4 {
     margin: 0 0;
@@ -101,20 +110,32 @@
     margin-left: 12px;
   }
 }
-@media screen and (max-width: 1000px) {
-  .kitchenTypeHolder {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
+.radio.active::before {
+  display: block;
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 0);
+  font-size: smaller;
+  color: theme.$primary;
 }
-@media screen and (max-width: 570px) {
+
+@media screen and (max-width: 768px) {
   .row {
     flex-direction: column;
-    max-width: 80vw;
     margin-top: 0;
+    .choice {
+      margin-top: 12px;
+    }
   }
-  .choice{
-    margin-top: 8px ;
+}
+
+@media screen and (max-width: 500px) {
+  .buttons button {
+    margin-left: 8px !important;
+    margin-right: 12px !important;
+    min-width: 50px !important;
   }
 }

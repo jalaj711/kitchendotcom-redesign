@@ -1,0 +1,140 @@
+@use "../../../styles/theme";
+
+.head {
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+.container {
+  background-color: #ffeabc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.backgroundCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  position: relative;
+  z-index: 100;
+}
+
+.card {
+  width: min-content;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  svg,
+  button {
+    margin-top: 8px;
+  }
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+}
+
+.selectionUnit {
+  background: #fff5e1;
+  border: 2px solid theme.$primary;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  padding: 16px 24px;
+  display: flex;
+  min-width: 350px;
+  margin: 12px 16px;
+  h2,
+  h3,
+  p {
+    margin: 4px 8px;
+  }
+
+  span,
+  img {
+    margin: 16px 0;
+  }
+}
+.primarySelection {
+  flex-direction: column;
+  display: flex;
+  min-width: 200px;
+}
+.radio {
+  height: 18px;
+  width: 18px;
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid theme.$primary;
+  display: block;
+  position: relative;
+}
+
+.radio.active::before {
+  display: block;
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, -25%);
+  font-size: smaller;
+  color: theme.$primary;
+}
+.buttons {
+  margin-top: 24px;
+  z-index: 2;
+  button {
+    margin-left: 12px;
+    margin-right: 24px;
+    min-width: 150px;
+  }
+}
+
+.square1 {
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.square2 {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .choices {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .head {
+    margin-left: 24px;  
+  }
+  .selectionUnit {
+    img {
+      width: 70vw;
+    }
+  }
+  .buttons button {
+    margin-left: 8px !important;
+    margin-right: 12px !important;
+    min-width: 50px !important;
+  }
+}
