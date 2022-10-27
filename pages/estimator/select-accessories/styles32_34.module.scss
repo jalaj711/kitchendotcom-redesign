@@ -1,4 +1,4 @@
-@use "../../styles/theme";
+@use "../../../styles/theme";
 
 .head {
   align-self: flex-start;
@@ -6,7 +6,8 @@
   z-index: 2;
 }
 .container {
-  background-color: #fff;
+  background-color: #ffeabc;
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -16,7 +17,6 @@
   padding: 32px;
 }
 .backgroundCard {
-  background-color: #ffeabc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +28,9 @@
   z-index: 100;
 }
 
+.img {
+  padding-left: 25px;
+}
 .card {
   width: min-content;
   padding: 16px;
@@ -48,6 +51,13 @@
   justify-content: center;
 }
 
+.rightChoices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .selectionUnit {
   background: #fff5e1;
   border: 2px solid theme.$primary;
@@ -55,42 +65,69 @@
   border-bottom-right-radius: 36px;
   padding: 16px 24px;
   display: flex;
-  flex-direction: column;
-  min-width: 200px;
+  min-width: 300px;
   margin: 12px 16px;
+  cursor: pointer;
   h2,
   h3,
   p {
     margin: 4px 8px;
   }
-  
 
-  span, img {
+  span,
+  img {
     margin: 16px 0;
   }
 }
-
-.buttons {
-  button {
-    margin: 0 24px;
-  }
+.primarySelection {
+  flex-direction: column;
+  display: flex;
+  min-width: 200px;
+}
+.radio {
+  height: 18px;
+  width: 18px;
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid theme.$primary;
+  display: block;
+  position: relative;
 }
 
-.decoratives * {
+.radio.active::before {
+  display: block;
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, -25%);
+  font-size: smaller;
+  color: theme.$primary;
+}
+
+.buttons {
+  margin-top: 24px;
+  z-index: 2;
+  button {
+    margin-left: 12px;
+    margin-right: 24px;
+    min-width: 150px;
+  }
+}
+.square1 {
+  top: 0;
+  right: 0;
   position: absolute;
   z-index: 0;
 }
 
-.circle {
-  width: max(150px, 40vw);
-  height: max(150px, 40vw);
-  background-color: theme.$primary;
-  border-radius: 50%;
-  filter: blur(400px);
+.square2 {
+  left: 0;
+  bottom: 0;
+  position: absolute;
   z-index: 0;
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .choices {
     flex-direction: column;
   }
@@ -98,8 +135,14 @@
 
 @media screen and (max-width: 600px) {
   .selectionUnit {
+    min-width: none;
     img {
       width: 70vw;
     }
+  }
+  .buttons button {
+    margin-left: 8px !important;
+    margin-right: 12px !important;
+    min-width: 50px !important;
   }
 }

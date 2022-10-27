@@ -1,7 +1,8 @@
-@use "../../styles/theme";
+@use "../../../styles/theme";
 
 .container {
-  background-color: theme.$bg2;
+  background-color: #ffeabc;
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -11,7 +12,6 @@
   padding: 32px;
 }
 .backgroundCard {
-  background-color: #ffeabc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +26,7 @@
 .card {
   border-bottom-right-radius: 48px;
   border-top-left-radius: 48px;
-  background-color: theme.$offwhite;
+  background-color: #fff5e1;
   width: min-content;
   padding: 16px;
   display: flex;
@@ -36,8 +36,9 @@
   z-index: 2;
   position: relative;
   min-width: 70vw;
-  svg, button {
-    margin-top: 8px
+  svg,
+  button {
+    margin-top: 8px;
   }
 }
 
@@ -46,27 +47,27 @@
   position: relative;
   z-index: 2;
 }
-
-.decoratives * {
+.square1 {
+  top: 0;
+  right: 0;
   position: absolute;
   z-index: 0;
 }
 
-.circle {
-  width: max(150px, 40vw);
-  height: max(150px, 40vw);
-  background-color: theme.$primary;
-  border-radius: 50%;
-  filter: blur(400px);
+.square2 {
+  left: 0;
+  bottom: 0;
+  position: absolute;
   z-index: 0;
 }
 
 .buttons {
-  z-index: 2;
-  position: relative;
   margin-top: 24px;
+  z-index: 2;
   button {
-    margin: 0 24px;
+    margin-left: 12px;
+    margin-right: 24px;
+    min-width: 150px;
   }
 }
 
@@ -100,6 +101,7 @@
     background-color: white;
     border: 1px solid theme.$primary;
     display: block;
+    position: relative;
   }
   h4 {
     margin: 0 0;
@@ -109,12 +111,31 @@
   }
 }
 
+.radio.active::before {
+  display: block;
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 0);
+  font-size: smaller;
+  color: theme.$primary;
+}
+
 @media screen and (max-width: 768px) {
   .row {
     flex-direction: column;
-    margin-top: 0;;
+    margin-top: 0;
     .choice {
       margin-top: 12px;
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttons button {
+    margin-left: 8px !important;
+    margin-right: 12px !important;
+    min-width: 50px !important;
   }
 }
