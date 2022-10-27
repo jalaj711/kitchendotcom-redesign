@@ -4,8 +4,10 @@ import Navbar from "../components/NavBar/NavBar";
 import Image1 from "../assets/Flipboard.png";
 import Image2 from "../assets/Picture.png";
 import Image3 from "../assets/Cost.png";
+import { useRouter } from "next/router";
 
 const Landing = () => {
+  const router = useRouter()
   return (
     <>
       <div className={styles.container}>
@@ -16,7 +18,7 @@ const Landing = () => {
             We Help You To Make Best Design Modular Kitchen
           </h1>
           <div className={styles.button}>
-            <button className={styles.enq}>ENQUIRY NOW</button>
+            <button className={styles.enq} onClick={()=> router.push('/contact-us')}>ENQUIRY NOW</button>
             <buttom className={styles.more}>Learn More</buttom>
           </div>
         </div>
@@ -26,7 +28,7 @@ const Landing = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.vectors}>
-            <div className={styles.v1}>
+            <div className={styles.v1} onClick={()=>router.push('/project-gallery')}>
               <img className={styles.img1} src={Image1.src} />
               <h2>PROJECT GALLERY</h2>
               <p className={styles.p1}>
@@ -36,7 +38,7 @@ const Landing = () => {
                 projects.
               </p>
             </div>
-            <div className={styles.v1}>
+            <div className={styles.v1} onClick={()=>router.push('/design-gallery')}>
               <img className={styles.img2} src={Image2.src} />
               <h2 className={styles.head2}>DESIGN GALLERY</h2>
               <p className={styles.p2}>
@@ -48,7 +50,7 @@ const Landing = () => {
                 a reality!
               </p>
             </div>
-            <div className={styles.v1}>
+            <div className={styles.v1} onClick={()=>router.push('/estimator')}>
               <img className={styles.img3} src={Image3.src} />
               <h2 className={styles.head3}>Kitchen Price Estimator</h2>
               <p className={styles.p3}>
