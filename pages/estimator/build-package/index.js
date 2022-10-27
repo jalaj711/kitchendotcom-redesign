@@ -13,7 +13,7 @@ const Estimator12 = () => {
   const handleClick = () => {
     var selection = active;
     if (selection) {
-      FetchFromApi.post(URLs.ESTIMATOR_12_16_SELECT_PACKAGE, {
+      FetchFromApi.post(URLs.ESTIMATOR_18_21_BUILD_PACKAGE, {
         package: selection,
       }).then((res) => {
         if (res.status == 200) {
@@ -38,84 +38,84 @@ const Estimator12 = () => {
           <h2>Now choose the accessories for your kitchen.</h2>
           <div className={styles.kitchenTypeHolder}>
             <div className={styles.row}>
-              <div className={styles.choice} onClick={() => setActive("Essentials")}
+              <div className={styles.choice} onClick={() => setActive("HDHMR")}
               >
                 <div>
                   <span
                     className={`${styles.radio} ${
-                      active === "Essentials" ? styles.active : ""
+                      active === "HDHMR" ? styles.active : ""
                     }`} />
                 </div>
                 <div className={styles.choiceContent}>
-                  <h4>Essentials</h4>
+                  <h4>HDHMR</h4>
                   <div style={{ marginTop: 8, color: "#4a4a4a" }}>
-                  A range that has the basic unit and accessories necessary for
-                  a comfortable modular kitchen.
+                  Has high strength and density, and a solid screw-holding
+                  capacity.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-package/essentials')}>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/build-package/hdhmr')}>
                     &#9432;
                   </span>
                 </div>
               </div>
-              <div className={styles.choice} onClick={() => setActive("Premium")}>
+              <div className={styles.choice} onClick={() => setActive("MR Plywood")}>
                 <div>
                   <span className={`${styles.radio} ${
-                      active === "Premium" ? styles.active : ""
+                      active === "MR Plywood" ? styles.active : ""
                     }`} />
                 </div>
                 <div className={styles.choiceContent}>
                   
-                  <h4>Premium</h4>
+                  <h4>MR Plywood</h4>
                   <div style={{ marginTop: 8, color: "#4a4a4a" }}>
-                  An exquisite kitchen with sleek fixtures, hardware, cabinets &
-                  fittings for an elegant and smooth cooking experiences.
+                  Is moisture and termite resistant and does not wear off
+                  easily.
                   </div>
                 </div>
 
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-package/premium')}>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/build-package/mr-plywood')}>
                     &#9432;
                   </span>
                 </div>
               </div>
             </div>
             <div className={styles.row} style={{ marginBottom: 12 }}>
-              <div className={styles.choice} onClick={() => setActive("Luxe")}>
+              <div className={styles.choice} onClick={() => setActive("BWR Plywwod")}>
                 <div>
                   <span className={`${styles.radio} ${
-                      active === "Luxe" ? styles.active : ""
+                      active === "BWR Plywwod" ? styles.active : ""
                     }`} />
                 </div>
                 <div className={styles.choiceContent}>
-                  <h4>Luxe</h4>
+                  <h4>BWR Plywwod</h4>
                   <div style={{ marginTop: 8, color: "#4a4a4a" }}>
-                  Luxurious dream kitchen that&apos;s a fine blend of aesthetics and
-                  high functionality complete with swanky units and accessories.
+                  Is water resistant and works well in areas prone to water
+                  exposure.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-package/luxe')}>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/build-package/bwr-plywood')}>
                     &#9432;
                   </span>
                 </div>
               </div>
-              <div className={styles.choice} onClick={() => setActive("Build your own")}>
+              <div className={styles.choice} onClick={() => setActive("BWP Plywood")}>
                 <div>
                   <span className={`${styles.radio} ${
-                      active === "Build your own" ? styles.active : ""
+                      active === "BWP Plywood" ? styles.active : ""
                     }`} />
                 </div>
                 <div className={styles.choiceContent}>
-                  <h4>Build your own</h4>
+                  <h4>BWP Plywood</h4>
                   <div style={{ marginTop: 8, color: "#4a4a4a" }}>
-                  Select materials, finishes, accessories and more of your
-                  choices from a range of collections for your kitchen.
+                  Is waterproof and withstands prolonged exposure to water and
+                  moisture.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-package/build-your-own')}>
+                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/build-package/bwp-plywood')}>
                     &#9432;
                   </span>
                 </div>
