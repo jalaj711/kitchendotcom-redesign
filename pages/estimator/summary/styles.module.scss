@@ -76,3 +76,15 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.downloadfiles {
+  background: #F4B32A;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+.downloadfiles:hover {
+  filter: brightness(0.95);
+}

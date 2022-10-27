@@ -10,6 +10,7 @@ const URLs = {
   ESTIMATOR_31_34_SELECT_ACCESSORIES: "/backend/select-accessories/",
   ESTIMATOR_35_SELECT_SERVICES: "/backend/select-services/",
   ESTIMATOR_36_SELECT_APPLIANCES: "/backend/select-appliances/",
+  ESTIMATOR_SUMMARY: "/backend/summary/",
   PROJECT_GALLERY: "/backend/projects/",
   CONTACT_US: "/backend/contact-us/",
 };
