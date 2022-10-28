@@ -1,0 +1,128 @@
+@use "../../../styles/theme";
+
+.container {
+  background-color: #ffeabc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.backgroundCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  position: relative;
+  z-index: 100;
+}
+
+.card {
+  border-bottom-right-radius: 48px;
+  border-top-left-radius: 48px;
+  background-color: #fff5e1;
+  width: min-content;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  min-width: 70vw;
+  svg,
+  button {
+    margin-top: 8px;
+  }
+}
+
+.head {
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+.square1 {
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.square2 {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.buttons {
+  margin-top: 24px;
+  z-index: 2;
+  button {
+    margin-left: 12px;
+    margin-right: 24px;
+    min-width: 150px;
+  }
+}
+
+.dimensions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  button {
+    background: rgba(theme.$primary, .26);
+    border: 2px solid theme.$primary;
+    border-radius: 20px;
+    height: 40px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    min-width: 100px;
+    margin: 0 16px;;
+    font-family: 'Spectral';
+    display: flex;
+  }
+}
+
+.radio {
+  height: 20px;
+  width: 20px;
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid theme.$primary;
+  display: block;
+  position: relative;
+  margin-right: 12px;
+}
+
+.radio.active::before {
+  display: block;
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 0);
+  font-size: smaller;
+  color: theme.$primary;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    img {
+      width: 70vw;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttons button {
+    margin-left: 8px !important;
+    margin-right: 12px !important;
+    min-width: 50px !important;
+  }
+}

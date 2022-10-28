@@ -109,14 +109,14 @@ export default function ContactUs() {
               designing eliminates any kind of mismatch between the
               clients&apos; expectations and the final outcome.
             </p>
-            <Carousel1 images={data.designs} />
+            <Carousel1 images={data.designs || []} />
           </div>
           <div className={styles.container}>
             <h1 className={styles.h1}>
               We&apos;ll let our clients do the talking
             </h1>
             <p>Here&apos;s what they have to say</p>
-            <Carousel2 data={data.feedbacks} />
+            <Carousel2 data={data.feedbacks || []} />
           </div>
         </>
       )}

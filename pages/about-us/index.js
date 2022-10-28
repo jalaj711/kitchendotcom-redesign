@@ -4,9 +4,6 @@ import Image1 from "../../assets/Rectangle252.jpg";
 import styles from "./styles.module.scss";
 import Image2 from "../../assets/Rectangle226.jpg";
 import Background from "../../assets/Rectangle288.png";
-import ThreeTriangles from "../../components/ThreeTriangles";
-import DoodleDots from "../../components/DoodleDotsEllipse";
-import TwoSquares from "../../components/TwoSquares";
 import Footer from "../../components/Footer/Footer";
 import Navbar from '../../components/NavBar/NavBar'
 

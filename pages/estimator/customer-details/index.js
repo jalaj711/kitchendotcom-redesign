@@ -14,14 +14,14 @@ const Estimater2 = () => {
   const router = useRouter();
   const handleClick = () => {
     var name = document.getElementById("name").value;
-    var number = document.getElementById("number").value;
+    var phone = document.getElementById("number").value;
     var email = document.getElementById("email").value;
     var location = document.getElementById("location").value;
 
-    if (name && number && email) {
+    if (name && phone && email) {
       FetchFromApi.post(URLs.ESTIMATOR_7, {
         name,
-        number,
+        phone,
         email,
         location
       }).then((res) => {
@@ -69,7 +69,7 @@ const Estimater2 = () => {
                 <div>
                   <div>Your location:</div>
 
-                  <select name="locations" id="location">
+                  <select name="locations" id="location" className={styles.selectLocation}>
                     {[
                       "Varanasi",
                       "Chandauli",

@@ -17,7 +17,7 @@ export default function NavBar() {
         <button className={styles.hamburger} onClick={() => setOpen(true)}>
           <img src={Hamburger.src} width="36" alt="" />
         </button>
-        <a href="#">Kitchendotcom</a>
+        <Link href="/">Kitchendotcom</Link>
         <span style={{ flexGrow: 1 }} />
         <div className={styles.hideOnSmall}>
           <Link href="/">Home</Link>
