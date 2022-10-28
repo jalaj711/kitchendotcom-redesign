@@ -23,7 +23,7 @@ export default function NavBar() {
           <Link href="/">Home</Link>
           <Link href="/about-us">About Us</Link>
           <Link href="/blog">Blog</Link>
-          <Link href="/cities">Cities</Link>
+          {/* <Link href="/cities">Cities</Link> */}
           <Link href="/contact-us">Contact us</Link>
         </div>
       </nav>
@@ -43,9 +43,9 @@ export default function NavBar() {
           <Link href="/blog" onClick={() => setOpen(false)}>
             Blog
           </Link>
-          <Link href="/cities" onClick={() => setOpen(false)}>
+          {/* <Link href="/cities" onClick={() => setOpen(false)}>
             Cities
-          </Link>
+          </Link> */}
           <Link href="/contact-us" onClick={() => setOpen(false)}>
             Contact us
           </Link>
