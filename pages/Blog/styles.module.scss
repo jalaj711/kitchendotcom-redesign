@@ -1,0 +1,54 @@
+.main {
+  width: 100vw;
+  z-index: 1;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  filter: brightness(0.7);
+}
+.section1 {
+  display: flex;
+  margin: 25px;
+}
+.image2 {
+  width: 40vw;
+  height: 22vw;
+}
+.v1 {
+  padding-left: 30px;
+  margin: 25px;
+}
+.b1 {
+  margin: 12px;
+  align-items: center;
+  // text-align: center;
+  justify-content: center;
+}
+.row1,
+.row2,
+.section2,
+.n1 {
+  display: flex;
+}
+.box {
+  background: rgba(188, 188, 188, 0.25);
+  margin: 20px;
+}
+.news {
+  margin-right: 40px;
+  width: 150vw;
+}
+.para {
+  margin: 30px;
+  margin: 28px;
+  margin-top: -23px;
+}
+.image7 {
+  height: 14vw;
+  width: 24vw;
+}
+.n1 {
+  background: #ffffff;
+  border: 2px solid #f4b32a;
+  border-radius: 5.58882px;
+  margin: 30px;
+}
