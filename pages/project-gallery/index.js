@@ -74,22 +74,73 @@ export default function ContactUs() {
               <img alt="" src={Carousel_1_2.src} />
               <img alt="" src={Carousel_1_3.src} />
             </div> */}
-            <Carousel
-              showThumbs={false}
-              autoPlay={true}
-              interval={3000}
-              infiniteLoop={true}
-              showStatus={false}
-            >
-              {data.videos.map((elem, index) => (
-                <video
-                  key={index}
-                  controls
-                  src={"/media/" + elem.video}
-                  style={{ width: "min-content !important", maxWidth: "70vw", maxHeight: '50vh' }}
-                />
-              ))}
-            </Carousel>
+            <div className={styles.carouselHolder}>
+              <Carousel
+                showThumbs={false}
+                autoPlay={true}
+                interval={3000}
+                infiniteLoop={true}
+                showStatus={false}
+                showArrows={false}
+                showIndicators={false}
+              >
+                {data.videos.map((elem, index) => (
+                  <video
+                    key={index}
+                    controls
+                    src={"/media/" + data.videos[index > 0 ? index-1 : data.videos.length -1].video}
+                    style={{
+                      width: "min-content !important",
+                      maxWidth: "70vw",
+                      maxHeight: "50vh",
+                    }}
+                  />
+                ))}
+              </Carousel>
+              <Carousel
+                showThumbs={false}
+                autoPlay={true}
+                interval={3000}
+                infiniteLoop={true}
+                showStatus={false}
+                showArrows={false}
+              >
+                {data.videos.map((elem, index) => (
+                  <video
+                    key={index}
+                    controls
+                    src={"/media/" + elem.video}
+                    style={{
+                      width: "min-content !important",
+                      maxWidth: "70vw",
+                      maxHeight: "50vh",
+                    }}
+                  />
+                ))}
+              </Carousel>
+              <Carousel
+                showThumbs={false}
+                autoPlay={true}
+                interval={3000}
+                infiniteLoop={true}
+                showStatus={false}
+                showArrows={false}
+                showIndicators={false}
+              >
+                {data.videos.map((elem, index) => (
+                  <video
+                    key={index}
+                    controls
+                    src={"/media/" + data.videos[index == data.videos.length - 1 ? 0 : index + 1].video}
+                    style={{
+                      width: "min-content !important",
+                      maxWidth: "70vw",
+                      maxHeight: "50vh",
+                    }}
+                  />
+                ))}
+              </Carousel>
+            </div>
           </div>
           <div
             className={styles.container}

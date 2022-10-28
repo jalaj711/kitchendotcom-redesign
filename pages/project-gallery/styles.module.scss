@@ -67,6 +67,28 @@
   }
 }
 
+.carouselHolder {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselHolder > div:nth-child(1), .carouselHolder > div:nth-child(3) {
+  transform: scale(0.7);
+  width: 25vw;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.carouselHolder > div:nth-child(2) {
+  width: 30vw;
+  @media (max-width: 768px) {
+    width: auto;
+  }
+}
+
 .videoCarousel1 {
   display: flex;
   align-items: center;
