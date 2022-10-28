@@ -19,7 +19,7 @@ const Landing = () => {
           </h1>
           <div className={styles.button}>
             <button className={styles.enq} onClick={()=> router.push('/contact-us')}>ENQUIRY NOW</button>
-            <buttom className={styles.more}>Learn More</buttom>
+            <buttom className={styles.more} onClick={()=> router.push('/project-gallery')}>Learn More</buttom>
           </div>
         </div>
         <div style={{ flexGrow: 1 }}></div>

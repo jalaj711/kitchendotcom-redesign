@@ -15,36 +15,45 @@
 }
 .v1 {
   margin-top: 10px;
+  max-width: 30vw;
+  img {
+    width: 64px;
+  }
   h2 {
     margin: 4px 8px;
+    font-size: 20px;
   }
   p {
     margin: 10px 20px;
+    font-size: small;
   }
 }
 
 .head {
-  padding-left: 10%;
-
- 
-
+  margin-top: 36px;
+  padding-left: 24px;
   color: #fff;
 }
+
+.head1 {
+  font-size: 36px;
+  max-width: 50vw;
+}
+
 .wec {
-  
   text-align: center;
   align-items: center;
   // right: 40%;
 
   font-weight: 600;
-  font-size: 42px;
+  font-size: 24px;
   line-height: 65px;
   color: #fff;
 }
 .enq {
   background: #f4b32a;
   border-radius: 42px;
-  padding: 8px 12px;
+  padding: 16px 24px;
   border: none;
   font-family: "Signika";
   font-style: normal;
@@ -84,9 +93,23 @@
   flex-direction: column;
 }
 @media screen and (max-width: 1000px) {
-  .vectors{
+  .vectors {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .div2 {
+    margin-top: 64px;
+  }
+  .head1{
+    max-width: none !important;
+    margin-top: 128px;
+  }
+  .head {
+
+    padding-left: 0px;
+  }
+  .v1 {
+    max-width: none !important;
   }
 }
