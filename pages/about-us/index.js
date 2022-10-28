@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 import Image2 from "../../assets/Rectangle226.jpg";
 import Background from "../../assets/Rectangle288.png";
 import Footer from "../../components/Footer/Footer";
-import Navbar from '../../components/NavBar/NavBar'
+import Navbar from "../../components/NavBar/NavBar";
 
 const About = () => {
   return (
@@ -32,13 +32,11 @@ const About = () => {
             </p>
           </div>
           <div className={styles.ddots}>
-            {/* <DoodleDots className={styles.dots} /> */}
             <img className={styles.img1} src={Image.src}></img>
           </div>
         </div>
         <div className={styles.ourvision}>
           <div className={styles.ddots1}>
-            {/* <DoodleDots className={styles.dots1} /> */}
             <img className={styles.img1} src={Image1.src}></img>
           </div>
           <div className={styles.paracontainer}>
@@ -46,18 +44,16 @@ const About = () => {
             <hr className={styles.line1}></hr>
 
             <p>
-              <b>Our</b> vision is to be a reputable, sustainable, and desirable
-              premier modular kitchen service provider of the global marketplace
-              providing state-of-the-art innovative designs and superior quality
-              finishing. We aim to be able to give our best services in each
-              city. We seek to provide such services which make kitchen chores a
-              hassle-free task. We are a one-stop solution to all your needs for
-              a modular kitchen with all the updated features.
+              <b>Our</b> mission is to positively influence the lives of all
+              customers with whom we have the pleasure of working, and leave a
+              lasting impression on their minds and imagination. We aim to
+              achieve our goal of having one showroom in each city. We seek to
+              define the most sophisticated and superior standard of quality
+              kitchens.
             </p>
           </div>
         </div>
         <div className={styles.howstart}>
-          {/* <ThreeTriangles className={styles.triangles1} /> */}
 
           <h2 className={styles.started}>HOW IT STARTED</h2>
           <hr className={styles.line2}></hr>
@@ -77,7 +73,7 @@ const About = () => {
         </div>
 
         <div className={styles.howstart}>
-          <h2 className={styles.started}>DIRECTOR’S DESK</h2>
+          <h2 className={styles.started}>DIRECTOR&apos;S DESK</h2>
           <hr className={styles.line3}></hr>
           <p className={styles.started1}>
             Our director Mr. Abhishek Gupta who is the creative mind behind this
@@ -88,7 +84,7 @@ const About = () => {
             presence in exhibitions across the seas. His artworks have always
             been praised by clients for telling a different story of their own.
             Ranging from Monochrome to Multichrome paintings , from still life
-            to portrait paintings – he has proved his excellence in all
+            to portrait paintings - he has proved his excellence in all
             dimensions of art. It is due to his invaluable leadership and
             efforts that the firm has been able to deliver the services to all
             the clients up to their satisfaction.
@@ -98,22 +94,12 @@ const About = () => {
             etc. We are a one-stop destination for material selection, products,
             fitting and installation, repairing ,etc.
           </p>
-          {/* <ThreeTriangles className={styles.triangles2} /> */}
         </div>
         <div className={styles.drdots}>
-          {/* <DoodleDots className={styles.dots3} /> */}
           <img className={styles.img2} src={Image2.src}></img>
           <h3 className={styles.he3}> Mr. Abhishek Gupta</h3>
-          {/* <ThreeTriangles className={styles.triangles3} />
-          <TwoSquares className={styles.squares} /> */}
         </div>
 
-        {/* <ThreeTriangles className={styles.triangles} /> */}
-        {/* <DoodleDots className={styles.dots} /> */}
-        {/* <TwoSquares className={styles.squares} /> */}
-        <div className={styles.circle1} />
-        <div className={styles.circle2} />
-        <div className={styles.circle3} />
       </div>
       <Footer />
     </>

@@ -4,15 +4,19 @@
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   filter: brightness(0.7);
-  
 }
 
 .ourvision {
   display: flex;
-  padding: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {
+  .img1{
+    width: 60vw !important;
+    margin: 16px 0;
+  }
   .container {
     overflow-x: hidden;
   }
@@ -54,58 +58,17 @@
   }
   .paracontainer {
     flex-direction: column;
+    max-width: none !important;
   }
   .howstart {
     flex-direction: column-reverse;
   }
-
-  .dots {
-    position: absolute;
-
-    width: 35%;
-    height: 60%;
-    top: 1% !important;
-    left: 10% !important;
-  }
-  .dots3 {
-    position: absolute;
-    width: 35%;
-    height: 60%;
-    top: -13% !important;
-    left: 4% !important;
-  }
-  .triangles4 {
-    position: absolute;
-    width: 40%;
-    height: 40%;
-
-    left: 70% !important;
-    top: 10% !important;
-  }
-  .triangles {
-    position: absolute;
-    width: 40%;
-    height: 40%;
-
-    left: 70% !important;
-    top: 60% !important;
-  }
-  .dots1 {
-    position: absolute;
-
-    width: 35%;
-    height: 60%;
-    top: -2% !important;
-  }
 }
 
 .img1 {
-  width: 70%;
-  height: 70%;
-  padding-top: 30px;
-  padding-left: 69px;
+  width: 30vw;
+  margin: 0 16px;
   z-index: 1;
-  position: relative;
 }
 .abt {
   // margin-top: 13%;
@@ -129,8 +92,8 @@
   text-align: center;
 }
 .paracontainer {
-  flex-basis: 50%;
-  padding-left: 30px;
+  padding: 30px;
+  max-width: 50vw;
 }
 .started,
 .he3 {
@@ -154,55 +117,6 @@
 .started1 {
   padding-left: 230px;
   padding-right: 230px;
-}
-.ddots,
-.ddots1,
-.drdots,
-.square1 {
-  position: relative;
-}
-.dots {
-  position: absolute;
-  top: -60px;
-}
-.dots1 {
-  position: absolute;
-  left: 50%;
-  top: -60px;
-  z-index: 0;
-}
-.triangles {
-  position: absolute;
-  top: 75%;
-  left: 85%;
-}
-.triangles1 {
-  position: absolute;
-  right: 85%;
-  top: -60%;
-}
-.dots3 {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  top: -1%;
-  left: 32%;
-  z-index: 0;
-}
-.triangles2 {
-  position: absolute;
-  left: 86%;
-  top: -2%;
-}
-.squares {
-  position: absolute;
-  top: 65%;
-  left: 70%;
-}
-.triangles3 {
-  position: absolute;
-  top: -27%;
-  right: 85%;
 }
 .line {
   width: 13%;

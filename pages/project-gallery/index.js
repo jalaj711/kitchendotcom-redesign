@@ -12,6 +12,7 @@ import fetchFromApi from "../../utils/fetchFromApi";
 import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import NavBar from "../../components/NavBar/NavBar";
 
 export default function ContactUs() {
   const [data, setData] = useState({ loaded: false });
@@ -34,6 +35,7 @@ export default function ContactUs() {
   }, []);
   return (
     <>
+    <NavBar />
       <div className={styles.landing}>
         <img alt="" src={BG.src} />
         <div>

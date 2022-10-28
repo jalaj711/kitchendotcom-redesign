@@ -8,6 +8,7 @@ import DesignGallery6 from "../../assets/design-gallery/6.jpeg";
 import BG from "../../assets/design-gallery/top-bg.png";
 import Footer from "../../components/Footer/Footer";
 import Carousel from "./Carousel";
+import NavBar from "../../components/NavBar/NavBar";
 
 function KitchenCard({ title, image, details }) {
   return (
@@ -26,6 +27,7 @@ function KitchenCard({ title, image, details }) {
 export default function DesignGallery() {
   return (
     <>
+    <NavBar />
       <div className={styles.landing}>
         <img src={BG.src} />
         <div>

@@ -69,10 +69,9 @@ const Estimater2 = () => {
                       type="number"
                       small
                       border
-                      placeholder={0}
+                      placeholder={3}
                       id="loft-length"
                       disabled={active !== "custom"}
-                      value={3}
                     />
                   </div>
                 </div>

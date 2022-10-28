@@ -16,7 +16,7 @@
   }
   div {
     position: absolute;
-    top: 32px;
+    bottom: 72px;
     left: 48px;
   }
   h2 {
@@ -132,7 +132,7 @@
 @media (max-width: 768px) {
   .landing {
   div {
-    top: 32px;
+    bottom: 32px;
     left: 32px;
   }
   h2 {
