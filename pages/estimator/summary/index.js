@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import PrimaryImage from "../../../assets/estimator/38.png";
 import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
-
+import NavBar from "../../../components/NavBar/NavBar"
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
@@ -33,11 +33,13 @@ const Estimater2 = () => {
   }, []);
   return (
     <div className={styles.container}>
+      <NavBar />
       <div className={styles.top}>
         <img src={PrimaryImage.src} className={styles.bg} alt="bg" />
       </div>
       <div className={styles.wrapper}>
-        <h1>You are done and so are we!</h1>
+        <h1>Summary</h1>
+        <h2>You are done and so are we!</h2>
         {data ? (
           <>
             <h4>Your estimated modular kitchen cost:</h4>
