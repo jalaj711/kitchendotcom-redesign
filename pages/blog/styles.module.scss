@@ -1,0 +1,147 @@
+.top {
+  position: relative;
+  .title {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10%);
+    color: white;
+    font-family: "Poppins";
+    text-align: center;
+    font-size: larger;
+  }
+  h1,
+  p {
+    margin: 0;
+  }
+}
+.bg {
+  width: 100vw;
+  margin: 0;
+  margin-left: -2px;
+  filter: brightness(0.7);
+  max-height: 50vh;
+  min-height: 40vh;
+  object-fit: cover;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 64px 0;
+  justify-content: center;
+  position: relative;
+}
+.primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 16px 0;
+  @media (max-width: 768px) {
+    flex-direction: column;   
+    .primaryContent {
+      max-width: 80vw;
+    }
+    .image2 {
+      width: 70vw;
+    }
+  }
+}
+
+.blogWriter {
+  text-transform: "uppercase";
+  font-family: "Spectral";
+}
+
+.blogDate {
+  color: #aaa;
+  margin-left: 24px;
+}
+.primaryContent {
+  margin: 25px;
+  max-width: 40vw;
+}
+.image2 {
+  width: 40vw;
+}
+.b1 {
+  margin: 12px;
+  align-items: center;
+  // text-align: center;
+  justify-content: center;
+}
+.blogsAndNews,
+.blogs,
+.n1 {
+  display: flex;
+}
+
+// .blogsAndNews {
+//   @media (max-width: )
+// }
+
+.blogs {
+  flex-flow: wrap;
+  width: 70vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  min-width: 300px;
+  margin: 24px;
+  img {
+    width: auto;
+  }
+  .blogTitle {
+    margin-top: 0;
+  }
+}
+
+.news {
+  width: 30vw;
+  .box {
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(188, 188, 188, 0.25);
+    margin: 16px;
+  }
+}
+.para {
+  margin: 30px;
+  margin: 28px;
+  margin-top: -23px;
+}
+.image7 {
+  height: 14vw;
+  width: 24vw;
+}
+.n1 {
+  background: #ffffff;
+  border: 2px solid #f4b32a;
+  border-radius: 5.58882px;
+  margin: 30px;
+}
+
+@media (max-width: 1000px){
+  .blogsAndNews {
+    flex-direction: column;
+  }
+  .blogs {
+    width: 100vw;
+  }
+  .blogCard {
+    margin: 12px;
+  }
+  .news {
+    width: 100vw;
+    .box {
+      width: calc(100% - 32px);
+      text-align: center;
+    }
+  }
+}
