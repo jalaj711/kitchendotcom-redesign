@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 import rehypeRaw from "rehype-raw";
-import { format, parseISO } from "date-fns"
+import { format, parseISO } from "date-fns";
 
 function BlogAndNews() {
   const [data, setData] = useState({ loaded: false });
@@ -54,14 +54,16 @@ function BlogAndNews() {
   };
   useEffect(() => {
     console.log(router.query.id);
-    fetchFromApi.get(URLs.BLOG + router.query.id + "/").then((res) => {
-      if (res.status == 200) {
-        res.json().then((result) => {
-          setData({ ...result, loaded: true });
-        });
-      }
-    });
-  }, []);
+    if (router.isReady) {
+      fetchFromApi.get(URLs.BLOG + router.query.id + "/").then((res) => {
+        if (res.status == 200) {
+          res.json().then((result) => {
+            setData({ ...result, loaded: true });
+          });
+        }
+      });
+    }
+  }, [router.isReady, router.query.id]);
   return (
     <>
       <Navbar />
@@ -77,7 +79,9 @@ function BlogAndNews() {
             <h2 className={styles.blogTitle}>{data.blog.title}</h2>
             <div>
               <span className={styles.blogWriter}>{data.blog.author}</span>
-              <span className={styles.blogDate}>{format(parseISO(data.blog.date), "dd MMM yy")}</span>
+              <span className={styles.blogDate}>
+                {format(parseISO(data.blog.date), "dd MMM yy")}
+              </span>
             </div>
             <img className={styles.image2} src={"/media/" + data.blog.image} />
             <div className={styles.blogCardContent}>
@@ -111,7 +115,10 @@ function BlogAndNews() {
                             {elem.mail}
                           </div>
                           <div className={styles.comment_time}>
-                            {format(parseISO(elem.timestamp), "dd MMM yy hh:mm")}
+                            {format(
+                              parseISO(elem.timestamp),
+                              "dd MMM yy hh:mm"
+                            )}
                           </div>
                         </div>
                         <div className={styles.comment_content}>
