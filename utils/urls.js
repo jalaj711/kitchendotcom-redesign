@@ -15,7 +15,8 @@ const URLs = {
   CONTACT_US: "/backend/contact-us/",
   BLOGS_AND_NEWS: "/backend/blogandnews/",
   BLOG: "/backend/blogandnews/blog/",
-  BLOG_LIKE: "/backend/blogandnews/blog/like/"
+  BLOG_LIKE: "/backend/blogandnews/blog/like/",
+  BLOG_COMMENT: "/backend/blogandnews/blog/comment/",
 };
 
 export default URLs;

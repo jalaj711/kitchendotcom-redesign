@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles2.module.scss";
-import image1 from "../../assets/blog1.png";
+import image1 from "../../assets/blog-page.png";
 import ShareIcon from "../../assets/share.svg";
 import LikeIcon from "../../assets/like.svg";
 import Footer from "../../components/Footer/Footer";
@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 import rehypeRaw from "rehype-raw";
+import { format, parseISO } from "date-fns"
 
 function BlogAndNews() {
   const [data, setData] = useState({ loaded: false });
@@ -27,6 +28,29 @@ function BlogAndNews() {
         });
       }
     });
+  };
+  const postComment = () => {
+    const email = document.getElementById("author-email").value;
+    const content = document.getElementById("author-content").value;
+    if (email && content) {
+      fetchFromApi
+        .post(URLs.BLOG_COMMENT + router.query.id, {
+          content,
+          email,
+        })
+        .then((res) => {
+          if (res.status == 200) {
+            res.json().then((result) => {
+              setData({
+                ...data,
+                comments: result.n_comments,
+              });
+            });
+          }
+        });
+    } else {
+      alert("Please enter your email and your content!");
+    }
   };
   useEffect(() => {
     console.log(router.query.id);
@@ -53,7 +77,7 @@ function BlogAndNews() {
             <h2 className={styles.blogTitle}>{data.blog.title}</h2>
             <div>
               <span className={styles.blogWriter}>{data.blog.author}</span>
-              <span className={styles.blogDate}>{data.blog.date}</span>
+              <span className={styles.blogDate}>{format(parseISO(data.blog.date), "dd MMM yy")}</span>
             </div>
             <img className={styles.image2} src={"/media/" + data.blog.image} />
             <div className={styles.blogCardContent}>
@@ -78,118 +102,42 @@ function BlogAndNews() {
             <div className={styles.comments}>
               <h3>Comments</h3>
               <div className={styles.commentsWrapper}>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>
-                    Nice blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice
-                    blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice
-                    blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice
-                    blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice
-                    blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice blog!Nice
-                    blog!Nice blog!Nice blog!Nice blog!Nice blog!
-                  </div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.comment_title}>
-                    <div className={styles.comment_author}>abcd@abcd.com</div>
-                    <div className={styles.comment_time}>
-                      21 Jun 2020, 00:30
-                    </div>
-                  </div>
-                  <div className={styles.comment_content}>Nice blog!</div>
-                </div>
+                {data.comments ? (
+                  <>
+                    {data.comments.map((elem) => (
+                      <div key={elem.id} className={styles.comment}>
+                        <div className={styles.comment_title}>
+                          <div className={styles.comment_author}>
+                            {elem.mail}
+                          </div>
+                          <div className={styles.comment_time}>
+                            {format(parseISO(elem.timestamp), "dd MMM yy hh:mm")}
+                          </div>
+                        </div>
+                        <div className={styles.comment_content}>
+                          {elem.comment}
+                        </div>
+                      </div>
+                    ))}
+                  </>
+                ) : (
+                  <i>No comments yet</i>
+                )}
               </div>
               <div className={styles.add_comment}>
-                <input type="email" placeholder="Enter your email" />
-                <input type="text" placeholder="Add your comment" />
-                <button className={styles.submit}>POST</button>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  id="author-email"
+                />
+                <input
+                  type="text"
+                  placeholder="Add your comment"
+                  id="author-content"
+                />
+                <button className={styles.submit} onClick={postComment}>
+                  POST
+                </button>
               </div>
             </div>
           </div>
