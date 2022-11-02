@@ -9,6 +9,7 @@ import URLs from "../../utils/urls";
 import fetchFromApi from "../../utils/fetchFromApi";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 function BlogAndNews() {
   const [data, setData] = useState({ loaded: false });
@@ -58,7 +59,7 @@ function BlogAndNews() {
                 </div>
                 <h2 className={styles.blogTitle}>{data.primary.title}</h2>
                 <p className={styles.blogContent}>
-                  <ReactMarkdown>{data.primary.content}</ReactMarkdown>
+                  <ReactMarkdown rehypePlugins={[rehypeRaw]}>{data.primary.content}</ReactMarkdown>
                 </p>
                 <Button>Read More</Button>
               </div>
