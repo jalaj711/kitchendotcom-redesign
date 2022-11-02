@@ -13,7 +13,9 @@ const URLs = {
   ESTIMATOR_SUMMARY: "/backend/summary/",
   PROJECT_GALLERY: "/backend/projects/",
   CONTACT_US: "/backend/contact-us/",
-  BLOGS_AND_NEWS: "/backend/blogandnews/"
+  BLOGS_AND_NEWS: "/backend/blogandnews/",
+  BLOG: "/backend/blogandnews/blog/",
+  BLOG_LIKE: "/backend/blogandnews/blog/like/"
 };
 
 export default URLs;
