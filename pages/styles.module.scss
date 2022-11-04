@@ -29,6 +29,16 @@
   }
 }
 
+.v1:hover {
+  cursor: pointer;
+  h2 {
+    color: #f9c24e;
+  }
+  img {
+    filter: brightness(50%) sepia(100) saturate(10);
+  }
+}
+
 .head {
   margin-top: 36px;
   padding-left: 24px;
@@ -57,6 +67,10 @@
   border: none;
   font-family: "Signika";
   font-style: normal;
+}
+.enq:hover {
+  background: white;
+  cursor: pointer;
 }
 .more {
   background-color: transparent;
@@ -101,12 +115,11 @@
   .div2 {
     margin-top: 64px;
   }
-  .head1{
+  .head1 {
     max-width: none !important;
     margin-top: 128px;
   }
   .head {
-
     padding-left: 0px;
   }
   .v1 {

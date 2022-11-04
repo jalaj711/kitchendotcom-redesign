@@ -1,225 +1,209 @@
 [
   [
     {
-      "image": "/design-gallery-carousel/1/1.png",
+      "image": "/_next/design-gallery-carousel/1/1.png",
       "colors": ["#CCC5BD", "#A17450", "#302C28", "#7B5336", "#7E7976"]
     },
     {
-      "image": "/design-gallery-carousel/1/2.png",
+      "image": "/_next/design-gallery-carousel/1/2.png",
       "colors": ["#A18E80", "#313F42", "#C7D9E1", "#5F402E", "#735139"]
     },
     {
-      "image": "/design-gallery-carousel/1/3.png",
+      "image": "/_next/design-gallery-carousel/1/3.png",
       "colors": ["#BFBFBD", "#2D2829", "#757271", "#60514F", "#6B5F52"]
     },
     {
-      "image": "/design-gallery-carousel/1/4.png",
+      "image": "/_next/design-gallery-carousel/1/4.png",
       "colors": ["#909C82", "#2F3427", "#E0E3D9", "#534732", "#817230"]
     },
     {
-      "image": "/design-gallery-carousel/1/5.png",
+      "image": "/_next/design-gallery-carousel/1/5.png",
       "colors": ["#9C7E53", "#392112", "#E0DCD6", "#60340F", "#DECBA3"]
     },
     {
-      "image": "/design-gallery-carousel/1/6.png",
+      "image": "/_next/design-gallery-carousel/1/6.png",
       "colors": ["#215D88", "#D7D5D2", "#AE5934", "#7F909C", "#A3724E"]
     },
     {
-      "image": "/design-gallery-carousel/1/7.png",
+      "image": "/_next/design-gallery-carousel/1/7.png",
       "colors": ["#8C8B7B", "#1F1F17", "#E7E6E1", "#483E2F", "#545637"]
     },
     {
-      "image": "/design-gallery-carousel/1/8.png",
+      "image": "/_next/design-gallery-carousel/1/8.png",
       "colors": ["#A26844", "#392214", "#E3CFBB", "#CDB7A5", "#5D2A12"]
     },
     {
-      "image": "/design-gallery-carousel/1/9.png",
+      "image": "/_next/design-gallery-carousel/1/9.png",
       "colors": ["#A29E6C", "#EFE8DB", "#2A251C", "#654C3B", "#636629"]
     },
     {
-      "image": "/design-gallery-carousel/1/10.png",
+      "image": "/_next/design-gallery-carousel/1/10.png",
       "colors": ["#CCC2B5", "#275670", "#785235", "#C77B3A", "#AC8D6D"]
     },
     {
-      "image": "/design-gallery-carousel/1/11.png",
+      "image": "/_next/design-gallery-carousel/1/11.png",
       "colors": ["#4E4842", "#DED1C3", "#9F846D", "#A9AEA9", "#A5B08A"]
     },
     {
-      "image": "/design-gallery-carousel/1/12.png",
+      "image": "/_next/design-gallery-carousel/1/12.png",
       "colors": ["#B5B0B0", "#2A2A26", "#474239", "#5D5C59", "#574F40"]
     }
   ],
   [
     {
-      "image": "/design-gallery-carousel/2/1.png",
+      "image": "/_next/design-gallery-carousel/2/1.png",
       "colors": ["#1D3834", "#BA967C", "#7A5B46", "#7DADA8", "#68939C"]
     },
     {
-      "image": "/design-gallery-carousel/2/2.png",
+      "image": "/_next/design-gallery-carousel/2/2.png",
       "colors": ["#8E8787", "#5F8BAE", "#572D1C", "#DCCCC2", "#6A4E34"]
     },
     {
-      "image": "/design-gallery-carousel/2/3.png",
+      "image": "/_next/design-gallery-carousel/2/3.png",
       "colors": ["#BFBFBD", "#2D2829", "#757271", "#60514F", "#6B5F52"]
     },
     {
-      "image": "/design-gallery-carousel/2/4.png",
+      "image": "/_next/design-gallery-carousel/2/4.png",
       "colors": ["#BAA796", "#21201D", "#7C644F", "#8B9B94", "#808996"]
     },
     {
-      "image": "/design-gallery-carousel/2/5.png",
+      "image": "/_next/design-gallery-carousel/2/5.png",
       "colors": ["#C67F31", "#331B33", "#DEDBD6", "#BCB6B1", "#512F4B"]
     },
     {
-      "image": "/design-gallery-carousel/2/6.png",
+      "image": "/_next/design-gallery-carousel/2/6.png",
       "colors": ["#CAC5C2", "#3B4358", "#737D9A", "#88704C", "#695650"]
     },
     {
-      "image": "/design-gallery-carousel/2/7.png",
+      "image": "/_next/design-gallery-carousel/2/7.png",
       "colors": ["#2B2317", "#E7CB54", "#857759", "#6B5434", "#DBCBAA"]
     },
     {
-      "image": "/design-gallery-carousel/2/8.png",
+      "image": "/_next/design-gallery-carousel/2/8.png",
       "colors": ["#5E8BAA", "#2A383F", "#572D1C", "#DCCCC2", "#6A4E34"]
     },
     {
-      "image": "/design-gallery-carousel/2/9.png",
+      "image": "/_next/design-gallery-carousel/2/9.png",
       "colors": ["#C1BAB4", "#393E3E", "#6B4932", "#A77144", "#737674"]
     },
     {
-      "image": "/design-gallery-carousel/2/10.png",
+      "image": "/_next/design-gallery-carousel/2/10.png",
       "colors": ["#ECA42B", "#DEE0DD", "#302116", "#67370C", "#D5C5B0"]
     },
     {
-      "image": "/design-gallery-carousel/2/11.png",
+      "image": "/_next/design-gallery-carousel/2/11.png",
       "colors": ["#852F29", "#E0C1B3", "#34100E", "#DE825B", "#F3E4E2"]
     },
     {
-      "image": "/design-gallery-carousel/2/12.png",
+      "image": "/_next/design-gallery-carousel/2/12.png",
       "colors": ["#1E6573", "#CBC7C2", "#F4B32A", "#75523B", "#32A1BC"]
     }
   ],
   [
     {
-      "image": "/design-gallery-carousel/3/1.png",
+      "image": "/_next/design-gallery-carousel/3/1.png",
       "colors": ["#9E869D", "#322640", "#DAD0CB", "#5C3963", "#695544"]
     },
     {
-      "image": "/design-gallery-carousel/3/2.png",
+      "image": "/_next/design-gallery-carousel/3/2.png",
       "colors": ["#897768", "#332E30", "#E2DCD8", "#CFC3A6", "#543830"]
       
     },
     {
-      "image": "/design-gallery-carousel/3/2.png",
-      "colors": []
-    },
-    {
-      "image": "/design-gallery-carousel/3/3.png",
+      "image": "/_next/design-gallery-carousel/3/3.png",
       "colors": ["#BCB5A8","#252527","#474143","#585B5D","#765737"]
     },
     {
-      "image": "/design-gallery-carousel/3/4.png",
+      "image": "/_next/design-gallery-carousel/3/4.png",
       "colors": ["#7F9B81", "#2A4435", "#F1E6D4", "#56412D", "#E1CA00"]
     },
     {
-      "image": "/design-gallery-carousel/3/5.png",
+      "image": "/_next/design-gallery-carousel/3/5.png",
       "colors": ["#AB9F97", "#635248", "#4B342E", "#32231E", "#5A473A"]
       
     },
     {
-      "image": "/design-gallery-carousel/3/5.png",
-      "colors": []
-    },
-    {
-      "image": "/design-gallery-carousel/3/6.png",
+      "image": "/_next/design-gallery-carousel/3/6.png",
       "colors": ["#AA9D8A" , "#2B2B26" ,"#EABD30" ,"#E0E2E2" ,"#5E4733"]
     },
     {
-      "image": "/design-gallery-carousel/3/7.png",
+      "image": "/_next/design-gallery-carousel/3/7.png",
       "colors": ["#8B4039", "#E0DCDA", "#2F1614", "#D46655", "#A49AB1"]
       
     },
     {
-      "image": "/design-gallery-carousel/3/8.png",
+      "image": "/_next/design-gallery-carousel/3/8.png",
       "colors": ["#D7D3CF" ,"#2A2825" ,"#4E3F35" ,"#615C53" ,"#717876"]
     },
     {
-      "image": "/design-gallery-carousel/3/9.png",
+      "image": "/_next/design-gallery-carousel/3/9.png",
       "colors": ["#BEB3A5" , "#6D3D38" ,"#3A1B18" ,"#70685E" ,"#645A47"]
     },
     {
-      "image": "/design-gallery-carousel/3/10.png",
+      "image": "/_next/design-gallery-carousel/3/10.png",
       "colors": ["#C5C1BD", "#313238", "#801A17", "#6D6E6F", "#5C5750"]
       
     },
     {
-      "image": "/design-gallery-carousel/3/11.png",
+      "image": "/_next/design-gallery-carousel/3/11.png",
       "colors": ["#D1CECE" ,"#524C49" ,"#948279" ,"#7D5C51" ,"#7D5C51"]
     },
     {
-      "image": "/design-gallery-carousel/3/12.png",
+      "image": "/_next/design-gallery-carousel/3/12.png",
       "colors": ["#C4D0CD" ,"#33493C" ,"#7FAA18" ,"#6C8482" ,"#070F10"]
     }
   ],
   [
     {
-      "image": "/design-gallery-carousel/4/1.png",
+      "image": "/_next/design-gallery-carousel/4/1.png",
       "colors": ["#3B3E24", "#E1DFD5", "#7A8042", "#6C5A36", "#8D8D80"]
     },
     {
-      "image": "/design-gallery-carousel/4/2.png",
+      "image": "/_next/design-gallery-carousel/4/2.png",
       "colors": ["#383A39", "#D3D7D6", "#85867F", "#9FA8A7", "#979CA4"]
      
     },
     {
-      "image": "/design-gallery-carousel/4/2.png",
-      "colors": []
-    },
-    {
-      "image": "/design-gallery-carousel/4/3.png",
+      "image": "/_next/design-gallery-carousel/4/3.png",
       "colors": ["#666D73" , "#E1D8CA" ,"#76A1CA" ,"#151E29" ,"#9DC5E1"] 
     },
     {
-      "image": "/design-gallery-carousel/4/4.png",
+      "image": "/_next/design-gallery-carousel/4/4.png",
       "colors": ["#C0A281", "#393F27", "#CE7E1C", "#D4D2CF", "#7B4419"]
     },
     {
-      "image": "/design-gallery-carousel/4/5.png",
+      "image": "/_next/design-gallery-carousel/4/5.png",
       "colors": ["#C2C6C0", "#456963", "#456963", "#9B8B70", "#994A21"]
       
     },
     {
-      "image": "/design-gallery-carousel/4/5.png",
-      "colors": []
-    },
-    {
-      "image": "/design-gallery-carousel/4/6.png",
+      "image": "/_next/design-gallery-carousel/4/6.png",
       "colors": ["#484848", "#D6D4D2" ,"#979693" ,"#B1B6B6" ,"#AAAAAE"]
     },
     {
-      "image": "/design-gallery-carousel/4/7.png",
+      "image": "/_next/design-gallery-carousel/4/7.png",
       "colors": ["#CDC9C6", "#2F251E", "#7E4225", "#A1694A", "#807F84"]
       
     },
     {
-      "image": "/design-gallery-carousel/4/8.png",
+      "image": "/_next/design-gallery-carousel/4/8.png",
       "colors": ["#B2AEA9" ,"#2E2A26" ,"#53463E" ,"#686461" ,"#665945"]
     },
     {
-      "image": "/design-gallery-carousel/4/9.png",
+      "image": "/_next/design-gallery-carousel/4/9.png",
       "colors": ["#958D75" ,"#2A3333" ,"#EAE4D4", "#365043" ,"#E3CFAB"]
     },
     {
-      "image": "/design-gallery-carousel/4/10.png",
+      "image": "/_next/design-gallery-carousel/4/10.png",
       "colors": ["#CABCAD", "#3B3B38", "#D5AA27", "#746A60", "#63482B"]
       
     },
     {
-      "image": "/design-gallery-carousel/4/11.png",
+      "image": "/_next/design-gallery-carousel/4/11.png",
       "colors": ["#B38D58" , "#B38D58" ,"#17393E" , "#E6E9E8" ,"#603D18" ,"#F3D491"]
     },
     {
-      "image": "/design-gallery-carousel/4/12.png",
+      "image": "/_next/design-gallery-carousel/4/12.png",
       "colors": ["#C9C9BD" ,"#333531" ,"#67503C" ,"#907844" ,"#767569"]
     }
   ]   

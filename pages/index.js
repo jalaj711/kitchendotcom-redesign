@@ -24,7 +24,7 @@ const Landing = () => {
         </div>
         <div style={{ flexGrow: 1 }}></div>
         <div className={styles.div2}>
-          <h1 className={styles.wec}>We can do for you</h1>
+          <h1 className={styles.wec}>We can design a great modular kitchen for you</h1>
         </div>
         <div className={styles.content}>
           <div className={styles.vectors}>

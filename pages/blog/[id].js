@@ -68,7 +68,7 @@ function BlogAndNews() {
     <>
       <Navbar />
       <div className={styles.top}>
-        <img src={image1.src} className={styles.bg} alt="bg" />
+        <img src={image1.src} className={styles.bg} alt="bg" id="page-bg" />
         <div className={styles.title}>
           <h1>Blog</h1>
         </div>

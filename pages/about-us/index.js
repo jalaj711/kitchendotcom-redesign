@@ -12,7 +12,7 @@ const About = () => {
     <>
       <Navbar />
       <div className={styles.container}>
-        <img className={styles.bgimg} src={Background.src}></img>
+        <img className={styles.bgimg} src={Background.src} id="page-bg" ></img>
         {/* <ThreeTriangles className={styles.triangles4} /> */}
 
         <h1 className={styles.abt}>About Us</h1>

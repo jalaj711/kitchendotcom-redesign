@@ -47,7 +47,7 @@ export default function ContactUs() {
     <>
       <NavBar />
       <div className={styles.top}>
-        <img src={Background.src} className={styles.bg} alt="bg" />
+        <img src={Background.src} className={styles.bg} alt="bg" id="page-bg" />
         <div className={styles.title}>
           <h1>Get in touch!</h1>
           <p>

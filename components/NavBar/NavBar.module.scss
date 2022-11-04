@@ -16,6 +16,19 @@
     text-decoration: none;
     color: white;
   }
+  a:hover {
+    color: theme.$primary;
+  }
+}
+
+.blackNav {
+  color: black;
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #ffad00;
+  }
 }
 
 .hamburger {
@@ -51,12 +64,19 @@
       text-decoration: none;
       color: #000;
     }
+    a:hover {
+      color: theme.$primary;
+    }
   }
 }
 
 @keyframes slideIn {
-  from { transform: translateX(-100%) }
-  to { transform: translateX(0%) }
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 @media (max-width: 900px) {

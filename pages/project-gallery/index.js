@@ -37,7 +37,7 @@ export default function ContactUs() {
     <>
     <NavBar />
       <div className={styles.landing}>
-        <img alt="" src={BG.src} />
+        <img alt="" src={BG.src} id="page-bg" />
         <div>
           <h1 className={styles.h1}>Project Gallery</h1>
           <h2 className={styles.h2}>Design Your Kitchen Instantly with us.</h2>

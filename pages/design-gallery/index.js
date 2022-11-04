@@ -29,7 +29,7 @@ export default function DesignGallery() {
     <>
     <NavBar />
       <div className={styles.landing}>
-        <img src={BG.src} />
+        <img src={BG.src} id="page-bg" />
         <div>
           <h1>Design Gallery</h1>
           <h2>Discover your Modular Kitchen</h2>
