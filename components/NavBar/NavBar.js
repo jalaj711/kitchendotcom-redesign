@@ -15,10 +15,8 @@ export default function NavBar() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const elem = document.getElementById("page-bg");
-      console.log(elem);
       if (elem) {
         const h = elem.getBoundingClientRect().height;
-        console.log(h, window.scrollY);
         if (window.scrollY > h) {
           setNavbarColor(true);
         } else {

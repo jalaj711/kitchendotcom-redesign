@@ -26,8 +26,12 @@ export default function ContactUs() {
             designs: [],
             feedbacks: result.feedbacks,
             videos: result.videos,
+            completed_projects: [],
           };
           result.designs.map((elem) => a.designs.push("/media/" + elem.image));
+          result.complete_projects.map((elem) =>
+            a.completed_projects.push("/media/" + elem.project_img)
+          );
           setData(a);
         });
       }
@@ -35,7 +39,7 @@ export default function ContactUs() {
   }, []);
   return (
     <>
-    <NavBar />
+      <NavBar />
       <div className={styles.landing}>
         <img alt="" src={BG.src} id="page-bg" />
         <div>
@@ -90,7 +94,12 @@ export default function ContactUs() {
                   <video
                     key={index}
                     controls
-                    src={"/media/" + data.videos[index > 0 ? index-1 : data.videos.length -1].video}
+                    src={
+                      "/media/" +
+                      data.videos[
+                        index > 0 ? index - 1 : data.videos.length - 1
+                      ].video
+                    }
                     style={{
                       width: "min-content !important",
                       maxWidth: "70vw",
@@ -133,7 +142,12 @@ export default function ContactUs() {
                   <video
                     key={index}
                     controls
-                    src={"/media/" + data.videos[index == data.videos.length - 1 ? 0 : index + 1].video}
+                    src={
+                      "/media/" +
+                      data.videos[
+                        index == data.videos.length - 1 ? 0 : index + 1
+                      ].video
+                    }
                     style={{
                       width: "min-content !important",
                       maxWidth: "70vw",
@@ -170,6 +184,91 @@ export default function ContactUs() {
             </h1>
             <p>Here&apos;s what they have to say</p>
             <Carousel2 data={data.feedbacks || []} />
+          </div>
+          <div
+            className={styles.container}
+            style={{ backgroundColor: "#f3f3f3" }}
+          >
+            <h1 className={styles.h1}>Some of our best projects</h1>
+            <div className={styles.carouselHolder}>
+              <Carousel
+                showThumbs={false}
+                autoPlay={true}
+                interval={3000}
+                infiniteLoop={true}
+                showStatus={false}
+                showArrows={false}
+                showIndicators={false}
+              >
+                {data.completed_projects.map((elem, index) => (
+                  <img
+                    key={index}
+                    alt=""
+                    src={
+                      data.completed_projects[
+                        index > 0
+                          ? index - 1
+                          : data.completed_projects.length - 1
+                      ]
+                    }
+                    style={{
+                      width: "min-content !important",
+                      maxWidth: "70vw",
+                      maxHeight: "50vh",
+                    }}
+                  />
+                ))}
+              </Carousel>
+              <Carousel
+                showThumbs={false}
+                autoPlay={true}
+                interval={3000}
+                infiniteLoop={true}
+                showStatus={false}
+                showArrows={false}
+              >
+                {data.completed_projects.map((elem, index) => (
+                  <img
+                    alt=""
+                    key={index}
+                    src={elem}
+                    style={{
+                      width: "min-content !important",
+                      maxWidth: "70vw",
+                      maxHeight: "50vh",
+                    }}
+                  />
+                ))}
+              </Carousel>
+              <Carousel
+                showThumbs={false}
+                autoPlay={true}
+                interval={3000}
+                infiniteLoop={true}
+                showStatus={false}
+                showArrows={false}
+                showIndicators={false}
+              >
+                {data.completed_projects.map((elem, index) => (
+                  <img
+                    alt=""
+                    key={index}
+                    src={
+                      data.completed_projects[
+                        index == data.completed_projects.length - 1
+                          ? 0
+                          : index + 1
+                      ]
+                    }
+                    style={{
+                      width: "min-content !important",
+                      maxWidth: "70vw",
+                      maxHeight: "50vh",
+                    }}
+                  />
+                ))}
+              </Carousel>
+            </div>
           </div>
         </>
       )}
