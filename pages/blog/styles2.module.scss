@@ -115,22 +115,16 @@
 }
 .add_comment {
   display: flex;
+  flex-direction: column;
   width: 100%;
   border-top: 1px solid #ccc;
   padding: 32px;
-  input {
+  input, textarea {
     background: #ececec;
     color: #000;
     border-radius: 8px;
     border: none;
     padding: 12px 16px;
-    margin-left: 8px;
-  }
-  input:nth-child(1) {
-    width: 20%;
-  }
-  input:nth-child(2) {
-    width: 60%;
   }
   button {
     width: 20%;
@@ -139,6 +133,20 @@
     background: #f9c24e;
     border: none;
     padding: 8px 12px;
+  }
+  .add_row_1 {
+    width: 100%;
+  }
+  .add_row_2 {
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    input {
+      width: 70%;
+    }
+    button {
+      width: 30%;
+    }
   }
 }
 
@@ -166,14 +174,18 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .add_comment {
     flex-direction: column;
+    .add_row_2 {
+      flex-direction: column;
+      margin-top: 0;
+    }
     input,
-    button {
+    button, textarea {
       width: 100% !important;
       margin-left: 0;
-      margin-top: 12px;
+      margin-top: 8px;
     }
   }
 }

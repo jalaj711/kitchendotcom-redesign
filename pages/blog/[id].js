@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from "./styles2.module.scss";
 import image1 from "../../assets/blog-page.png";
@@ -83,7 +84,11 @@ function BlogAndNews() {
                 {format(parseISO(data.blog.date), "dd MMM yy")}
               </span>
             </div>
-            <img className={styles.image2} src={"/media/" + data.blog.image} />
+            <img
+              className={styles.image2}
+              src={"/media/" + data.blog.image}
+              alt="blog image"
+            />
             <div className={styles.blogCardContent}>
               <div className={styles.blogContent}>
                 <ReactMarkdown rehypePlugins={[rehypeRaw]}>
@@ -132,19 +137,23 @@ function BlogAndNews() {
                 )}
               </div>
               <div className={styles.add_comment}>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  id="author-email"
-                />
-                <input
-                  type="text"
+                <textarea
                   placeholder="Add your comment"
                   id="author-content"
+                  aria-multiline="true"
+                  className={styles.add_row_1}
+                  rows={5}
                 />
-                <button className={styles.submit} onClick={postComment}>
-                  POST
-                </button>
+                <div className={styles.add_row_2}>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    id="author-email"
+                  />
+                  <button className={styles.submit} onClick={postComment}>
+                    POST
+                  </button>
+                </div>
               </div>
             </div>
           </div>
