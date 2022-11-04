@@ -9,9 +9,12 @@ import URLs from "../../utils/urls";
 import fetchFromApi from "../../utils/fetchFromApi";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import { useRouter } from "next/router";
 
 function BlogAndNews() {
   const [data, setData] = useState({ loaded: false });
+  const router = useRouter();
 
   useEffect(() => {
     fetchFromApi.get(URLs.BLOGS_AND_NEWS).then((res) => {
@@ -58,9 +61,9 @@ function BlogAndNews() {
                 </div>
                 <h2 className={styles.blogTitle}>{data.primary.title}</h2>
                 <p className={styles.blogContent}>
-                  <ReactMarkdown>{data.primary.content}</ReactMarkdown>
+                  <ReactMarkdown rehypePlugins={[rehypeRaw]}>{data.primary.content}</ReactMarkdown>
                 </p>
-                <Button>Read More</Button>
+                <Button onClick={() => router.push("/blog/" + data.primary.id)}>Read More</Button>
               </div>
             </div>
             <div className={styles.blogsAndNews}>
@@ -75,9 +78,9 @@ function BlogAndNews() {
                       </div>
                       <h2 className={styles.blogTitle}>{elem.title}</h2>
                       <div className={styles.blogContent}>
-                        <ReactMarkdown>{elem.content}</ReactMarkdown>
+                        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{elem.content}</ReactMarkdown>
                       </div>
-                      <Button>Read More</Button>
+                      <Button onClick={() => router.push("/blog/" + elem.id)}>Read More</Button>
                     </div>
                   </div>
                 ))}

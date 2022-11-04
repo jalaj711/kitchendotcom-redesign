@@ -12,8 +12,8 @@ const nextConfig = {
         destination: "http://127.0.0.1:8000/media/:path*/",
       },
       {
-        source: "/backend/:path",
-        destination: "http://127.0.0.1:8000/backend/:path/",
+        source: "/backend/:path*",
+        destination: "http://127.0.0.1:8000/backend/:path*/",
       },
     ];
   },
