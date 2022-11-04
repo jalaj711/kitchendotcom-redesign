@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import NavBar from "../../components/NavBar/NavBar";
+import Counter from "../../components/CounterAnimation";
 
 export default function ContactUs() {
   const [data, setData] = useState({ loaded: false });
@@ -56,19 +57,19 @@ export default function ContactUs() {
             <div className={styles.chooseUsHolder}>
               <div className={styles.chooseUsCard}>
                 <img alt="" src={ChooseUs1.src} />
-                <div className={styles.chooseUsTitle}>10</div>
+                <div className={styles.chooseUsTitle}><Counter countTo={10} /></div>
                 <div className={styles.chooseUsCaption}>
                   Years of experience
                 </div>
               </div>
               <div className={styles.chooseUsCard}>
                 <img alt="" src={ChooseUs2.src} />
-                <div className={styles.chooseUsTitle}>295</div>
+                <div className={styles.chooseUsTitle}><Counter countTo={295} /></div>
                 <div className={styles.chooseUsCaption}>Property Built</div>
               </div>
               <div className={styles.chooseUsCard}>
                 <img alt="" src={ChooseUs3.src} />
-                <div className={styles.chooseUsTitle}>15</div>
+                <div className={styles.chooseUsTitle}><Counter countTo={15} /></div>
                 <div className={styles.chooseUsCaption}>Award Wins</div>
               </div>
             </div>
