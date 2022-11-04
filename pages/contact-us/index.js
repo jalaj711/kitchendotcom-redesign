@@ -126,6 +126,7 @@ export default function ContactUs() {
                   </span>
                   <div style={{ display: "inline" }}>
                     <Image
+                      className={styles.social}
                       src={FacebookIcon}
                       width={48}
                       alt="facebook"
@@ -142,12 +143,20 @@ export default function ContactUs() {
                       alt="Instagram"
                       onClick={() =>
                         window.open(
-                          "https://www.instagram.com/kitchendotcom.in/","_blank"
+                          "https://www.instagram.com/kitchendotcom.in/",
+                          "_blank"
                         )
                       }
                     />
-                    <Image src={TwitterIcon} width={48} alt="Twitter" />
-                    <Image src={WhatsAppIcon} width={48} alt="WhatsApp" />
+                    {/* <Image src={TwitterIcon} width={48} alt="Twitter" /> */}
+                    <Image
+                      src={WhatsAppIcon}
+                      width={48}
+                      alt="WhatsApp"
+                      onClick={() =>
+                        window.open("https://wa.me/08707482268", "_blank")
+                      }
+                    />
                   </div>
                 </div>
               </div>
