@@ -16,7 +16,7 @@
   }
 }
 .container {
-   margin: 32px 0;
+  margin: 32px 0;
 }
 .bg {
   width: 100vw;
@@ -42,7 +42,7 @@
   width: 100%;
   margin: 16px 0;
   @media (max-width: 768px) {
-    flex-direction: column;   
+    flex-direction: column;
     .primaryContent {
       max-width: 80vw;
     }
@@ -87,7 +87,6 @@
 .blogs {
   flex-flow: wrap;
   width: 70vw;
-  align-items: center;
   justify-content: center;
 }
 
@@ -95,7 +94,7 @@
   display: flex;
   flex-direction: column;
   max-width: 30vw;
-  min-width: 300px;
+  min-width: 250px;
   margin: 24px;
   img {
     width: auto;
@@ -130,8 +129,10 @@
   margin: 30px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .blogsAndNews {
+    max-width: 100vw;
+    align-items: center;
     flex-direction: column;
   }
   .blogs {
