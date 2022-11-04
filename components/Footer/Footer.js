@@ -5,6 +5,7 @@ import TwitterIcon from "../../assets/Twitter.svg";
 import WhatsAppIcon from "../../assets/WhatsApp.svg";
 import LampImg from "../../assets/lamp.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -33,18 +34,18 @@ export default function Footer() {
       </div>
       <div className={styles.aboutus}>
         <ul>
-            <li>About us</li>
-            <li>Blog</li>
-            <li>Cities</li>
-            <li>Contact Us</li>
+            <li><Link href="/about-us">About us</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/cities">Cities</Link></li>
+            <li><Link href="/contact-us">Contact Us</Link></li>
         </ul>
       </div>
       <div className={styles.offerings}>
         <h3>Offerings</h3>
         <ul>
-            <li>Kitchen Price estimator</li>
-            <li>Product Gallery</li>
-            <li>Design Gallery</li>
+            <li><Link href="/estimator">Kitchen Price estimator</Link></li>
+            <li><Link href="/project-gallery">Product Gallery</Link></li>
+            <li><Link href="/design-gallery">Design Gallery</Link></li>
         </ul>
       </div>
       <div className={styles.locations}>
