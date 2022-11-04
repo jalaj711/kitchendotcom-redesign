@@ -92,16 +92,16 @@ function BlogAndNews() {
               </div>
             </div>
             <div className={styles.controls}>
-              <span
+              <img
+                alt="like-button"
                 src={LikeIcon.src}
                 onClick={like}
                 style={{
-                  background: data.liked ? "#f44336" : "#000",
                   maskImage: "url(" + LikeIcon.src + ")",
                 }}
               />
               ({data.blog.likes})
-              <img src={ShareIcon.src} />
+              <img alt="share" src={ShareIcon.src} />
             </div>
             <div className={styles.comments}>
               <h3>Comments</h3>
