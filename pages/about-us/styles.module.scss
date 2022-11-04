@@ -11,10 +11,25 @@
   align-items: center;
   justify-content: center;
 }
+ 
+@media (max-width: 900px) {
+
+  .img1{
+    width: 40vw !important;
+  }
+  .img2{
+    width: 40vw !important;
+  }
+  .started1{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
 
 @media (max-width: 600px) {
   .img1{
-    width: 60vw !important;
+    width: 70vw !important;
     margin: 16px 0;
   }
   .container {
@@ -55,6 +70,7 @@
     position: absolute;
     width: 54% !important;
     height: 45% !important;
+    width: 80vw  !important ; 
   }
   .paracontainer {
     flex-direction: column;
