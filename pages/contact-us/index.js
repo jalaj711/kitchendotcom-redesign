@@ -125,8 +125,27 @@ export default function ContactUs() {
                     kitchendotcom.in
                   </span>
                   <div style={{ display: "inline" }}>
-                    <Image src={FacebookIcon} width={48} alt="facebook" />
-                    <Image src={InstagramIcon} width={48} alt="Instagram" />
+                    <Image
+                      src={FacebookIcon}
+                      width={48}
+                      alt="facebook"
+                      onClick={() =>
+                        window.open(
+                          "https://www.facebook.com/kitchendotcom.in",
+                          "_blank"
+                        )
+                      }
+                    />
+                    <Image
+                      src={InstagramIcon}
+                      width={48}
+                      alt="Instagram"
+                      onClick={() =>
+                        window.open(
+                          "https://www.instagram.com/kitchendotcom.in/","_blank"
+                        )
+                      }
+                    />
                     <Image src={TwitterIcon} width={48} alt="Twitter" />
                     <Image src={WhatsAppIcon} width={48} alt="WhatsApp" />
                   </div>
