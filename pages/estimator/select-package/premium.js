@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles_1316.module.scss";
-import Image1 from "../../../assets/Rectangle991.png";
+import Image1 from "../../../assets/Rectangle991.webp";
 import Button from "../../../components/Button/Button";
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
