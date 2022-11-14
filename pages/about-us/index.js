@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "../../assets/Rectangle213.jpg";
-import Image1 from "../../assets/Rectangle252.jpg";
+import Image from "../../assets/Rectangle213.webp";
+import Image1 from "../../assets/Rectangle252.webp";
 import styles from "./styles.module.scss";
-import Image2 from "../../assets/Rectangle226.jpg";
-import Background from "../../assets/Rectangle288.png";
+import Image2 from "../../assets/Rectangle226.webp";
+import Background from "../../assets/Rectangle288.webp";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/NavBar/NavBar";
 
