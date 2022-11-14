@@ -1,9 +1,9 @@
 import styles from "./styles.module.scss";
 import React from "react";
 import Navbar from "../components/NavBar/NavBar";
-import Image1 from "../assets/Flipboard.png";
-import Image2 from "../assets/Picture.png";
-import Image3 from "../assets/Cost.png";
+import Image1 from "../assets/Flipboard.webp";
+import Image2 from "../assets/Picture.webp";
+import Image3 from "../assets/Cost.webp";
 import { useRouter } from "next/router";
 
 const Landing = () => {
