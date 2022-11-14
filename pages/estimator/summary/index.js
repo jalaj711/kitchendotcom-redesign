@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
-import PrimaryImage from "../../../assets/estimator/38.png";
+import PrimaryImage from "../../../assets/estimator/38.webp";
 import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import NavBar from "../../../components/NavBar/NavBar"
 import FetchFromApi from "../../../utils/fetchFromApi";

@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import Button from "../../../components/Button/Button";
-import Image1 from "../../../assets/estimator/35-1.png";
-import Image2 from "../../../assets/estimator/35-2.png";
-import Image3 from "../../../assets/estimator/35-3.png";
-import Image4 from "../../../assets/estimator/35-4.png";
-import Image5 from "../../../assets/estimator/35-5.png";
+import Image1 from "../../../assets/estimator/35-1.webp";
+import Image2 from "../../../assets/estimator/35-2.webp";
+import Image3 from "../../../assets/estimator/35-3.webp";
+import Image4 from "../../../assets/estimator/35-4.webp";
+import Image5 from "../../../assets/estimator/35-5.webp";
 import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
 import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 
