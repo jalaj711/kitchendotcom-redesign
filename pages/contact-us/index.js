@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "./styles.module.scss";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
@@ -16,6 +17,7 @@ import Footer from "../../components/Footer/Footer";
 import { useState } from "react";
 import FetchFromApi from "../../utils/fetchFromApi";
 import URLs from "../../utils/urls";
+import Link from "next/link";
 
 export default function ContactUs() {
   const [data, setData] = useState({
@@ -112,21 +114,26 @@ export default function ContactUs() {
               <div>
                 <h2>Contact Info</h2>
                 <div>
-                  <span>
-                    <Image src={PhoneIcon} width={48} alt="phone" />{" "}
-                    +919876543210
-                  </span>
-                  <span>
-                    <Image src={SecuredLetterIcon} width={48} alt="email" />{" "}
-                    @kitchendotcom
-                  </span>
-                  <span>
-                    <Image src={InternetIcon} width={48} alt="website" />{" "}
-                    kitchendotcom.in
-                  </span>
+                  <Link href="tel:087074 82268">
+                    <span>
+                      <Image src={PhoneIcon} width={48} alt="phone" />{" "}
+                      +919876543210
+                    </span>
+                  </Link>
+                  <Link href="mailto:jalaj2811@gmail.com">
+                    <span>
+                      <Image src={SecuredLetterIcon} width={48} alt="email" />{" "}
+                      @kitchendotcom
+                    </span>
+                  </Link>
+                  <Link href="/">
+                    <span>
+                      <Image src={InternetIcon} width={48} alt="website" />{" "}
+                      kitchendotcom.in
+                    </span>
+                  </Link>
                   <div style={{ display: "inline" }}>
                     <Image
-                      className={styles.social}
                       src={FacebookIcon}
                       width={48}
                       alt="facebook"
