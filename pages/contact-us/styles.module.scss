@@ -81,6 +81,10 @@
       display: flex;
       flex-direction: column;
       font-weight: 600;
+      span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -127,7 +131,4 @@
       }
     }
   }
-}
-.social :hover{
-  cursor: pointer;
 }
