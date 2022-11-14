@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles_2730.module.scss";
-import Image1 from "../../../assets/estimator/laminate-1.png";
+import Image1 from "../../../assets/estimator/laminate-1.webp";
 import Button from "../../../components/Button/Button";
 import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
 import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
