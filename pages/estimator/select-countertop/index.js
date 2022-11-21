@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Button from "../../../components/Button/Button";
 import Image from "../../../assets/estimator/22.webp";
-import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
-import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
@@ -62,9 +60,7 @@ const Estimator22 = () => {
             Next
           </Button>
         </div>
-      </div>
-      <TwoSquaresTopRight className={styles.square1} />
-      <TwoSquaresBottomLeft className={styles.square2} />
+      </div> 
     </div>
   );
 };

@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./styles32_34.module.scss";
 import Image1 from "../../../assets/estimator/33.webp";
 import Button from "../../../components/Button/Button";
-import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
-import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
@@ -133,8 +131,6 @@ const Estimator27 = () => {
           </div>
         </div>
       </div>
-      <TwoSquaresTopRight className={styles.square1} />
-      <TwoSquaresBottomLeft className={styles.square2} />
     </div>
   );
 };

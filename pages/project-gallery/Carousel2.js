@@ -19,6 +19,8 @@ export default function CustomCarousel({ data }) {
           infiniteLoop={true}
           showStatus={false}
           selectedItem={current}
+          swipeable={false}
+          stopOnHover={false}
           onChange={(index) => setCurrent(index)}
         >
           {data.map((elem, index) => (

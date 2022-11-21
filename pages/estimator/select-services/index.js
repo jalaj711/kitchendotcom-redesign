@@ -7,8 +7,6 @@ import Image2 from "../../../assets/estimator/35-2.webp";
 import Image3 from "../../../assets/estimator/35-3.webp";
 import Image4 from "../../../assets/estimator/35-4.webp";
 import Image5 from "../../../assets/estimator/35-5.webp";
-import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
-import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
@@ -149,9 +147,7 @@ const Estimater2 = () => {
               Next
             </Button>
           </div>
-        </div>
-      <TwoSquaresTopRight className={styles.square1} />
-      <TwoSquaresBottomLeft className={styles.square2} />
+        </div> 
     </div>
   );
 };

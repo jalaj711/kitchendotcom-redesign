@@ -119,7 +119,7 @@ export default function ContactUs() {
                       +919876543210
                     </span>
                   </Link>
-                  <Link href="mailto:jalaj2811@gmail.com">
+                  <Link href="mailto:">
                     <span>
                       <Image src={SecuredLetterIcon} width={48} alt="email" />{" "}
                       @kitchendotcom

@@ -90,6 +90,7 @@ export default function ContactUs() {
                 showStatus={false}
                 showArrows={false}
                 showIndicators={false}
+                swipeable={false}
               >
                 {data.videos.map((elem, index) => (
                   <video
@@ -116,6 +117,7 @@ export default function ContactUs() {
                 infiniteLoop={true}
                 showStatus={false}
                 showArrows={false}
+                swipeable={false}
               >
                 {data.videos.map((elem, index) => (
                   <video
@@ -138,6 +140,7 @@ export default function ContactUs() {
                 showStatus={false}
                 showArrows={false}
                 showIndicators={false}
+                swipeable={false}
               >
                 {data.videos.map((elem, index) => (
                   <video
@@ -200,6 +203,8 @@ export default function ContactUs() {
                 showStatus={false}
                 showArrows={false}
                 showIndicators={false}
+                swipeable={false}
+                stopOnHover={false}
               >
                 {data.completed_projects.map((elem, index) => (
                   <img
@@ -227,6 +232,8 @@ export default function ContactUs() {
                 infiniteLoop={true}
                 showStatus={false}
                 showArrows={false}
+                swipeable={false}
+                stopOnHover={false}
               >
                 {data.completed_projects.map((elem, index) => (
                   <img
@@ -249,6 +256,8 @@ export default function ContactUs() {
                 showStatus={false}
                 showArrows={false}
                 showIndicators={false}
+                swipeable={false}
+                stopOnHover={false}
               >
                 {data.completed_projects.map((elem, index) => (
                   <img

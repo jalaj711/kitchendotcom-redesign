@@ -33,6 +33,8 @@ export default function ColourElementsCarousel() {
         infiniteLoop={true}
         showStatus={false}
         selectedItem={current}
+        swipeable={false}
+        stopOnHover={false}
         onChange={(index) => setCurrent(index)}
       >
         {ColorPalettes.map((paletteSheet, index) => (

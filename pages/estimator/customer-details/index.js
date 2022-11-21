@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
-import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import Button from "../../../components/Button/Button";
 import Input from "../../../components/Input/Input";
 import Image from "../../../assets/estimator/estimator-7-main.webp";
@@ -104,9 +102,7 @@ const Estimater2 = () => {
             </Button>
           </div>
         </div>
-      </div>
-      <TwoSquaresTopRight className={styles.square1} />
-      <TwoSquaresBottomLeft className={styles.square2} />
+      </div> 
     </div>
   );
 };

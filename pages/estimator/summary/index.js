@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import PrimaryImage from "../../../assets/estimator/38.webp";
-import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import NavBar from "../../../components/NavBar/NavBar"
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
+import Footer from "../../../components/Footer/Footer"
 import { useRouter } from "next/router";
 
 const Estimater2 = () => {
@@ -35,7 +35,7 @@ const Estimater2 = () => {
     <div className={styles.container}>
       <NavBar />
       <div className={styles.top}>
-        <img src={PrimaryImage.src} className={styles.bg} alt="bg" />
+        <img src={PrimaryImage.src} className={styles.bg} alt="bg" id="page-bg" />
       </div>
       <div className={styles.wrapper}>
         <h1>Summary</h1>
@@ -70,7 +70,7 @@ const Estimater2 = () => {
           <h4>Loading...</h4>
         )}
       </div>
-      <TwoSquaresBottomLeft className={styles.square2} />
+      <Footer />
     </div>
   );
 };

@@ -109,6 +109,11 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    h1 {
+      max-width: 60vw;
+    }
+  }
   .landing {
     div {
       bottom: 32px;

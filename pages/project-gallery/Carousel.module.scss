@@ -46,9 +46,7 @@
 }
 
 .projectName {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 80vw;
     img {
         width: 48px !important;
         height: 48px;
@@ -56,4 +54,12 @@
         object-fit: cover;
         margin-right: 16px;
     }
+}
+
+.additionalContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

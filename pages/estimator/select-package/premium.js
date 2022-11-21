@@ -5,8 +5,6 @@ import Button from "../../../components/Button/Button";
 import FetchFromApi from "../../../utils/fetchFromApi";
 import URLs from "../../../utils/urls";
 import { useRouter } from "next/router";
-import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
-import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 
 const Estimator27 = () => {
   const [active, setActive] = React.useState("");
@@ -168,9 +166,7 @@ const Estimator27 = () => {
             </Button>
           </div>
         </div>
-      </div>
-      <TwoSquaresTopRight className={styles.square1} />
-      <TwoSquaresBottomLeft className={styles.square2} />
+      </div> 
     </div>
   );
 };

@@ -13,10 +13,32 @@ export default function Footer() {
       <div className={styles.main}>
         <h1>Kitchendotcom</h1>
         <div>
-          <Image src={FacebookIcon} width={64} alt="facebook" />
-          <Image src={InstagramIcon} width={64} alt="Instagram" />
-          <Image src={TwitterIcon} width={64} alt="Twitter" />
-          <Image src={WhatsAppIcon} width={64} alt="WhatsApp" />
+          <Image
+            src={FacebookIcon}
+            width={48}
+            alt="facebook"
+            onClick={() =>
+              window.open("https://www.facebook.com/kitchendotcom.in", "_blank")
+            }
+          />
+          <Image
+            src={InstagramIcon}
+            width={48}
+            alt="Instagram"
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/kitchendotcom.in/",
+                "_blank"
+              )
+            }
+          />
+          {/* <Image src={TwitterIcon} width={48} alt="Twitter" /> */}
+          <Image
+            src={WhatsAppIcon}
+            width={48}
+            alt="WhatsApp"
+            onClick={() => window.open("https://wa.me/08707482268", "_blank")}
+          />
         </div>
       </div>
       <div className={styles.getInTouch}>
@@ -34,35 +56,49 @@ export default function Footer() {
       </div>
       <div className={styles.aboutus}>
         <ul>
-            <li><Link href="/about-us">About us</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/cities">Cities</Link></li>
-            <li><Link href="/contact-us">Contact Us</Link></li>
+          <li>
+            <Link href="/about-us">About us</Link>
+          </li>
+          <li>
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link href="/cities">Cities</Link>
+          </li>
+          <li>
+            <Link href="/contact-us">Contact Us</Link>
+          </li>
         </ul>
       </div>
       <div className={styles.offerings}>
         <h3>Offerings</h3>
         <ul>
-            <li><Link href="/estimator">Kitchen Price estimator</Link></li>
-            <li><Link href="/project-gallery">Product Gallery</Link></li>
-            <li><Link href="/design-gallery">Design Gallery</Link></li>
+          <li>
+            <Link href="/estimator">Kitchen Price estimator</Link>
+          </li>
+          <li>
+            <Link href="/project-gallery">Product Gallery</Link>
+          </li>
+          <li>
+            <Link href="/design-gallery">Design Gallery</Link>
+          </li>
         </ul>
       </div>
       <div className={styles.locations}>
         <h3>Locations</h3>
       </div>
       <div className={styles.copyrights}>
-        <div style={{textAlign: "left"}}>
-            <span>Designed by</span>
-            <span>RACreators.com</span>
+        <div style={{ textAlign: "left" }}>
+          <span>Designed by</span>
+          <span>RACreators.com</span>
         </div>
         <div>
-            <span>Terms and conditions</span>
-            <span>Privacy Policy</span>
+          <span>Terms and conditions</span>
+          <span>Privacy Policy</span>
         </div>
-        <div style={{ textAlign: "right"}}>
-            <span>@2022Kitchendotcom.in</span>
-            <span>All Rights Reserved</span>
+        <div style={{ textAlign: "right" }}>
+          <span>@2022Kitchendotcom.in</span>
+          <span>All Rights Reserved</span>
         </div>
       </div>
       <img src={LampImg.src} alt="lamp" className={styles.lampImage} />

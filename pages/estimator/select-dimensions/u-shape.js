@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import TwoSquaresTopRight from "../../../components/TwoSquaresTopRight";
-import TwoSquaresBottomLeft from "../../../components/TwoSquaresBottomLeft";
 import Button from "../../../components/Button/Button";
 import UShapeKitchen from "../../../assets/estimator/u-shape-dimension.svg";
 import Input from "../../../components/Input/Input";
@@ -150,9 +148,7 @@ const Estimater2 = () => {
             Next
           </Button>
         </div>
-      </div>
-      <TwoSquaresTopRight className={styles.square1} />
-      <TwoSquaresBottomLeft className={styles.square2} />
+      </div> 
     </div>
   );
 };

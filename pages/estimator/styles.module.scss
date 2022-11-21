@@ -1,8 +1,8 @@
 @use "../../styles/theme";
 
 .container {
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   display: flex;
   flex-direction: column;
   width: 100vw;

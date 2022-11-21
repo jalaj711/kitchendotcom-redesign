@@ -19,6 +19,8 @@ export default function CustomCarousel({ images }) {
           infiniteLoop={true}
           showStatus={false}
           selectedItem={current}
+          swipeable={false}
+          stopOnHover={false}
           onChange={(index) => setCurrent(index)}
         >
           {images.map((elem, index) => (
