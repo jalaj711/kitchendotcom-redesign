@@ -146,6 +146,9 @@
     }
   }
   .container {
+    h1 {
+      max-width: 80vw;
+    }
     .half2 {
       padding: 0;
       .imageWithSquare {

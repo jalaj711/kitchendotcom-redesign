@@ -110,6 +110,9 @@
   @media (max-width: 768px) {
     text-align: center;
     margin-top: 12px;
+    ul {
+      padding: 0;
+    }
   }
 }
 
@@ -121,6 +124,9 @@
   @media (max-width: 768px) {
     text-align: center;
     margin-top: 12px;
+    ul {
+      padding: 0;
+    }
   }
 }
 
@@ -137,7 +143,7 @@
   margin-top: 48px;
   @media (max-width: 768px) {
     text-align: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 12px;
     div {
       text-align: center !important;
