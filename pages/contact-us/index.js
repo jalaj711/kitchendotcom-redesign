@@ -113,10 +113,10 @@ export default function ContactUs() {
               <div>
                 <h2>Contact Info</h2>
                 <div>
-                  <Link href="tel:087074 82268">
+                  <Link href="tel:093052 81003">
                     <span>
                       <Image src={PhoneIcon} width={48} alt="phone" />{" "}
-                      +919876543210
+                      093052 81003
                     </span>
                   </Link>
                   <Link href="mailto:">
@@ -160,7 +160,7 @@ export default function ContactUs() {
                       width={48}
                       alt="WhatsApp"
                       onClick={() =>
-                        window.open("https://wa.me/08707482268", "_blank")
+                        window.open("https://wa.me/09305281003", "_blank")
                       }
                     />
                   </div>

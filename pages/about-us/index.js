@@ -4,6 +4,7 @@ import Image1 from "../../assets/Rectangle252.webp";
 import styles from "./styles.module.scss";
 import Image2 from "../../assets/Rectangle226.webp";
 import Background from "../../assets/Rectangle288.webp";
+import Ideago from "../../assets/ideago_interiors.webp";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/NavBar/NavBar";
 
@@ -12,7 +13,7 @@ const About = () => {
     <>
       <Navbar />
       <div className={styles.container}>
-        <img className={styles.bgimg} src={Background.src} id="page-bg" ></img>
+        <img className={styles.bgimg} src={Background.src} id="page-bg"></img>
         {/* <ThreeTriangles className={styles.triangles4} /> */}
 
         <h1 className={styles.abt}>About Us</h1>
@@ -54,7 +55,6 @@ const About = () => {
           </div>
         </div>
         <div className={styles.howstart}>
-
           <h2 className={styles.started}>HOW IT STARTED</h2>
           <hr className={styles.line2}></hr>
           <p className={styles.started1}>
@@ -99,7 +99,20 @@ const About = () => {
           <img className={styles.img2} src={Image2.src}></img>
           <h3 className={styles.he3}> Mr. Abhishek Gupta</h3>
         </div>
-
+        <div className={styles.howstart} style={{ marginTop: "32px" }}>
+          <h2 className={styles.started}>Our Parent Company</h2>
+          <hr className={styles.line3}></hr>
+        </div>
+        <div className={styles.drdots}>
+          <img
+            className={styles.img3}
+            src={Ideago.src}
+            alt="Ideago Interiors"
+            width="128"
+            height="128"
+          />
+          <h3 className={styles.he3}>Ideago Interiors</h3>
+        </div>
       </div>
       <Footer />
     </>

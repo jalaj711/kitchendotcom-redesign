@@ -37,7 +37,7 @@ export default function Footer() {
             src={WhatsAppIcon}
             width={48}
             alt="WhatsApp"
-            onClick={() => window.open("https://wa.me/08707482268", "_blank")}
+            onClick={() => window.open("https://wa.me/09305281003", "_blank")}
           />
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function Footer() {
             <Link href="/estimator">Kitchen Price estimator</Link>
           </li>
           <li>
-            <Link href="/project-gallery">Product Gallery</Link>
+            <Link href="/project-gallery">Project Gallery</Link>
           </li>
           <li>
             <Link href="/design-gallery">Design Gallery</Link>
@@ -85,7 +85,8 @@ export default function Footer() {
         </ul>
       </div>
       <div className={styles.locations}>
-        <h3>Locations</h3>
+        <h3>Our parent company</h3>
+        <Link href="http://indeagointeriors.com/">Indeago Interiors</Link>
       </div>
       <div className={styles.copyrights}>
         <div style={{ textAlign: "left" }}>

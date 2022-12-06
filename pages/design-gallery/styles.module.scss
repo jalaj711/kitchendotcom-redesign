@@ -24,7 +24,7 @@
   }
 }
 
-.imageWithSquare{
+.imageWithSquare {
   border: 2px solid theme.$primary_deep;
   border-radius: 16px;
 }
@@ -131,14 +131,14 @@
 
 @media (max-width: 768px) {
   .landing {
-  div {
-    bottom: 32px;
-    left: 32px;
+    div {
+      bottom: 32px;
+      left: 32px;
+    }
+    h2 {
+      margin-left: 16px;
+    }
   }
-  h2 {
-    margin-left: 16px;
-  }
-}
   .imageWithSquare {
     max-width: 60vw;
     img {
@@ -197,6 +197,19 @@
     .colorPaletteElement {
       width: 36px;
       height: 36px;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .kitchenLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      width: 100%;
+      text-align: center;
     }
   }
 }
