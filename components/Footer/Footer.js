@@ -37,7 +37,7 @@ export default function Footer() {
             src={WhatsAppIcon}
             width={48}
             alt="WhatsApp"
-            onClick={() => window.open("https://wa.me/09305281003", "_blank")}
+            onClick={() => window.open("https://wa.me/+919305281003", "_blank")}
           />
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function Footer() {
         <div className={styles.contactDetails}>
           <div>
             <span>Call us</span>
-            <span>+91 9876543210</span>
+            <span>+91 9305281003</span>
           </div>
           <div>
             <span>Email us</span>
@@ -84,25 +84,20 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className={styles.locations}>
-        <h3>Our parent company</h3>
-        <Link href="http://indeagointeriors.com/">Indeago Interiors</Link>
-      </div>
       <div className={styles.copyrights}>
         <div style={{ textAlign: "left" }}>
           <span>Designed by</span>
           <span>RACreators.com</span>
         </div>
         <div>
-          <span>Terms and conditions</span>
-          <span>Privacy Policy</span>
+          <span>Our parent company</span>
+          <Link href="http://ideagointeriors.com/">Indeago Interiors</Link>
         </div>
         <div style={{ textAlign: "right" }}>
           <span>@2022Kitchendotcom.in</span>
           <span>All Rights Reserved</span>
         </div>
       </div>
-      <img src={LampImg.src} alt="lamp" className={styles.lampImage} />
     </footer>
   );
 }

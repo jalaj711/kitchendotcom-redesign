@@ -102,6 +102,9 @@
   .container {
     flex-direction: column;
   }
+  .social {
+    display: none !important;
+  }
 }
 
 @media (max-width: 600px) {

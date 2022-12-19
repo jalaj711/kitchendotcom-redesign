@@ -31,11 +31,11 @@
   display: grid;
   position: relative;
   grid-template-areas:
-    "footer-main footer-main footer-about-us footer-offerings footer-locations"
-    "footer-main footer-main footer-about-us footer-offerings footer-locations"
-    "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings footer-locations"
-    "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings footer-locations"
-    "footer-copyrights footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
+    "footer-main footer-main footer-about-us footer-offerings"
+    "footer-main footer-main footer-about-us footer-offerings"
+    "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings"
+    "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings"
+    "footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
   @media (max-width: 768px) {
     padding: 48px 16px 4px 16px;
     grid-template-areas:
@@ -48,10 +48,6 @@
       "footer-about-us footer-offerings"
       "footer-about-us footer-offerings"
       "footer-about-us footer-offerings"
-      "footer-locations footer-locations"
-      "footer-locations footer-locations"
-      "footer-locations footer-locations"
-      "footer-locations footer-locations"
       "footer-copyrights footer-copyrights"
       "footer-copyrights footer-copyrights";
 
@@ -77,10 +73,6 @@
       "footer-offerings"
       "footer-offerings"
       "footer-offerings"
-      "footer-locations"
-      "footer-locations"
-      "footer-locations"
-      "footer-locations"
       "footer-copyrights"
       "footer-copyrights";
   }
@@ -129,14 +121,6 @@
     }
   }
 }
-
-.locations {
-  grid-area: footer-locations;
-  @media (max-width: 768px) {
-    text-align: center;
-  }
-}
-
 .copyrights {
   grid-area: footer-copyrights;
   display: flex;
@@ -159,12 +143,6 @@
       font-weight: 600;
     }
   }
-
-  :nth-child(2) {
-    * {
-      font-weight: 400 !important;
-    }
-  }
 }
 
 .contactDetails {
@@ -181,11 +159,3 @@
   }
 }
 
-.lampImage {
-  top: 0;
-  right: 12px;
-  position: absolute;
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
