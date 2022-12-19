@@ -25,11 +25,16 @@ export default function ContactUs() {
     email: null,
     city: null,
     message: null,
+    phone: null,
   });
 
   const handleClick = (evt) => {
     evt.preventDefault();
-    if (data.first_name && data.email && data.city && data.message) {
+    if (data.first_name && data.phone && data.city && data.message) {
+      if(typeof(Number(data.phone)) === NaN || data.phone.length != 10){
+        alert("Please enter a valid phone number of 10 digits");
+        return;
+      }
       FetchFromApi.post(URLs.CONTACT_US, data).then((res) => {
         if (res.status == 200) {
           return res.json().then((res) => {
@@ -82,13 +87,21 @@ export default function ContactUs() {
                   />
                 </div>
                 <Input
-                  placeholder="Your Email Address*"
+                  placeholder="Your Phone Number*"
+                  onChange={(evt) =>
+                    setData({ ...data, phone: evt.target.value })
+                  }
+                  value={data.phone}
+                  type="tel"
+                  required
+                />
+                <Input
+                  placeholder="Your Email Address"
                   onChange={(evt) =>
                     setData({ ...data, email: evt.target.value })
                   }
                   value={data.email}
                   type="email"
-                  required
                 />
                 <Input
                   placeholder="Your Location*"
@@ -131,7 +144,7 @@ export default function ContactUs() {
                       kitchendotcom.in
                     </span>
                   </Link>
-                  <div style={{ display: "inline" }}>
+                  <div style={{ display: "inline" }} className={styles.social}>
                     <Image
                       src={FacebookIcon}
                       width={48}
