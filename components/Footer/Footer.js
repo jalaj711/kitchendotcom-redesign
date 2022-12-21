@@ -10,47 +10,54 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.main}>
-        <h1>Kitchendotcom</h1>
-        <div>
-          <Image
-            src={FacebookIcon}
-            width={48}
-            alt="facebook"
-            onClick={() =>
-              window.open("https://www.facebook.com/kitchendotcom.in", "_blank")
-            }
-          />
-          <Image
-            src={InstagramIcon}
-            width={48}
-            alt="Instagram"
-            onClick={() =>
-              window.open(
-                "https://www.instagram.com/kitchendotcom.in/",
-                "_blank"
-              )
-            }
-          />
-          {/* <Image src={TwitterIcon} width={48} alt="Twitter" /> */}
-          <Image
-            src={WhatsAppIcon}
-            width={48}
-            alt="WhatsApp"
-            onClick={() => window.open("https://wa.me/+919305281003", "_blank")}
-          />
-        </div>
-      </div>
-      <div className={styles.getInTouch}>
-        <h2>Get In Touch</h2>
-        <div className={styles.contactDetails}>
+      <div className={styles.con}>
+        <div className={styles.main}>
+          <h1>Kitchendotcom</h1>
           <div>
-            <span>Call us</span>
-            <span>+91 9305281003</span>
+            <Image
+              src={FacebookIcon}
+              width={48}
+              alt="facebook"
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/kitchendotcom.in",
+                  "_blank"
+                )
+              }
+            />
+            <Image
+              src={InstagramIcon}
+              width={48}
+              alt="Instagram"
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/kitchendotcom.in/",
+                  "_blank"
+                )
+              }
+            />
+            {/* <Image src={TwitterIcon} width={48} alt="Twitter" /> */}
+            <Image
+              src={WhatsAppIcon}
+              width={48}
+              alt="WhatsApp"
+              onClick={() =>
+                window.open("https://wa.me/+919305281003", "_blank")
+              }
+            />
           </div>
-          <div>
-            <span>Email us</span>
-            <span>@kitchendotcom</span>
+        </div>
+        <div className={styles.getInTouch}>
+          <h2>Contact Us</h2>
+          <div className={styles.contactDetails}>
+            <div>
+              <span>Call us</span>
+              <span>+91 9305281003</span>
+            </div>
+            <div>
+              <span>Email us</span>
+              <span>@kitchendotcom</span>
+            </div>
           </div>
         </div>
       </div>
@@ -85,10 +92,13 @@ export default function Footer() {
         </ul>
       </div>
       <div className={styles.copyrights}>
-        <div style={{ textAlign: "left" }}>
-          <span>Designed by</span>
-          <span>RACreators.com</span>
-        </div>
+        
+          <div style={{ textAlign: "left" }}>
+           
+            <span>Designed by</span>
+            <span>RACreators.com</span>
+          </div>
+      
         <div>
           <span>Our parent company</span>
           <Link href="http://ideagointeriors.com/">Indeago Interiors</Link>

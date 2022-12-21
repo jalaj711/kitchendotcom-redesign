@@ -51,11 +51,11 @@
       "footer-copyrights footer-copyrights"
       "footer-copyrights footer-copyrights";
 
-      .offerings{
-        ul{
-          list-style: none;
-        }
+    .offerings {
+      ul {
+        list-style: none;
       }
+    }
   }
   @media (max-width: 500px) {
     padding: 48px 16px 4px 16px;
@@ -80,7 +80,7 @@
 
 .main {
   grid-area: footer-main;
-  text-align: center;
+  text-align: left;
 
   div {
     display: inline-block;
@@ -90,6 +90,10 @@
 .getInTouch {
   grid-area: footer-get-in-touch;
   text-align: center;
+  margin-left: -70%;
+}
+.con{
+  margin-left: 0%;
 }
 
 .aboutus {
@@ -147,7 +151,9 @@
 
 .contactDetails {
   display: flex;
+  flex-direction: column;
   text-align: center;
+
   div {
     display: flex;
     flex-direction: column;
@@ -158,4 +164,3 @@
     }
   }
 }
-
