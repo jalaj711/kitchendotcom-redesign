@@ -59,9 +59,8 @@
     align-items: center;
     animation: slideIn 300ms ease-out;
     li, a {
-      display: inline-block;
       list-style-type: none;
-      font-size: x-large;
+      font-size: large;
       font-weight: 600;
       text-decoration: none;
       color: #000;
@@ -73,7 +72,7 @@
       margin: 16px 0;
       padding: 12px 8px;
       border-radius: 8px;
-      width: 80%;
+      width: 60%;
 
     }
     li:hover {
@@ -82,6 +81,18 @@
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     }
   }
+}
+
+.mobileNavLink {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 8px;
+  width: 30px;
+  height: 30px;
+  stroke-width: 2px;
 }
 
 .activeLink {
@@ -93,7 +104,7 @@
 .mobileNavBg {
   position: relative;
   color: white;
-  img {
+  .navBg {
     width: 60vw;
     min-width: 275px;
     max-width: 400px;
@@ -108,7 +119,8 @@
     z-index: 10001;
   }
   h1 {
-    font-size: 24px;
+    font-size: 30px;
+    margin: 0;
   }
 }
 

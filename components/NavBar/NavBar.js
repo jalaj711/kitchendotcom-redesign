@@ -3,7 +3,10 @@ import styles from "./NavBar.module.scss";
 import Hamburger from "../../assets/hamburger.svg";
 import Link from "next/link";
 import BG from "../../assets/design-gallery/top-bg.webp";
+import Logo from "../../assets/logo.webp";
 import { useRouter } from "next/router";
+import { AiOutlineInfoCircle, AiOutlineComment, AiOutlineHome } from "react-icons/ai";
+import { GrBlog } from "react-icons/gr";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -60,42 +63,64 @@ export default function NavBar() {
       >
         <div className={styles.mobileNav}>
           <div className={styles.mobileNavBg}>
-            <img src={BG.src} />
+            <img src={BG.src} className={styles.navBg} />
             <div>
+              <img src={Logo.src} height={72} />
               <h1>Kitchendotcom</h1>
             </div>
           </div>
           <div className={styles.mobileNav}>
-            <li className={router.asPath == "/" ? styles.activeLink : ""}>
+            <li
+              className={
+                styles.mobileNavLink + " " +
+                (router.asPath == "/" ? styles.activeLink : "")
+              }
+            >
+              <AiOutlineHome className={styles.icon} />
               <Link href="/" onClick={() => setOpen(false)}>
                 Home
               </Link>
             </li>
             <li
-              className={router.asPath == "/about-us" ? styles.activeLink : ""}
+              className={
+                styles.mobileNavLink + " " +
+                (router.asPath == "/about-us" ? styles.activeLink : "")
+              }
             >
+              <AiOutlineInfoCircle className={styles.icon} />
               <Link href="/about-us" onClick={() => setOpen(false)}>
                 About Us
               </Link>
             </li>
-            <li className={router.asPath == "/blog" ? styles.activeLink : ""}>
+            <li
+              className={
+                styles.mobileNavLink + " " +
+                (router.asPath == "/blog" ? styles.activeLink : "")
+              }
+            >
+              <GrBlog className={styles.icon} />
               <Link href="/blog" onClick={() => setOpen(false)}>
                 Blog
               </Link>
             </li>
-            {/* <Link href="/cities" className={router.asPath == "/" ? styles.activeLink : ""} onClick={() => setOpen(false)}>
+            {/* <Link href="/cities" className={styles.mobileNavLink + " " + (router.asPath == "/" ? styles.activeLink : "")} onClick={() => setOpen(false)}>
             Cities
           </Link> */}
             <li
               className={
-                router.asPath == "/contact-us" ? styles.activeLink : ""
+                styles.mobileNavLink + " " +
+                (router.asPath == "/contact-us" ? styles.activeLink : "")
               }
             >
+              <AiOutlineComment className={styles.icon} />
               <Link href="/contact-us" onClick={() => setOpen(false)}>
                 Contact us
               </Link>
             </li>
           </div>
+          <span style={{position: "absolute", bottom: 0}}>
+            An initiative by <a href="http://ideagointeriors.com/">Ideago Interiors</a>
+          </span>
         </div>
       </div>
     </>
