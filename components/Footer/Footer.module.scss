@@ -31,11 +31,11 @@
   display: grid;
   position: relative;
   grid-template-areas:
-    "footer-main footer-main footer-about-us footer-offerings"
-    "footer-main footer-main footer-about-us footer-offerings"
-    "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings"
-    "footer-get-in-touch footer-get-in-touch footer-about-us footer-offerings"
-    "footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
+    "footer-main footer-main footer-about-us footer-offerings footer-get-in-touch"
+    "footer-main footer-main footer-about-us footer-offerings footer-get-in-touch"
+    "footer-main footer-main footer-about-us footer-offerings footer-get-in-touch"
+    "footer-main footer-main footer-about-us footer-offerings footer-get-in-touch"
+    "footer-copyrights footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
   @media (max-width: 768px) {
     padding: 48px 16px 4px 16px;
     grid-template-areas:
@@ -89,7 +89,7 @@
 
 .getInTouch {
   grid-area: footer-get-in-touch;
-  text-align: center;
+  text-align: left;
 }
 
 .aboutus {
@@ -146,8 +146,6 @@
 }
 
 .contactDetails {
-  display: flex;
-  text-align: center;
   div {
     display: flex;
     flex-direction: column;

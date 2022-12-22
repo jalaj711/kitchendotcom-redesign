@@ -1,9 +1,7 @@
 import styles from "./Footer.module.scss";
 import FacebookIcon from "../../assets/Facebook.svg";
 import InstagramIcon from "../../assets/Instagram.svg";
-import TwitterIcon from "../../assets/Twitter.svg";
 import WhatsAppIcon from "../../assets/WhatsApp.svg";
-import LampImg from "../../assets/lamp.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.getInTouch}>
-        <h2>Get In Touch</h2>
+        <h3>Get In Touch</h3>
         <div className={styles.contactDetails}>
           <div>
             <span>Call us</span>
@@ -50,7 +48,7 @@ export default function Footer() {
           </div>
           <div>
             <span>Email us</span>
-            <span>@kitchendotcom</span>
+            <span>info@kitchendotcom.in</span>
           </div>
         </div>
       </div>

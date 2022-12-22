@@ -132,10 +132,10 @@ export default function ContactUs() {
                       093052 81003
                     </span>
                   </Link>
-                  <Link href="mailto:">
+                  <Link href="mailto:info@kitchendotcom.in">
                     <span>
                       <Image src={SecuredLetterIcon} width={48} alt="email" />{" "}
-                      @kitchendotcom
+                      info@kitchendotcom.in
                     </span>
                   </Link>
                   <Link href="/">
