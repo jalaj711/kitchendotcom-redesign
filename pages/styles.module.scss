@@ -124,6 +124,7 @@
   .head1 {
     max-width: none !important;
     margin-top: 128px;
+    font-size: 24px !important;
   }
   .head {
     padding-left: 0px;
@@ -131,4 +132,14 @@
   .v1 {
     max-width: none !important;
   }
+  .p1 , .p2 , .p3{
+      display: none !important;
+    }
+    .wec{
+       width: 100%;
+    text-align: center;
+    }
+    .head{
+      margin-top: -10px;
+    }
 }
