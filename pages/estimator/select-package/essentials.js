@@ -48,14 +48,14 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>Essentials</h2>
-                <span>
+                <span className={styles.res}>
                   A range that has the basic unit and accessories necessary for
                   a comfortable modular kitchen.
                 </span>
 
                 <img src={Image1.src} />
 
-                <p>
+                <p className={styles.res}>
                   <b>PRO TIP: </b>If you&apos;re lookingfor a kitchen with the
                   necessary units for an easycooking time this is yours pick!{" "}
                 </p>
@@ -84,9 +84,7 @@ const Estimator27 = () => {
                   <span
                     style={{ color: "#F9C24E", cursor: "pointer" }}
                     onClick={() =>
-                      router.push(
-                        "/estimator/select-package/premium"
-                      )
+                      router.push("/estimator/select-package/premium")
                     }
                   >
                     &#9432;
@@ -164,7 +162,7 @@ const Estimator27 = () => {
             </Button>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

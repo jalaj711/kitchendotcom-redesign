@@ -48,14 +48,14 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>Premium</h2>
-                <span>
+                <span className={styles.res}>
                   An exquisite kitchen with sleek fixtures, hardware, cabinets &
                   fittings for an elegant and smooth cooking experiences.
                 </span>
 
                 <img src={Image1.src} />
 
-                <p>
+                <p className={styles.res}>
                   <b>PRO TIP: </b>
                   Consider this if you&apos;re looking for a exclusive
                   accessories,cabinets and more to make your version of the
@@ -116,9 +116,7 @@ const Estimator27 = () => {
                   <span
                     style={{ color: "#F9C24E", cursor: "pointer" }}
                     onClick={() =>
-                      router.push(
-                        "/estimator/select-package/luxe"
-                      )
+                      router.push("/estimator/select-package/luxe")
                     }
                   >
                     &#9432;
@@ -166,7 +164,7 @@ const Estimator27 = () => {
             </Button>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

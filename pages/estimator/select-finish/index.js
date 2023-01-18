@@ -48,13 +48,21 @@ const Estimater26 = () => {
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>Laminate</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
                     Is a smooth, durable finish which gives a clean and rich
                     look.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-finish/laminate')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/laminate")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
@@ -72,12 +80,20 @@ const Estimater26 = () => {
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>PVC laminate</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
                     Has a lustrous surface that enhances your modular kitchen.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-finish/pvc-laminate')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/pvc-laminate")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
@@ -97,12 +113,23 @@ const Estimater26 = () => {
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>Anti-scratch Acrylic</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
                     Is an elegant, reflective, glossy finish that is scratch
                     resistant.
                   </div>
-                </div><div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-finish/anti-scratch-acrylic')}>
+                </div>
+                <div>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push(
+                        "/estimator/select-finish/anti-scratch-acrylic"
+                      )
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
@@ -120,13 +147,21 @@ const Estimater26 = () => {
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>Glossy PU</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
                     Comes with a slick look, high durability, and a polished
                     finish.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-finish/glossy-pu')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-finish/glossy-pu")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
@@ -142,7 +177,7 @@ const Estimater26 = () => {
             Next
           </Button>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

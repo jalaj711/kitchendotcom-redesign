@@ -47,12 +47,12 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>Glossy PU</h2>
-                <span>
+                <span className={styles.res}>
                   Comes with a slick look, high durability, and a polished
                   finish.
                 </span>
                 <img src={Image1.src} />
-                <p>
+                <p className={styles.res}>
                   <b>Pro Tip: </b>Consider this if you want mirror-like cabinets
                   that are easy to clean!
                 </p>
@@ -72,7 +72,7 @@ const Estimator27 = () => {
                 </div>
                 <div>
                   <h3>Laminate</h3>
-                  <p>
+                  <p className={styles.res}>
                     Is a smooth, durable finish which gives a clean and rich
                     look.
                   </p>
@@ -101,7 +101,7 @@ const Estimator27 = () => {
                 </div>
                 <div>
                   <h3>PVC laminate</h3>
-                  <p>
+                  <p className={styles.res}>
                     Is waterproof and withstands prolonged exposure to water and
                     moisture.
                   </p>
@@ -130,7 +130,7 @@ const Estimator27 = () => {
                 </div>
                 <div>
                   <h3>Anti-scratch Acrylic</h3>
-                  <p>
+                  <p className={styles.res}>
                     Is an elegant, reflective, glossy finish that is scratch
                     resistant.
                   </p>
@@ -139,7 +139,9 @@ const Estimator27 = () => {
                   <span
                     style={{ color: "#F9C24E", cursor: "pointer" }}
                     onClick={() =>
-                      router.push("/estimator/select-finish/anti-scratch-acrylic")
+                      router.push(
+                        "/estimator/select-finish/anti-scratch-acrylic"
+                      )
                     }
                   >
                     &#9432;
@@ -158,7 +160,7 @@ const Estimator27 = () => {
             </Button>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

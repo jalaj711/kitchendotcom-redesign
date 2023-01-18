@@ -130,6 +130,12 @@
       margin-top: 12px;
     }
   }
+  .res{
+    display: none;
+  }
+  .choice{
+    min-height: fit-content ;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -137,5 +143,11 @@
     margin-left: 8px !important;
     margin-right: 12px !important;
     min-width: 50px !important;
+  }
+  .res{
+    display: none;
+  }
+  .choice{
+    min-height: fit-content;
   }
 }

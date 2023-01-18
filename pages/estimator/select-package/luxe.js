@@ -48,7 +48,7 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>Luxe</h2>
-                <span>
+                <span className={styles.res}>
                   Lixurious dream kitchen that&apos;s a fine blend of aesthetics
                   and high functionality complete with swanky units and
                   accessories.
@@ -56,7 +56,7 @@ const Estimator27 = () => {
 
                 <img src={Image1.src} />
 
-                <p>
+                <p className={styles.res}>
                   <b>PRO TIP: </b>Choose this if you want to go all out to
                   ensure your dream luxury kitchen gives you an exquisite
                   culinary expierience that fits your lifestyle.
@@ -115,9 +115,7 @@ const Estimator27 = () => {
                   <span
                     style={{ color: "#F9C24E", cursor: "pointer" }}
                     onClick={() =>
-                      router.push(
-                        "/estimator/select-package/premium"
-                      )
+                      router.push("/estimator/select-package/premium")
                     }
                   >
                     &#9432;
@@ -165,7 +163,7 @@ const Estimator27 = () => {
             </Button>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

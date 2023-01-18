@@ -47,12 +47,12 @@ const Estimator29 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>Anti-scratch Acrylic</h2>
-                <span>
+                <span className={styles.res}>
                   Is an elegant, reflective, glossy finish that is scratch
                   resistant.
                 </span>
                 <img src={Image1.src} />
-                <p>
+                <p className={styles.res}>
                   <b>Pro Tip: </b>Dreaming of a chic kitchen with a touch of
                   luxury? Go for this one.
                 </p>
@@ -72,7 +72,7 @@ const Estimator29 = () => {
                 </div>
                 <div>
                   <h3>Laminate</h3>
-                  <p>
+                  <p className={styles.res}>
                     Is a smooth, durable finish which gives a clean and rich
                     look.
                   </p>
@@ -101,7 +101,7 @@ const Estimator29 = () => {
                 </div>
                 <div>
                   <h3>PVC laminate</h3>
-                  <p>
+                  <p className={styles.res}>
                     Is waterproof and withstands prolonged exposure to water and
                     moisture.
                   </p>
@@ -130,7 +130,7 @@ const Estimator29 = () => {
                 </div>
                 <div>
                   <h3>Glossy PU</h3>
-                  <p>
+                  <p className={styles.res}>
                     Comes with a slick look, high durability, and a polished
                     finish.
                   </p>
@@ -158,7 +158,7 @@ const Estimator29 = () => {
             </Button>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

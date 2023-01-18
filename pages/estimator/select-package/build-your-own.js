@@ -51,12 +51,15 @@ const Estimator27 = () => {
                 <div
                   style={{
                     display: "flex",
-                    height: '100%',
+                    height: "100%",
                     alignItems: "center",
-                    flexDirection: 'column'
+                    flexDirection: "column",
                   }}
                 >
-                  <p style={{ marginTop: "16px", flexGrow: 1 }}>
+                  <p
+                    className={styles.res}
+                    style={{ marginTop: "16px", flexGrow: 1 }}
+                  >
                     Select materials, finishes, accessories and more of your
                     choices from a range of collections for your kitchen.
                   </p>
@@ -65,7 +68,10 @@ const Estimator27 = () => {
                     <b>PRICE: Based on your selection</b>
                   </p>
 
-                  <p style={{ marginTop: "16px", flexGrow: 1 }}>
+                  <p
+                    className={styles.res}
+                    style={{ marginTop: "16px", flexGrow: 1 }}
+                  >
                     <b>PRO TIP: </b>If you’re sure about the other options, you
                     can always customise your package that works well for your
                     kitchen needs.
@@ -125,9 +131,7 @@ const Estimator27 = () => {
                   <span
                     style={{ color: "#F9C24E", cursor: "pointer" }}
                     onClick={() =>
-                      router.push(
-                        "/estimator/select-package/premium"
-                      )
+                      router.push("/estimator/select-package/premium")
                     }
                   >
                     &#9432;
@@ -176,7 +180,7 @@ const Estimator27 = () => {
             </Button>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
