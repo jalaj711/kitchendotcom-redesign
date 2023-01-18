@@ -121,6 +121,15 @@
   .choices {
     flex-direction: column;
   }
+  .p2{
+    display: none !important;
+  }
+  .res{
+    display: none ;
+  }
+  .selectionUnit{
+    min-width: fit-content !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -136,5 +145,11 @@
     margin-left: 8px !important;
     margin-right: 12px !important;
     min-width: 50px !important;
+  }
+  .p2{
+    display: none !important;
+  }
+  .selectionUnit{
+    min-width: fit-content !important;
   }
 }

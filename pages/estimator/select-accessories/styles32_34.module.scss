@@ -131,6 +131,12 @@
   .choices {
     flex-direction: column;
   }
+  .res{
+    display: none;
+  }
+  .head{
+    padding-left: 14px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -144,5 +150,11 @@
     margin-left: 8px !important;
     margin-right: 12px !important;
     min-width: 50px !important;
+  }
+  .res{
+    display: none;
+  }
+  .head{
+    padding-left: 14px !important;
   }
 }

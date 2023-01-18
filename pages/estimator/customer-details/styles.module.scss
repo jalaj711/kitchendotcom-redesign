@@ -139,6 +139,15 @@
       }
     }
   }
+  .imageWithSquare{
+    display: none !important;
+  }
+  .kitchenTypeHolder{
+    margin-top: -20%;
+  }
+  .res{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -179,5 +188,14 @@
     margin-left: 8px !important;
     margin-right: 12px !important;
     min-width: 50px !important;
+  }
+  .imageWithSquare{
+    display: none !important;
+  }
+  .kitchenTypeHolder{
+    margin-top: -20%;
+  }
+  .res{
+    display: none;
   }
 }

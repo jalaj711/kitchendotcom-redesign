@@ -48,12 +48,12 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>Intermediate</h2>
-                <span>
+                <span className={styles.res}>
                   A fine range of fittings, cabinets, and more for a smooth
                   culinary experience.
                 </span>
                 <img src={Image1.src} />
-                <p>
+                <p className={styles.res}>
                   <b>Pro Tip: </b>Pick this if you experiment with cooking and
                   need more units to ease your time in the kitchen.
                 </p>
@@ -73,7 +73,7 @@ const Estimator27 = () => {
                 </div>
                 <div>
                   <h3>Basic</h3>
-                  <p>
+                  <p className={styles.res}>
                     A basic range of accessories usually required to get your
                     ideal kitchen started.
                   </p>
@@ -102,7 +102,7 @@ const Estimator27 = () => {
                 </div>
                 <div>
                   <h3>Premium</h3>
-                  <p>
+                  <p className={styles.res}>
                     A showstopper kitchen with an exclusive range you were
                     always looking for.
                   </p>

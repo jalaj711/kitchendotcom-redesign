@@ -49,7 +49,7 @@ const Estimater2 = () => {
             <div className={styles.rightBar}>
               <div className={styles.rightBarTitle}>
                 <h2>Please enter your details to get the details</h2>
-                <img src={LoginImage.src} />
+                <img className={styles.res} src={LoginImage.src} />
               </div>
               <div className={styles.dataForm}>
                 <div>

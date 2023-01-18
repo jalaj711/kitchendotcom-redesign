@@ -48,14 +48,14 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>MR Plywood</h2>
-                <span>
+                <span className={styles.res}>
                   Is moisture and termite resistant and does not wear off
                   easily.
                 </span>
 
                 <img src={Image1.src} />
 
-                <p>
+                <p className={styles.res}>
                   <b>PRO TIP: </b>Works well if you&apos;re on a budget and
                   looking for a durable material.
                 </p>

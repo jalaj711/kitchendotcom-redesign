@@ -36,84 +36,130 @@ const Estimator12 = () => {
           <h2>Now choose the accessories for your kitchen.</h2>
           <div className={styles.kitchenTypeHolder}>
             <div className={styles.row}>
-              <div className={styles.choice} onClick={() => setActive("HDHMR")}
-              >
+              <div className={styles.choice} onClick={() => setActive("HDHMR")}>
                 <div>
                   <span
                     className={`${styles.radio} ${
                       active === "HDHMR" ? styles.active : ""
-                    }`} />
+                    }`}
+                  />
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>HDHMR</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
-                  Has high strength and density, and a solid screw-holding
-                  capacity.
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
+                    Has high strength and density, and a solid screw-holding
+                    capacity.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/build-package/hdhmr')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/build-package/hdhmr")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
               </div>
-              <div className={styles.choice} onClick={() => setActive("MR Plywood")}>
+              <div
+                className={styles.choice}
+                onClick={() => setActive("MR Plywood")}
+              >
                 <div>
-                  <span className={`${styles.radio} ${
+                  <span
+                    className={`${styles.radio} ${
                       active === "MR Plywood" ? styles.active : ""
-                    }`} />
+                    }`}
+                  />
                 </div>
                 <div className={styles.choiceContent}>
-                  
                   <h4>MR Plywood</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
-                  Is moisture and termite resistant and does not wear off
-                  easily.
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
+                    Is moisture and termite resistant and does not wear off
+                    easily.
                   </div>
                 </div>
 
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/build-package/mr-plywood')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/build-package/mr-plywood")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
               </div>
             </div>
             <div className={styles.row} style={{ marginBottom: 12 }}>
-              <div className={styles.choice} onClick={() => setActive("BWR Plywwod")}>
+              <div
+                className={styles.choice}
+                onClick={() => setActive("BWR Plywwod")}
+              >
                 <div>
-                  <span className={`${styles.radio} ${
+                  <span
+                    className={`${styles.radio} ${
                       active === "BWR Plywwod" ? styles.active : ""
-                    }`} />
+                    }`}
+                  />
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>BWR Plywwod</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
-                  Is water resistant and works well in areas prone to water
-                  exposure.
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
+                    Is water resistant and works well in areas prone to water
+                    exposure.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/build-package/bwr-plywood')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/build-package/bwr-plywood")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
               </div>
-              <div className={styles.choice} onClick={() => setActive("BWP Plywood")}>
+              <div
+                className={styles.choice}
+                onClick={() => setActive("BWP Plywood")}
+              >
                 <div>
-                  <span className={`${styles.radio} ${
+                  <span
+                    className={`${styles.radio} ${
                       active === "BWP Plywood" ? styles.active : ""
-                    }`} />
+                    }`}
+                  />
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>BWP Plywood</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
-                  Is waterproof and withstands prolonged exposure to water and
-                  moisture.
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
+                    Is waterproof and withstands prolonged exposure to water and
+                    moisture.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/build-package/bwp-plywood')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/build-package/bwp-plywood")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
@@ -129,7 +175,7 @@ const Estimator12 = () => {
             Next
           </Button>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
