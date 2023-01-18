@@ -38,6 +38,10 @@ export default function Footer() {
             onClick={() => window.open("https://wa.me/+919305281003", "_blank")}
           />
         </div>
+        <div className={styles.initiative}>
+          <span>An initiative by</span>
+          <Link href="http://ideagointeriors.com/">Indeago Interiors</Link>
+        </div>
       </div>
       <div className={styles.getInTouch}>
         <h3>Get In Touch</h3>
@@ -53,6 +57,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.aboutus}>
+        <h3>Company</h3>
         <ul>
           <li>
             <Link href="/about-us">About us</Link>
@@ -86,10 +91,6 @@ export default function Footer() {
         <div style={{ textAlign: "left" }}>
           <span>Designed by</span>
           <span>RACreators.com</span>
-        </div>
-        <div>
-          <span>Our parent company</span>
-          <Link href="http://ideagointeriors.com/">Indeago Interiors</Link>
         </div>
         <div style={{ textAlign: "right" }}>
           <span>@2022Kitchendotcom.in</span>

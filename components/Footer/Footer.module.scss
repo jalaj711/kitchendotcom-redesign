@@ -4,38 +4,39 @@
   width: 100vw;
   background-color: theme.$primary;
   color: theme.$text_on_primary;
-  background: linear-gradient(98.74deg, #f4b32a 9.75%, #ffe6b2 90.54%);
-  clip-path: polygon(
-    0 16px,
-    7% 12px,
-    14% 10px,
-    21% 10px,
-    28% 12px,
-    34% 16px,
-    40% 24px,
-    46% 34px,
-    50% 40px,
-    54% 46px,
-    60% 50px,
-    66% 52px,
-    70% 52px,
-    77% 50px,
-    83% 46px,
-    89% 42px,
-    95% 38px,
-    100% 34px,
-    100% 100%,
-    0% 100%
-  );
-  padding: 48px 24px 8px 24px;
+  // background: linear-gradient(98.74deg, #f4b32a 9.75%, #ffe6b2 90.54%);
+  background: #f4b32a;
+  // clip-path: polygon(
+  //   0 16px,
+  //   7% 12px,
+  //   14% 10px,
+  //   21% 10px,
+  //   28% 12px,
+  //   34% 16px,
+  //   40% 24px,
+  //   46% 34px,
+  //   50% 40px,
+  //   54% 46px,
+  //   60% 50px,
+  //   66% 52px,
+  //   70% 52px,
+  //   77% 50px,
+  //   83% 46px,
+  //   89% 42px,
+  //   95% 38px,
+  //   100% 34px,
+  //   100% 100%,
+  //   0% 100%
+  // );
+  padding: 8px 24px 8px 24px;
   display: grid;
   position: relative;
   grid-template-areas:
-    "footer-main footer-main footer-about-us footer-offerings footer-get-in-touch"
-    "footer-main footer-main footer-about-us footer-offerings footer-get-in-touch"
-    "footer-main footer-main footer-about-us footer-offerings footer-get-in-touch"
-    "footer-main footer-main footer-about-us footer-offerings footer-get-in-touch"
-    "footer-copyrights footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
+    "footer-main footer-about-us footer-offerings footer-get-in-touch"
+    "footer-main footer-about-us footer-offerings footer-get-in-touch"
+    "footer-main footer-about-us footer-offerings footer-get-in-touch"
+    "footer-main footer-about-us footer-offerings footer-get-in-touch"
+    "footer-copyrights footer-copyrights footer-copyrights footer-copyrights";
   @media (max-width: 768px) {
     padding: 48px 16px 4px 16px;
     grid-template-areas:
@@ -80,10 +81,20 @@
 
 .main {
   grid-area: footer-main;
-  text-align: center;
-
+  text-align: left;
+  padding-left: 32px;
   div {
-    display: inline-block;
+    display: block;
+  }
+  .initiative {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    a {
+      margin-left: 8px;
+      font-weight: 600;
+    }
   }
 }
 
@@ -94,10 +105,9 @@
 
 .aboutus {
   grid-area: footer-about-us;
-  ul li {
+  ul {
     list-style-type: none;
-    font-size: larger;
-    font-weight: 600;
+    padding-left: 8px;
   }
   @media (max-width: 768px) {
     text-align: center;
@@ -111,6 +121,7 @@
 .offerings {
   grid-area: footer-offerings;
   ul {
+    list-style-type: none;
     padding-left: 8px;
   }
   @media (max-width: 768px) {
