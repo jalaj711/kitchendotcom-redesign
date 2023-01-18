@@ -36,65 +36,98 @@ const Estimater2 = () => {
           <h2>Now choose the accessories for your kitchen.</h2>
           <div className={styles.kitchenTypeHolder}>
             <div className={styles.row}>
-              <div className={styles.choice} onClick={() => setActive("Basic")}
-              >
+              <div className={styles.choice} onClick={() => setActive("Basic")}>
                 <div>
                   <span
                     className={`${styles.radio} ${
                       active === "Basic" ? styles.active : ""
-                    }`} />
+                    }`}
+                  />
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>Basic</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
                     A basic range of accessories usually required to get your
                     ideal kitchen started.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-accessories/basic')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-accessories/basic")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
               </div>
-              <div className={styles.choice} onClick={() => setActive("Intermediate")}>
+              <div
+                className={styles.choice}
+                onClick={() => setActive("Intermediate")}
+              >
                 <div>
-                  <span className={`${styles.radio} ${
+                  <span
+                    className={`${styles.radio} ${
                       active === "Intermediate" ? styles.active : ""
-                    }`} />
+                    }`}
+                  />
                 </div>
                 <div className={styles.choiceContent}>
-                  
                   <h4>Intermediate</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
                     A fine range of fittings, cabinets, and more for a smooth
                     culinary experience.
                   </div>
                 </div>
 
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-accessories/intermediate')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-accessories/intermediate")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
               </div>
             </div>
             <div className={styles.row} style={{ marginBottom: 12 }}>
-              <div className={styles.choice} onClick={() => setActive("Premium")}>
+              <div
+                className={styles.choice}
+                onClick={() => setActive("Premium")}
+              >
                 <div>
-                  <span className={`${styles.radio} ${
+                  <span
+                    className={`${styles.radio} ${
                       active === "Premium" ? styles.active : ""
-                    }`} />
+                    }`}
+                  />
                 </div>
                 <div className={styles.choiceContent}>
                   <h4>Premium</h4>
-                  <div style={{ marginTop: 8, color: "#4a4a4a" }}>
+                  <div
+                    className={styles.res}
+                    style={{ marginTop: 8, color: "#4a4a4a" }}
+                  >
                     A showstopper kitchen with an exclusive range you were
                     always looking for.
                   </div>
                 </div>
                 <div>
-                  <span style={{ color: "#F9C24E", cursor: "pointer" }} onClick={()=>router.push('/estimator/select-accessories/premium')}>
+                  <span
+                    style={{ color: "#F9C24E", cursor: "pointer" }}
+                    onClick={() =>
+                      router.push("/estimator/select-accessories/premium")
+                    }
+                  >
                     &#9432;
                   </span>
                 </div>
@@ -110,8 +143,7 @@ const Estimater2 = () => {
             Next
           </Button>
         </div>
-      </div> 
-
+      </div>
     </div>
   );
 };

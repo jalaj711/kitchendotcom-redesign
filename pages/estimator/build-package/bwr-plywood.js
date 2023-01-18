@@ -48,14 +48,14 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>BWR Plywood</h2>
-                <span>
+                <span className={styles.res}>
                 Is water resistant and works well in areas prone to water
               exposure.
                 </span>
 
                 <img src={Image1.src} />
 
-                <p>
+                <p className={styles.res}>
                   <b>PRO TIP: </b>
               Pick this if you don’t want to be worried about
               frequent exposure to water.

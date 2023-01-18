@@ -48,13 +48,13 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>HDHMR</h2>
-                <span>
+                <span className={styles.res}>
                 Has high strength and density, and a solid screw-holding capacity.
                 </span>
 
                 <img src={Image1.src} />
 
-                <p>
+                <p className={styles.res}>
                   <b>PRO TIP: </b>Makes for a good choice as it has load-bearing
 capacity at a lower cost.
                 </p>

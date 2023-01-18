@@ -49,14 +49,14 @@ const Estimator27 = () => {
               </div>
               <div className={styles.primarySelection}>
                 <h2>BWP Plywood</h2>
-                <span>
+                <span className={styles.res}>
                 Is waterproof and withstands prolonged exposure to water and
                   moisture.
                 </span>
 
                 <img src={Image1.src} />
 
-                <p>
+                <p className={styles.res}>
                   <b>PRO TIP: </b>Looking for a waterproof material? Then consider
               this one!
                 </p>
