@@ -45,7 +45,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 10000;
+  z-index: 10000 !important;
   backdrop-filter: blur(2px);
   .mobileNav {
     width: 60vw;
