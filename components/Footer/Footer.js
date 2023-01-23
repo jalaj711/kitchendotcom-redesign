@@ -47,41 +47,12 @@ export default function Footer() {
         <h3>Get In Touch</h3>
         <div className={styles.contactDetails}>
           <div>
-            <Image
-              src={FacebookIcon}
-              width={48}
-              alt="facebook"
-              onClick={() =>
-                window.open(
-                  "https://www.facebook.com/kitchendotcom.in",
-                  "_blank"
-                )
-              }
-            />
-            <Image
-              src={InstagramIcon}
-              width={48}
-              alt="Instagram"
-              onClick={() =>
-                window.open(
-                  "https://www.instagram.com/kitchendotcom.in/",
-                  "_blank"
-                )
-              }
-            />
-            {/* <Image src={TwitterIcon} width={48} alt="Twitter" /> */}
-            <Image
-              src={WhatsAppIcon}
-              width={48}
-              alt="WhatsApp"
-              onClick={() =>
-                window.open("https://wa.me/+919305281003", "_blank")
-              }
-            />
-          </div>
-          <div>
             <span>Email us</span>
             <span>info@kitchendotcom.in</span>
+          </div>
+          <div>
+            <span>Call Us</span>
+            <span>093052 81003</span>
           </div>
         </div>
       </div>

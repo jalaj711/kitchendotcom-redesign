@@ -57,6 +57,9 @@
         list-style: none;
       }
     }
+    .main {
+      text-align: center;
+    }
   }
   @media (max-width: 500px) {
     padding: 48px 16px 4px 16px;
@@ -76,6 +79,9 @@
       "footer-offerings"
       "footer-copyrights"
       "footer-copyrights";
+  }
+  .getInTouch {
+    text-align: center;
   }
 }
 
