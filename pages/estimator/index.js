@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import SVG from "../../assets/estimator/estimator-1.svg";
-import SVGSmall from "../../assets/estimator/estimator-1-small.svg";
+import SVGSmall from "../../assets/estimator/estimator-2-small.svg";
 import Button from "../../components/Button/Button";
 import BG from "../../assets/estimator/estimator-1-bg.webp"
 import { useRouter } from "next/router";
